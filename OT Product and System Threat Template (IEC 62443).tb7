@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <KnowledgeBase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Manifest name="OT Product and System Threat Model Template (IEC 62443)" id="c9c2e48d-618e-52df-987f-3b002f877f93" version="1.2.0.0" author="John Desilva" />
+  <Manifest name="OT Product and System Threat Model Template (IEC 62443)" id="c9c2e48d-618e-52df-987f-3b002f877f93" version="1.3.0.0" author="John Desilva" />
   <ThreatMetaData>
     <IsPriorityUsed>true</IsPriorityUsed>
     <IsStatusUsed>true</IsStatusUsed>
@@ -89,24 +89,6 @@
         <AttributeType>0</AttributeType>
       </ThreatMetaDatum>
       <ThreatMetaDatum>
-        <Name>SDLPhase</Name>
-        <Label>IEC 62443-4-1 Practice</Label>
-        <HideFromUI>false</HideFromUI>
-        <Values>
-          <Value>SR - Security requirements</Value>
-          <Value>SD - Secure by design</Value>
-          <Value>SI - Secure implementation</Value>
-          <Value>SVV - Security verification and validation</Value>
-          <Value>DM - Security defect management</Value>
-          <Value>SUM - Security update management</Value>
-          <Value>SG - Security guidelines</Value>
-          <Value>SM - Security management and supply chain</Value>
-        </Values>
-        <Description>IEC 62443-4-1 secure development practice that addresses this threat.</Description>
-        <Id>SDLPhase</Id>
-        <AttributeType>1</AttributeType>
-      </ThreatMetaDatum>
-      <ThreatMetaDatum>
         <Name>ATTACKICS</Name>
         <Label>MITRE ATTACK for ICS v20</Label>
         <HideFromUI>false</HideFromUI>
@@ -124,7 +106,7 @@
         <Values>
           <Value />
         </Values>
-        <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 practice references. The first one belongs to the stated FR.</Description>
+        <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 references. The first one belongs to the stated FR.</Description>
         <Id>IEC62443Req</Id>
         <AttributeType>0</AttributeType>
       </ThreatMetaDatum>
@@ -245,7 +227,7 @@
       </ThreatMetaDatum>
       <ThreatMetaDatum>
         <Name>Validation</Name>
-        <Label>Verification Evidence (4-1 SVV)</Label>
+        <Label>Verification Evidence</Label>
         <HideFromUI>false</HideFromUI>
         <Values>
           <Value />
@@ -4531,17 +4513,6 @@
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>SDLPhase</Name>
-          <Label>IEC 62443-4-1 Practice</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>SD - Secure by design</Value>
-          </Values>
-          <Description>IEC 62443-4-1 secure development practice that addresses this threat.</Description>
-          <Id>SDLPhase</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
           <Name>ATTACKICS</Name>
           <Label>MITRE ATTACK for ICS v20</Label>
           <HideFromUI>false</HideFromUI>
@@ -4559,7 +4530,7 @@
           <Values>
             <Value>4-2 CR 1.2; 3-3 SR 1.2; 4-2 CR 1.8; 4-2 CR 1.9</Value>
           </Values>
-          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 practice references. The first one belongs to the stated FR.</Description>
+          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 references. The first one belongs to the stated FR.</Description>
           <Id>IEC62443Req</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
@@ -4651,17 +4622,6 @@
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>SDLPhase</Name>
-          <Label>IEC 62443-4-1 Practice</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>SD - Secure by design</Value>
-          </Values>
-          <Description>IEC 62443-4-1 secure development practice that addresses this threat.</Description>
-          <Id>SDLPhase</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
           <Name>ATTACKICS</Name>
           <Label>MITRE ATTACK for ICS v20</Label>
           <HideFromUI>false</HideFromUI>
@@ -4679,7 +4639,7 @@
           <Values>
             <Value>4-2 CR 3.1; 3-3 SR 3.1; 4-2 CR 4.3</Value>
           </Values>
-          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 practice references. The first one belongs to the stated FR.</Description>
+          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 references. The first one belongs to the stated FR.</Description>
           <Id>IEC62443Req</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
@@ -4771,17 +4731,6 @@
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>SDLPhase</Name>
-          <Label>IEC 62443-4-1 Practice</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>SD - Secure by design</Value>
-          </Values>
-          <Description>IEC 62443-4-1 secure development practice that addresses this threat.</Description>
-          <Id>SDLPhase</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
           <Name>ATTACKICS</Name>
           <Label>MITRE ATTACK for ICS v20</Label>
           <HideFromUI>false</HideFromUI>
@@ -4799,7 +4748,7 @@
           <Values>
             <Value>4-2 CR 4.1; 4-2 CR 4.3; 3-3 SR 4.1</Value>
           </Values>
-          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 practice references. The first one belongs to the stated FR.</Description>
+          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 references. The first one belongs to the stated FR.</Description>
           <Id>IEC62443Req</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
@@ -4891,17 +4840,6 @@
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>SDLPhase</Name>
-          <Label>IEC 62443-4-1 Practice</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>SD - Secure by design</Value>
-          </Values>
-          <Description>IEC 62443-4-1 secure development practice that addresses this threat.</Description>
-          <Id>SDLPhase</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
           <Name>ATTACKICS</Name>
           <Label>MITRE ATTACK for ICS v20</Label>
           <HideFromUI>false</HideFromUI>
@@ -4919,7 +4857,7 @@
           <Values>
             <Value>4-2 CR 4.1; 4-2 CR 1.5; 4-2 CR 4.3</Value>
           </Values>
-          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 practice references. The first one belongs to the stated FR.</Description>
+          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 references. The first one belongs to the stated FR.</Description>
           <Id>IEC62443Req</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
@@ -5011,17 +4949,6 @@
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>SDLPhase</Name>
-          <Label>IEC 62443-4-1 Practice</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>SD - Secure by design</Value>
-          </Values>
-          <Description>IEC 62443-4-1 secure development practice that addresses this threat.</Description>
-          <Id>SDLPhase</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
           <Name>ATTACKICS</Name>
           <Label>MITRE ATTACK for ICS v20</Label>
           <HideFromUI>false</HideFromUI>
@@ -5039,7 +4966,7 @@
           <Values>
             <Value>4-2 CR 3.1; 4-2 CR 3.8; 4-2 CR 2.1</Value>
           </Values>
-          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 practice references. The first one belongs to the stated FR.</Description>
+          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 references. The first one belongs to the stated FR.</Description>
           <Id>IEC62443Req</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
@@ -5131,17 +5058,6 @@
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>SDLPhase</Name>
-          <Label>IEC 62443-4-1 Practice</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>SVV - Security verification and validation</Value>
-          </Values>
-          <Description>IEC 62443-4-1 secure development practice that addresses this threat.</Description>
-          <Id>SDLPhase</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
           <Name>ATTACKICS</Name>
           <Label>MITRE ATTACK for ICS v20</Label>
           <HideFromUI>false</HideFromUI>
@@ -5159,7 +5075,7 @@
           <Values>
             <Value>4-2 CR 7.1; 4-2 CR 7.2; 3-3 SR 7.1</Value>
           </Values>
-          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 practice references. The first one belongs to the stated FR.</Description>
+          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 references. The first one belongs to the stated FR.</Description>
           <Id>IEC62443Req</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
@@ -5251,17 +5167,6 @@
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>SDLPhase</Name>
-          <Label>IEC 62443-4-1 Practice</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>SR - Security requirements</Value>
-          </Values>
-          <Description>IEC 62443-4-1 secure development practice that addresses this threat.</Description>
-          <Id>SDLPhase</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
           <Name>ATTACKICS</Name>
           <Label>MITRE ATTACK for ICS v20</Label>
           <HideFromUI>false</HideFromUI>
@@ -5279,7 +5184,7 @@
           <Values>
             <Value>4-2 CR 2.8; 4-2 CR 2.11; 4-2 CR 6.1</Value>
           </Values>
-          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 practice references. The first one belongs to the stated FR.</Description>
+          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 references. The first one belongs to the stated FR.</Description>
           <Id>IEC62443Req</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
@@ -5371,17 +5276,6 @@
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>SDLPhase</Name>
-          <Label>IEC 62443-4-1 Practice</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>SD - Secure by design</Value>
-          </Values>
-          <Description>IEC 62443-4-1 secure development practice that addresses this threat.</Description>
-          <Id>SDLPhase</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
           <Name>ATTACKICS</Name>
           <Label>MITRE ATTACK for ICS v20</Label>
           <HideFromUI>false</HideFromUI>
@@ -5399,7 +5293,7 @@
           <Values>
             <Value>4-2 CR 7.7; 4-2 CR 7.6; 4-2 NDR 5.2</Value>
           </Values>
-          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 practice references. The first one belongs to the stated FR.</Description>
+          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 references. The first one belongs to the stated FR.</Description>
           <Id>IEC62443Req</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
@@ -5491,17 +5385,6 @@
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>SDLPhase</Name>
-          <Label>IEC 62443-4-1 Practice</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>SD - Secure by design</Value>
-          </Values>
-          <Description>IEC 62443-4-1 secure development practice that addresses this threat.</Description>
-          <Id>SDLPhase</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
           <Name>ATTACKICS</Name>
           <Label>MITRE ATTACK for ICS v20</Label>
           <HideFromUI>false</HideFromUI>
@@ -5519,7 +5402,7 @@
           <Values>
             <Value>4-2 CR 7.7; 4-2 CR 2.1; 4-2 CR 6.2</Value>
           </Values>
-          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 practice references. The first one belongs to the stated FR.</Description>
+          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 references. The first one belongs to the stated FR.</Description>
           <Id>IEC62443Req</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
@@ -5611,17 +5494,6 @@
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>SDLPhase</Name>
-          <Label>IEC 62443-4-1 Practice</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>SD - Secure by design</Value>
-          </Values>
-          <Description>IEC 62443-4-1 secure development practice that addresses this threat.</Description>
-          <Id>SDLPhase</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
           <Name>ATTACKICS</Name>
           <Label>MITRE ATTACK for ICS v20</Label>
           <HideFromUI>false</HideFromUI>
@@ -5639,7 +5511,7 @@
           <Values>
             <Value>4-2 CR 2.1; 4-2 CR 3.4; 4-2 CR 2.8</Value>
           </Values>
-          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 practice references. The first one belongs to the stated FR.</Description>
+          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 references. The first one belongs to the stated FR.</Description>
           <Id>IEC62443Req</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
@@ -5731,17 +5603,6 @@
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>SDLPhase</Name>
-          <Label>IEC 62443-4-1 Practice</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>SD - Secure by design</Value>
-          </Values>
-          <Description>IEC 62443-4-1 secure development practice that addresses this threat.</Description>
-          <Id>SDLPhase</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
           <Name>ATTACKICS</Name>
           <Label>MITRE ATTACK for ICS v20</Label>
           <HideFromUI>false</HideFromUI>
@@ -5759,7 +5620,7 @@
           <Values>
             <Value>4-2 CR 2.1; 4-2 CR 2.8</Value>
           </Values>
-          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 practice references. The first one belongs to the stated FR.</Description>
+          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 references. The first one belongs to the stated FR.</Description>
           <Id>IEC62443Req</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
@@ -5851,17 +5712,6 @@
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>SDLPhase</Name>
-          <Label>IEC 62443-4-1 Practice</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>SD - Secure by design</Value>
-          </Values>
-          <Description>IEC 62443-4-1 secure development practice that addresses this threat.</Description>
-          <Id>SDLPhase</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
           <Name>ATTACKICS</Name>
           <Label>MITRE ATTACK for ICS v20</Label>
           <HideFromUI>false</HideFromUI>
@@ -5879,7 +5729,7 @@
           <Values>
             <Value>4-2 CR 7.1; 4-2 CR 2.1; 4-2 CR 3.6</Value>
           </Values>
-          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 practice references. The first one belongs to the stated FR.</Description>
+          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 references. The first one belongs to the stated FR.</Description>
           <Id>IEC62443Req</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
@@ -5971,17 +5821,6 @@
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>SDLPhase</Name>
-          <Label>IEC 62443-4-1 Practice</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>SD - Secure by design</Value>
-          </Values>
-          <Description>IEC 62443-4-1 secure development practice that addresses this threat.</Description>
-          <Id>SDLPhase</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
           <Name>ATTACKICS</Name>
           <Label>MITRE ATTACK for ICS v20</Label>
           <HideFromUI>false</HideFromUI>
@@ -5999,7 +5838,7 @@
           <Values>
             <Value>4-2 CR 4.1; 4-2 CR 2.1</Value>
           </Values>
-          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 practice references. The first one belongs to the stated FR.</Description>
+          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 references. The first one belongs to the stated FR.</Description>
           <Id>IEC62443Req</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
@@ -6091,17 +5930,6 @@
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>SDLPhase</Name>
-          <Label>IEC 62443-4-1 Practice</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>SI - Secure implementation</Value>
-          </Values>
-          <Description>IEC 62443-4-1 secure development practice that addresses this threat.</Description>
-          <Id>SDLPhase</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
           <Name>ATTACKICS</Name>
           <Label>MITRE ATTACK for ICS v20</Label>
           <HideFromUI>false</HideFromUI>
@@ -6119,7 +5947,7 @@
           <Values>
             <Value>4-2 CR 3.5; 4-2 CR 2.1; 4-2 CR 3.6</Value>
           </Values>
-          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 practice references. The first one belongs to the stated FR.</Description>
+          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 references. The first one belongs to the stated FR.</Description>
           <Id>IEC62443Req</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
@@ -6211,17 +6039,6 @@
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>SDLPhase</Name>
-          <Label>IEC 62443-4-1 Practice</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>SD - Secure by design</Value>
-          </Values>
-          <Description>IEC 62443-4-1 secure development practice that addresses this threat.</Description>
-          <Id>SDLPhase</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
           <Name>ATTACKICS</Name>
           <Label>MITRE ATTACK for ICS v20</Label>
           <HideFromUI>false</HideFromUI>
@@ -6239,7 +6056,7 @@
           <Values>
             <Value>4-2 CR 2.1; 4-2 CR 2.8</Value>
           </Values>
-          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 practice references. The first one belongs to the stated FR.</Description>
+          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 references. The first one belongs to the stated FR.</Description>
           <Id>IEC62443Req</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
@@ -6331,17 +6148,6 @@
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>SDLPhase</Name>
-          <Label>IEC 62443-4-1 Practice</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>SD - Secure by design</Value>
-          </Values>
-          <Description>IEC 62443-4-1 secure development practice that addresses this threat.</Description>
-          <Id>SDLPhase</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
           <Name>ATTACKICS</Name>
           <Label>MITRE ATTACK for ICS v20</Label>
           <HideFromUI>false</HideFromUI>
@@ -6359,7 +6165,7 @@
           <Values>
             <Value>4-2 CR 3.4; 4-2 EDR 3.10; 4-2 EDR 3.14</Value>
           </Values>
-          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 practice references. The first one belongs to the stated FR.</Description>
+          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 references. The first one belongs to the stated FR.</Description>
           <Id>IEC62443Req</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
@@ -6451,17 +6257,6 @@
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>SDLPhase</Name>
-          <Label>IEC 62443-4-1 Practice</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>SD - Secure by design</Value>
-          </Values>
-          <Description>IEC 62443-4-1 secure development practice that addresses this threat.</Description>
-          <Id>SDLPhase</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
           <Name>ATTACKICS</Name>
           <Label>MITRE ATTACK for ICS v20</Label>
           <HideFromUI>false</HideFromUI>
@@ -6479,7 +6274,7 @@
           <Values>
             <Value>4-2 EDR 3.14; 4-2 EDR 3.12; 4-2 EDR 3.13; 4-2 CR 3.3</Value>
           </Values>
-          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 practice references. The first one belongs to the stated FR.</Description>
+          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 references. The first one belongs to the stated FR.</Description>
           <Id>IEC62443Req</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
@@ -6571,17 +6366,6 @@
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>SDLPhase</Name>
-          <Label>IEC 62443-4-1 Practice</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>SVV - Security verification and validation</Value>
-          </Values>
-          <Description>IEC 62443-4-1 secure development practice that addresses this threat.</Description>
-          <Id>SDLPhase</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
           <Name>ATTACKICS</Name>
           <Label>MITRE ATTACK for ICS v20</Label>
           <HideFromUI>false</HideFromUI>
@@ -6599,7 +6383,7 @@
           <Values>
             <Value>4-2 CR 3.6; 4-2 CR 3.7; 4-2 CR 7.1</Value>
           </Values>
-          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 practice references. The first one belongs to the stated FR.</Description>
+          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 references. The first one belongs to the stated FR.</Description>
           <Id>IEC62443Req</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
@@ -6691,17 +6475,6 @@
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>SDLPhase</Name>
-          <Label>IEC 62443-4-1 Practice</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>SVV - Security verification and validation</Value>
-          </Values>
-          <Description>IEC 62443-4-1 secure development practice that addresses this threat.</Description>
-          <Id>SDLPhase</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
           <Name>ATTACKICS</Name>
           <Label>MITRE ATTACK for ICS v20</Label>
           <HideFromUI>false</HideFromUI>
@@ -6719,7 +6492,7 @@
           <Values>
             <Value>4-2 CR 7.1; 4-2 CR 7.2</Value>
           </Values>
-          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 practice references. The first one belongs to the stated FR.</Description>
+          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 references. The first one belongs to the stated FR.</Description>
           <Id>IEC62443Req</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
@@ -6811,17 +6584,6 @@
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>SDLPhase</Name>
-          <Label>IEC 62443-4-1 Practice</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>SD - Secure by design</Value>
-          </Values>
-          <Description>IEC 62443-4-1 secure development practice that addresses this threat.</Description>
-          <Id>SDLPhase</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
           <Name>ATTACKICS</Name>
           <Label>MITRE ATTACK for ICS v20</Label>
           <HideFromUI>false</HideFromUI>
@@ -6839,7 +6601,7 @@
           <Values>
             <Value>4-2 EDR 3.11; 4-2 CR 2.8</Value>
           </Values>
-          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 practice references. The first one belongs to the stated FR.</Description>
+          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 references. The first one belongs to the stated FR.</Description>
           <Id>IEC62443Req</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
@@ -6931,17 +6693,6 @@
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>SDLPhase</Name>
-          <Label>IEC 62443-4-1 Practice</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>SD - Secure by design</Value>
-          </Values>
-          <Description>IEC 62443-4-1 secure development practice that addresses this threat.</Description>
-          <Id>SDLPhase</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
           <Name>ATTACKICS</Name>
           <Label>MITRE ATTACK for ICS v20</Label>
           <HideFromUI>false</HideFromUI>
@@ -6959,7 +6710,7 @@
           <Values>
             <Value>4-2 EDR 2.13; 4-2 HDR 2.13; 4-2 NDR 2.13</Value>
           </Values>
-          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 practice references. The first one belongs to the stated FR.</Description>
+          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 references. The first one belongs to the stated FR.</Description>
           <Id>IEC62443Req</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
@@ -7051,17 +6802,6 @@
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>SDLPhase</Name>
-          <Label>IEC 62443-4-1 Practice</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>SD - Secure by design</Value>
-          </Values>
-          <Description>IEC 62443-4-1 secure development practice that addresses this threat.</Description>
-          <Id>SDLPhase</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
           <Name>ATTACKICS</Name>
           <Label>MITRE ATTACK for ICS v20</Label>
           <HideFromUI>false</HideFromUI>
@@ -7079,7 +6819,7 @@
           <Values>
             <Value>4-2 CR 4.1; 4-2 CR 1.5; 4-2 CR 4.2; 4-2 EDR 3.11</Value>
           </Values>
-          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 practice references. The first one belongs to the stated FR.</Description>
+          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 references. The first one belongs to the stated FR.</Description>
           <Id>IEC62443Req</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
@@ -7171,17 +6911,6 @@
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>SDLPhase</Name>
-          <Label>IEC 62443-4-1 Practice</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>SD - Secure by design</Value>
-          </Values>
-          <Description>IEC 62443-4-1 secure development practice that addresses this threat.</Description>
-          <Id>SDLPhase</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
           <Name>ATTACKICS</Name>
           <Label>MITRE ATTACK for ICS v20</Label>
           <HideFromUI>false</HideFromUI>
@@ -7199,7 +6928,7 @@
           <Values>
             <Value>4-2 CR 1.2; 3-3 SR 1.2</Value>
           </Values>
-          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 practice references. The first one belongs to the stated FR.</Description>
+          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 references. The first one belongs to the stated FR.</Description>
           <Id>IEC62443Req</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
@@ -7291,17 +7020,6 @@
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>SDLPhase</Name>
-          <Label>IEC 62443-4-1 Practice</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>SD - Secure by design</Value>
-          </Values>
-          <Description>IEC 62443-4-1 secure development practice that addresses this threat.</Description>
-          <Id>SDLPhase</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
           <Name>ATTACKICS</Name>
           <Label>MITRE ATTACK for ICS v20</Label>
           <HideFromUI>false</HideFromUI>
@@ -7319,7 +7037,7 @@
           <Values>
             <Value>4-2 CR 3.1; 4-2 CR 3.5; 4-2 CR 1.2</Value>
           </Values>
-          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 practice references. The first one belongs to the stated FR.</Description>
+          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 references. The first one belongs to the stated FR.</Description>
           <Id>IEC62443Req</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
@@ -7411,17 +7129,6 @@
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>SDLPhase</Name>
-          <Label>IEC 62443-4-1 Practice</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>SD - Secure by design</Value>
-          </Values>
-          <Description>IEC 62443-4-1 secure development practice that addresses this threat.</Description>
-          <Id>SDLPhase</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
           <Name>ATTACKICS</Name>
           <Label>MITRE ATTACK for ICS v20</Label>
           <HideFromUI>false</HideFromUI>
@@ -7439,7 +7146,7 @@
           <Values>
             <Value>4-2 CR 3.4; 4-2 CR 2.1; IEC 61511-1 8.2.4</Value>
           </Values>
-          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 practice references. The first one belongs to the stated FR.</Description>
+          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 references. The first one belongs to the stated FR.</Description>
           <Id>IEC62443Req</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
@@ -7531,17 +7238,6 @@
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>SDLPhase</Name>
-          <Label>IEC 62443-4-1 Practice</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>SD - Secure by design</Value>
-          </Values>
-          <Description>IEC 62443-4-1 secure development practice that addresses this threat.</Description>
-          <Id>SDLPhase</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
           <Name>ATTACKICS</Name>
           <Label>MITRE ATTACK for ICS v20</Label>
           <HideFromUI>false</HideFromUI>
@@ -7559,7 +7255,7 @@
           <Values>
             <Value>4-2 CR 2.1; 4-2 CR 2.8; IEC 61511</Value>
           </Values>
-          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 practice references. The first one belongs to the stated FR.</Description>
+          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 references. The first one belongs to the stated FR.</Description>
           <Id>IEC62443Req</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
@@ -7651,17 +7347,6 @@
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>SDLPhase</Name>
-          <Label>IEC 62443-4-1 Practice</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>SD - Secure by design</Value>
-          </Values>
-          <Description>IEC 62443-4-1 secure development practice that addresses this threat.</Description>
-          <Id>SDLPhase</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
           <Name>ATTACKICS</Name>
           <Label>MITRE ATTACK for ICS v20</Label>
           <HideFromUI>false</HideFromUI>
@@ -7679,7 +7364,7 @@
           <Values>
             <Value>3-3 SR 5.1; 3-3 SR 5.2; 4-2 CR 5.1</Value>
           </Values>
-          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 practice references. The first one belongs to the stated FR.</Description>
+          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 references. The first one belongs to the stated FR.</Description>
           <Id>IEC62443Req</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
@@ -7771,17 +7456,6 @@
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>SDLPhase</Name>
-          <Label>IEC 62443-4-1 Practice</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>SD - Secure by design</Value>
-          </Values>
-          <Description>IEC 62443-4-1 secure development practice that addresses this threat.</Description>
-          <Id>SDLPhase</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
           <Name>ATTACKICS</Name>
           <Label>MITRE ATTACK for ICS v20</Label>
           <HideFromUI>false</HideFromUI>
@@ -7799,7 +7473,7 @@
           <Values>
             <Value>4-2 CR 3.1; 3-3 SR 5.1; IEC 61784-3</Value>
           </Values>
-          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 practice references. The first one belongs to the stated FR.</Description>
+          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 references. The first one belongs to the stated FR.</Description>
           <Id>IEC62443Req</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
@@ -7891,17 +7565,6 @@
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>SDLPhase</Name>
-          <Label>IEC 62443-4-1 Practice</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>SD - Secure by design</Value>
-          </Values>
-          <Description>IEC 62443-4-1 secure development practice that addresses this threat.</Description>
-          <Id>SDLPhase</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
           <Name>ATTACKICS</Name>
           <Label>MITRE ATTACK for ICS v20</Label>
           <HideFromUI>false</HideFromUI>
@@ -7919,7 +7582,7 @@
           <Values>
             <Value>4-2 CR 3.1; 4-2 CR 3.4</Value>
           </Values>
-          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 practice references. The first one belongs to the stated FR.</Description>
+          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 references. The first one belongs to the stated FR.</Description>
           <Id>IEC62443Req</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
@@ -8011,17 +7674,6 @@
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>SDLPhase</Name>
-          <Label>IEC 62443-4-1 Practice</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>SD - Secure by design</Value>
-          </Values>
-          <Description>IEC 62443-4-1 secure development practice that addresses this threat.</Description>
-          <Id>SDLPhase</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
           <Name>ATTACKICS</Name>
           <Label>MITRE ATTACK for ICS v20</Label>
           <HideFromUI>false</HideFromUI>
@@ -8039,7 +7691,7 @@
           <Values>
             <Value>4-2 CR 7.1; 4-2 CR 7.3; 4-2 CR 7.4</Value>
           </Values>
-          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 practice references. The first one belongs to the stated FR.</Description>
+          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 references. The first one belongs to the stated FR.</Description>
           <Id>IEC62443Req</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
@@ -8131,17 +7783,6 @@
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>SDLPhase</Name>
-          <Label>IEC 62443-4-1 Practice</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>SD - Secure by design</Value>
-          </Values>
-          <Description>IEC 62443-4-1 secure development practice that addresses this threat.</Description>
-          <Id>SDLPhase</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
           <Name>ATTACKICS</Name>
           <Label>MITRE ATTACK for ICS v20</Label>
           <HideFromUI>false</HideFromUI>
@@ -8159,7 +7800,7 @@
           <Values>
             <Value>4-2 CR 2.1; 4-2 CR 2.8</Value>
           </Values>
-          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 practice references. The first one belongs to the stated FR.</Description>
+          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 references. The first one belongs to the stated FR.</Description>
           <Id>IEC62443Req</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
@@ -8251,17 +7892,6 @@
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>SDLPhase</Name>
-          <Label>IEC 62443-4-1 Practice</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>SD - Secure by design</Value>
-          </Values>
-          <Description>IEC 62443-4-1 secure development practice that addresses this threat.</Description>
-          <Id>SDLPhase</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
           <Name>ATTACKICS</Name>
           <Label>MITRE ATTACK for ICS v20</Label>
           <HideFromUI>false</HideFromUI>
@@ -8279,7 +7909,7 @@
           <Values>
             <Value>4-2 CR 2.1; 4-2 CR 1.3</Value>
           </Values>
-          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 practice references. The first one belongs to the stated FR.</Description>
+          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 references. The first one belongs to the stated FR.</Description>
           <Id>IEC62443Req</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
@@ -8371,17 +8001,6 @@
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>SDLPhase</Name>
-          <Label>IEC 62443-4-1 Practice</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>SR - Security requirements</Value>
-          </Values>
-          <Description>IEC 62443-4-1 secure development practice that addresses this threat.</Description>
-          <Id>SDLPhase</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
           <Name>ATTACKICS</Name>
           <Label>MITRE ATTACK for ICS v20</Label>
           <HideFromUI>false</HideFromUI>
@@ -8399,7 +8018,7 @@
           <Values>
             <Value>4-2 CR 2.8; 4-2 CR 1.1; 4-2 CR 2.12</Value>
           </Values>
-          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 practice references. The first one belongs to the stated FR.</Description>
+          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 references. The first one belongs to the stated FR.</Description>
           <Id>IEC62443Req</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
@@ -8491,17 +8110,6 @@
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>SDLPhase</Name>
-          <Label>IEC 62443-4-1 Practice</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>SD - Secure by design</Value>
-          </Values>
-          <Description>IEC 62443-4-1 secure development practice that addresses this threat.</Description>
-          <Id>SDLPhase</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
           <Name>ATTACKICS</Name>
           <Label>MITRE ATTACK for ICS v20</Label>
           <HideFromUI>false</HideFromUI>
@@ -8519,7 +8127,7 @@
           <Values>
             <Value>4-2 HDR 3.2; 4-2 SAR 3.2; 4-2 CR 3.4</Value>
           </Values>
-          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 practice references. The first one belongs to the stated FR.</Description>
+          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 references. The first one belongs to the stated FR.</Description>
           <Id>IEC62443Req</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
@@ -8611,17 +8219,6 @@
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>SDLPhase</Name>
-          <Label>IEC 62443-4-1 Practice</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>SD - Secure by design</Value>
-          </Values>
-          <Description>IEC 62443-4-1 secure development practice that addresses this threat.</Description>
-          <Id>SDLPhase</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
           <Name>ATTACKICS</Name>
           <Label>MITRE ATTACK for ICS v20</Label>
           <HideFromUI>false</HideFromUI>
@@ -8639,7 +8236,7 @@
           <Values>
             <Value>4-2 CR 7.3; 4-2 CR 7.4; 3-3 SR 5.1</Value>
           </Values>
-          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 practice references. The first one belongs to the stated FR.</Description>
+          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 references. The first one belongs to the stated FR.</Description>
           <Id>IEC62443Req</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
@@ -8731,17 +8328,6 @@
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>SDLPhase</Name>
-          <Label>IEC 62443-4-1 Practice</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>SUM - Security update management</Value>
-          </Values>
-          <Description>IEC 62443-4-1 secure development practice that addresses this threat.</Description>
-          <Id>SDLPhase</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
           <Name>ATTACKICS</Name>
           <Label>MITRE ATTACK for ICS v20</Label>
           <HideFromUI>false</HideFromUI>
@@ -8759,7 +8345,7 @@
           <Values>
             <Value>4-2 HDR 3.10; 4-1 SUM; 4-1 SG</Value>
           </Values>
-          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 practice references. The first one belongs to the stated FR.</Description>
+          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 references. The first one belongs to the stated FR.</Description>
           <Id>IEC62443Req</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
@@ -8851,17 +8437,6 @@
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>SDLPhase</Name>
-          <Label>IEC 62443-4-1 Practice</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>SD - Secure by design</Value>
-          </Values>
-          <Description>IEC 62443-4-1 secure development practice that addresses this threat.</Description>
-          <Id>SDLPhase</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
           <Name>ATTACKICS</Name>
           <Label>MITRE ATTACK for ICS v20</Label>
           <HideFromUI>false</HideFromUI>
@@ -8879,7 +8454,7 @@
           <Values>
             <Value>4-2 CR 3.4; 4-2 SAR 3.2</Value>
           </Values>
-          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 practice references. The first one belongs to the stated FR.</Description>
+          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 references. The first one belongs to the stated FR.</Description>
           <Id>IEC62443Req</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
@@ -8971,17 +8546,6 @@
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>SDLPhase</Name>
-          <Label>IEC 62443-4-1 Practice</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>SD - Secure by design</Value>
-          </Values>
-          <Description>IEC 62443-4-1 secure development practice that addresses this threat.</Description>
-          <Id>SDLPhase</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
           <Name>ATTACKICS</Name>
           <Label>MITRE ATTACK for ICS v20</Label>
           <HideFromUI>false</HideFromUI>
@@ -8999,7 +8563,7 @@
           <Values>
             <Value>4-2 CR 4.1; 4-2 CR 2.1</Value>
           </Values>
-          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 practice references. The first one belongs to the stated FR.</Description>
+          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 references. The first one belongs to the stated FR.</Description>
           <Id>IEC62443Req</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
@@ -9091,17 +8655,6 @@
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>SDLPhase</Name>
-          <Label>IEC 62443-4-1 Practice</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>SD - Secure by design</Value>
-          </Values>
-          <Description>IEC 62443-4-1 secure development practice that addresses this threat.</Description>
-          <Id>SDLPhase</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
           <Name>ATTACKICS</Name>
           <Label>MITRE ATTACK for ICS v20</Label>
           <HideFromUI>false</HideFromUI>
@@ -9119,7 +8672,7 @@
           <Values>
             <Value>4-2 CR 1.1; 4-2 CR 1.2; 4-2 CR 2.1</Value>
           </Values>
-          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 practice references. The first one belongs to the stated FR.</Description>
+          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 references. The first one belongs to the stated FR.</Description>
           <Id>IEC62443Req</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
@@ -9211,17 +8764,6 @@
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>SDLPhase</Name>
-          <Label>IEC 62443-4-1 Practice</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>SI - Secure implementation</Value>
-          </Values>
-          <Description>IEC 62443-4-1 secure development practice that addresses this threat.</Description>
-          <Id>SDLPhase</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
           <Name>ATTACKICS</Name>
           <Label>MITRE ATTACK for ICS v20</Label>
           <HideFromUI>false</HideFromUI>
@@ -9239,7 +8781,7 @@
           <Values>
             <Value>4-2 CR 3.5; 4-2 CR 2.1; 4-1 SI; 4-1 SVV</Value>
           </Values>
-          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 practice references. The first one belongs to the stated FR.</Description>
+          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 references. The first one belongs to the stated FR.</Description>
           <Id>IEC62443Req</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
@@ -9331,17 +8873,6 @@
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>SDLPhase</Name>
-          <Label>IEC 62443-4-1 Practice</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>SI - Secure implementation</Value>
-          </Values>
-          <Description>IEC 62443-4-1 secure development practice that addresses this threat.</Description>
-          <Id>SDLPhase</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
           <Name>ATTACKICS</Name>
           <Label>MITRE ATTACK for ICS v20</Label>
           <HideFromUI>false</HideFromUI>
@@ -9359,7 +8890,7 @@
           <Values>
             <Value>4-2 CR 3.8; 4-2 CR 2.5; 4-2 CR 2.6</Value>
           </Values>
-          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 practice references. The first one belongs to the stated FR.</Description>
+          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 references. The first one belongs to the stated FR.</Description>
           <Id>IEC62443Req</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
@@ -9451,17 +8982,6 @@
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>SDLPhase</Name>
-          <Label>IEC 62443-4-1 Practice</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>SD - Secure by design</Value>
-          </Values>
-          <Description>IEC 62443-4-1 secure development practice that addresses this threat.</Description>
-          <Id>SDLPhase</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
           <Name>ATTACKICS</Name>
           <Label>MITRE ATTACK for ICS v20</Label>
           <HideFromUI>false</HideFromUI>
@@ -9479,7 +8999,7 @@
           <Values>
             <Value>4-2 SAR 2.4; 4-2 CR 3.4</Value>
           </Values>
-          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 practice references. The first one belongs to the stated FR.</Description>
+          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 references. The first one belongs to the stated FR.</Description>
           <Id>IEC62443Req</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
@@ -9571,17 +9091,6 @@
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>SDLPhase</Name>
-          <Label>IEC 62443-4-1 Practice</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>SG - Security guidelines</Value>
-          </Values>
-          <Description>IEC 62443-4-1 secure development practice that addresses this threat.</Description>
-          <Id>SDLPhase</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
           <Name>ATTACKICS</Name>
           <Label>MITRE ATTACK for ICS v20</Label>
           <HideFromUI>false</HideFromUI>
@@ -9599,7 +9108,7 @@
           <Values>
             <Value>4-2 CR 2.1; 4-2 CR 7.7</Value>
           </Values>
-          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 practice references. The first one belongs to the stated FR.</Description>
+          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 references. The first one belongs to the stated FR.</Description>
           <Id>IEC62443Req</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
@@ -9691,17 +9200,6 @@
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>SDLPhase</Name>
-          <Label>IEC 62443-4-1 Practice</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>SI - Secure implementation</Value>
-          </Values>
-          <Description>IEC 62443-4-1 secure development practice that addresses this threat.</Description>
-          <Id>SDLPhase</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
           <Name>ATTACKICS</Name>
           <Label>MITRE ATTACK for ICS v20</Label>
           <HideFromUI>false</HideFromUI>
@@ -9719,7 +9217,7 @@
           <Values>
             <Value>4-2 CR 3.7</Value>
           </Values>
-          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 practice references. The first one belongs to the stated FR.</Description>
+          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 references. The first one belongs to the stated FR.</Description>
           <Id>IEC62443Req</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
@@ -9811,17 +9309,6 @@
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>SDLPhase</Name>
-          <Label>IEC 62443-4-1 Practice</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>SD - Secure by design</Value>
-          </Values>
-          <Description>IEC 62443-4-1 secure development practice that addresses this threat.</Description>
-          <Id>SDLPhase</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
           <Name>ATTACKICS</Name>
           <Label>MITRE ATTACK for ICS v20</Label>
           <HideFromUI>false</HideFromUI>
@@ -9839,7 +9326,7 @@
           <Values>
             <Value>4-2 CR 1.1; 4-2 CR 1.5; 4-2 CR 1.7</Value>
           </Values>
-          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 practice references. The first one belongs to the stated FR.</Description>
+          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 references. The first one belongs to the stated FR.</Description>
           <Id>IEC62443Req</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
@@ -9931,17 +9418,6 @@
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>SDLPhase</Name>
-          <Label>IEC 62443-4-1 Practice</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>SD - Secure by design</Value>
-          </Values>
-          <Description>IEC 62443-4-1 secure development practice that addresses this threat.</Description>
-          <Id>SDLPhase</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
           <Name>ATTACKICS</Name>
           <Label>MITRE ATTACK for ICS v20</Label>
           <HideFromUI>false</HideFromUI>
@@ -9959,7 +9435,7 @@
           <Values>
             <Value>4-2 CR 1.11; 4-2 CR 1.10; 4-2 CR 1.7</Value>
           </Values>
-          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 practice references. The first one belongs to the stated FR.</Description>
+          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 references. The first one belongs to the stated FR.</Description>
           <Id>IEC62443Req</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
@@ -10051,17 +9527,6 @@
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>SDLPhase</Name>
-          <Label>IEC 62443-4-1 Practice</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>SVV - Security verification and validation</Value>
-          </Values>
-          <Description>IEC 62443-4-1 secure development practice that addresses this threat.</Description>
-          <Id>SDLPhase</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
           <Name>ATTACKICS</Name>
           <Label>MITRE ATTACK for ICS v20</Label>
           <HideFromUI>false</HideFromUI>
@@ -10079,7 +9544,7 @@
           <Values>
             <Value>4-2 CR 3.5; 4-1 SI; 4-1 SVV</Value>
           </Values>
-          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 practice references. The first one belongs to the stated FR.</Description>
+          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 references. The first one belongs to the stated FR.</Description>
           <Id>IEC62443Req</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
@@ -10171,17 +9636,6 @@
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>SDLPhase</Name>
-          <Label>IEC 62443-4-1 Practice</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>SG - Security guidelines</Value>
-          </Values>
-          <Description>IEC 62443-4-1 secure development practice that addresses this threat.</Description>
-          <Id>SDLPhase</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
           <Name>ATTACKICS</Name>
           <Label>MITRE ATTACK for ICS v20</Label>
           <HideFromUI>false</HideFromUI>
@@ -10199,7 +9653,7 @@
           <Values>
             <Value>4-2 CR 7.6; 4-2 CR 7.7; 4-1 SG</Value>
           </Values>
-          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 practice references. The first one belongs to the stated FR.</Description>
+          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 references. The first one belongs to the stated FR.</Description>
           <Id>IEC62443Req</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
@@ -10291,17 +9745,6 @@
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>SDLPhase</Name>
-          <Label>IEC 62443-4-1 Practice</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>SM - Security management and supply chain</Value>
-          </Values>
-          <Description>IEC 62443-4-1 secure development practice that addresses this threat.</Description>
-          <Id>SDLPhase</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
           <Name>ATTACKICS</Name>
           <Label>MITRE ATTACK for ICS v20</Label>
           <HideFromUI>false</HideFromUI>
@@ -10319,7 +9762,7 @@
           <Values>
             <Value>4-2 CR 7.8; 4-1 SM-9; 4-1 SM-10; 4-1 DM</Value>
           </Values>
-          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 practice references. The first one belongs to the stated FR.</Description>
+          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 references. The first one belongs to the stated FR.</Description>
           <Id>IEC62443Req</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
@@ -10411,17 +9854,6 @@
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>SDLPhase</Name>
-          <Label>IEC 62443-4-1 Practice</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>SM - Security management and supply chain</Value>
-          </Values>
-          <Description>IEC 62443-4-1 secure development practice that addresses this threat.</Description>
-          <Id>SDLPhase</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
           <Name>ATTACKICS</Name>
           <Label>MITRE ATTACK for ICS v20</Label>
           <HideFromUI>false</HideFromUI>
@@ -10439,7 +9871,7 @@
           <Values>
             <Value>4-2 EDR 3.12; 4-2 EDR 3.13; 4-1 SM</Value>
           </Values>
-          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 practice references. The first one belongs to the stated FR.</Description>
+          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 references. The first one belongs to the stated FR.</Description>
           <Id>IEC62443Req</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
@@ -10531,17 +9963,6 @@
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>SDLPhase</Name>
-          <Label>IEC 62443-4-1 Practice</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>SD - Secure by design</Value>
-          </Values>
-          <Description>IEC 62443-4-1 secure development practice that addresses this threat.</Description>
-          <Id>SDLPhase</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
           <Name>ATTACKICS</Name>
           <Label>MITRE ATTACK for ICS v20</Label>
           <HideFromUI>false</HideFromUI>
@@ -10559,7 +9980,7 @@
           <Values>
             <Value>4-2 CR 3.3; 4-2 CR 7.6; 4-2 CR 2.8</Value>
           </Values>
-          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 practice references. The first one belongs to the stated FR.</Description>
+          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 references. The first one belongs to the stated FR.</Description>
           <Id>IEC62443Req</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
@@ -10651,17 +10072,6 @@
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>SDLPhase</Name>
-          <Label>IEC 62443-4-1 Practice</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>SUM - Security update management</Value>
-          </Values>
-          <Description>IEC 62443-4-1 secure development practice that addresses this threat.</Description>
-          <Id>SDLPhase</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
           <Name>ATTACKICS</Name>
           <Label>MITRE ATTACK for ICS v20</Label>
           <HideFromUI>false</HideFromUI>
@@ -10679,7 +10089,7 @@
           <Values>
             <Value>4-2 CR 7.4; 4-2 EDR 3.10; 4-2 HDR 3.10; 4-2 NDR 3.10; 4-1 SUM</Value>
           </Values>
-          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 practice references. The first one belongs to the stated FR.</Description>
+          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 references. The first one belongs to the stated FR.</Description>
           <Id>IEC62443Req</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
@@ -10771,17 +10181,6 @@
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>SDLPhase</Name>
-          <Label>IEC 62443-4-1 Practice</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>SD - Secure by design</Value>
-          </Values>
-          <Description>IEC 62443-4-1 secure development practice that addresses this threat.</Description>
-          <Id>SDLPhase</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
           <Name>ATTACKICS</Name>
           <Label>MITRE ATTACK for ICS v20</Label>
           <HideFromUI>false</HideFromUI>
@@ -10799,7 +10198,7 @@
           <Values>
             <Value>4-2 CR 4.3; 4-2 CR 1.8; 4-2 CR 1.9</Value>
           </Values>
-          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 practice references. The first one belongs to the stated FR.</Description>
+          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 references. The first one belongs to the stated FR.</Description>
           <Id>IEC62443Req</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
@@ -10891,17 +10290,6 @@
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>SDLPhase</Name>
-          <Label>IEC 62443-4-1 Practice</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>SD - Secure by design</Value>
-          </Values>
-          <Description>IEC 62443-4-1 secure development practice that addresses this threat.</Description>
-          <Id>SDLPhase</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
           <Name>ATTACKICS</Name>
           <Label>MITRE ATTACK for ICS v20</Label>
           <HideFromUI>false</HideFromUI>
@@ -10919,7 +10307,7 @@
           <Values>
             <Value>4-2 NDR 5.2; 3-3 SR 5.1; 3-3 SR 5.2</Value>
           </Values>
-          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 practice references. The first one belongs to the stated FR.</Description>
+          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 references. The first one belongs to the stated FR.</Description>
           <Id>IEC62443Req</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
@@ -11011,17 +10399,6 @@
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>SDLPhase</Name>
-          <Label>IEC 62443-4-1 Practice</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>SG - Security guidelines</Value>
-          </Values>
-          <Description>IEC 62443-4-1 secure development practice that addresses this threat.</Description>
-          <Id>SDLPhase</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
           <Name>ATTACKICS</Name>
           <Label>MITRE ATTACK for ICS v20</Label>
           <HideFromUI>false</HideFromUI>
@@ -11039,7 +10416,7 @@
           <Values>
             <Value>4-2 CR 7.6; 4-2 CR 7.7; 4-2 CR 3.1</Value>
           </Values>
-          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 practice references. The first one belongs to the stated FR.</Description>
+          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 references. The first one belongs to the stated FR.</Description>
           <Id>IEC62443Req</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
@@ -11131,17 +10508,6 @@
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>SDLPhase</Name>
-          <Label>IEC 62443-4-1 Practice</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>SVV - Security verification and validation</Value>
-          </Values>
-          <Description>IEC 62443-4-1 secure development practice that addresses this threat.</Description>
-          <Id>SDLPhase</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
           <Name>ATTACKICS</Name>
           <Label>MITRE ATTACK for ICS v20</Label>
           <HideFromUI>false</HideFromUI>
@@ -11159,7 +10525,7 @@
           <Values>
             <Value>4-2 CR 7.1; 4-2 CR 7.2</Value>
           </Values>
-          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 practice references. The first one belongs to the stated FR.</Description>
+          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 references. The first one belongs to the stated FR.</Description>
           <Id>IEC62443Req</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
@@ -11251,17 +10617,6 @@
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>SDLPhase</Name>
-          <Label>IEC 62443-4-1 Practice</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>SG - Security guidelines</Value>
-          </Values>
-          <Description>IEC 62443-4-1 secure development practice that addresses this threat.</Description>
-          <Id>SDLPhase</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
           <Name>ATTACKICS</Name>
           <Label>MITRE ATTACK for ICS v20</Label>
           <HideFromUI>false</HideFromUI>
@@ -11279,7 +10634,7 @@
           <Values>
             <Value>4-2 CR 4.1; 4-2 CR 1.5; 4-2 CR 7.7</Value>
           </Values>
-          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 practice references. The first one belongs to the stated FR.</Description>
+          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 references. The first one belongs to the stated FR.</Description>
           <Id>IEC62443Req</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
@@ -11371,17 +10726,6 @@
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>SDLPhase</Name>
-          <Label>IEC 62443-4-1 Practice</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>SD - Secure by design</Value>
-          </Values>
-          <Description>IEC 62443-4-1 secure development practice that addresses this threat.</Description>
-          <Id>SDLPhase</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
           <Name>ATTACKICS</Name>
           <Label>MITRE ATTACK for ICS v20</Label>
           <HideFromUI>false</HideFromUI>
@@ -11399,7 +10743,7 @@
           <Values>
             <Value>3-3 SR 1.13; 4-2 CR 1.1; 4-2 CR 2.6</Value>
           </Values>
-          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 practice references. The first one belongs to the stated FR.</Description>
+          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 references. The first one belongs to the stated FR.</Description>
           <Id>IEC62443Req</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
@@ -11491,17 +10835,6 @@
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>SDLPhase</Name>
-          <Label>IEC 62443-4-1 Practice</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>SG - Security guidelines</Value>
-          </Values>
-          <Description>IEC 62443-4-1 secure development practice that addresses this threat.</Description>
-          <Id>SDLPhase</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
           <Name>ATTACKICS</Name>
           <Label>MITRE ATTACK for ICS v20</Label>
           <HideFromUI>false</HideFromUI>
@@ -11519,7 +10852,7 @@
           <Values>
             <Value>4-2 CR 2.6; 3-3 SR 1.13; 4-2 CR 2.7</Value>
           </Values>
-          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 practice references. The first one belongs to the stated FR.</Description>
+          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 references. The first one belongs to the stated FR.</Description>
           <Id>IEC62443Req</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
@@ -11611,17 +10944,6 @@
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>SDLPhase</Name>
-          <Label>IEC 62443-4-1 Practice</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>SD - Secure by design</Value>
-          </Values>
-          <Description>IEC 62443-4-1 secure development practice that addresses this threat.</Description>
-          <Id>SDLPhase</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
           <Name>ATTACKICS</Name>
           <Label>MITRE ATTACK for ICS v20</Label>
           <HideFromUI>false</HideFromUI>
@@ -11639,7 +10961,7 @@
           <Values>
             <Value>3-3 SR 5.2; 3-3 SR 1.13; 4-2 NDR 1.13</Value>
           </Values>
-          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 practice references. The first one belongs to the stated FR.</Description>
+          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 references. The first one belongs to the stated FR.</Description>
           <Id>IEC62443Req</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
@@ -11731,17 +11053,6 @@
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>SDLPhase</Name>
-          <Label>IEC 62443-4-1 Practice</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>SD - Secure by design</Value>
-          </Values>
-          <Description>IEC 62443-4-1 secure development practice that addresses this threat.</Description>
-          <Id>SDLPhase</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
           <Name>ATTACKICS</Name>
           <Label>MITRE ATTACK for ICS v20</Label>
           <HideFromUI>false</HideFromUI>
@@ -11759,7 +11070,7 @@
           <Values>
             <Value>4-2 CR 4.1; 4-2 CR 2.2; 3-3 SR 1.6</Value>
           </Values>
-          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 practice references. The first one belongs to the stated FR.</Description>
+          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 references. The first one belongs to the stated FR.</Description>
           <Id>IEC62443Req</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
@@ -11851,17 +11162,6 @@
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>SDLPhase</Name>
-          <Label>IEC 62443-4-1 Practice</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>SD - Secure by design</Value>
-          </Values>
-          <Description>IEC 62443-4-1 secure development practice that addresses this threat.</Description>
-          <Id>SDLPhase</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
           <Name>ATTACKICS</Name>
           <Label>MITRE ATTACK for ICS v20</Label>
           <HideFromUI>false</HideFromUI>
@@ -11879,7 +11179,7 @@
           <Values>
             <Value>3-3 SR 1.6; 4-2 CR 2.2; 4-2 CR 1.2; 4-2 CR 1.6</Value>
           </Values>
-          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 practice references. The first one belongs to the stated FR.</Description>
+          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 references. The first one belongs to the stated FR.</Description>
           <Id>IEC62443Req</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
@@ -11971,17 +11271,6 @@
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>SDLPhase</Name>
-          <Label>IEC 62443-4-1 Practice</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>SD - Secure by design</Value>
-          </Values>
-          <Description>IEC 62443-4-1 secure development practice that addresses this threat.</Description>
-          <Id>SDLPhase</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
           <Name>ATTACKICS</Name>
           <Label>MITRE ATTACK for ICS v20</Label>
           <HideFromUI>false</HideFromUI>
@@ -11999,7 +11288,7 @@
           <Values>
             <Value>4-2 CR 7.1; 4-2 CR 3.6</Value>
           </Values>
-          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 practice references. The first one belongs to the stated FR.</Description>
+          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 references. The first one belongs to the stated FR.</Description>
           <Id>IEC62443Req</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
@@ -12091,17 +11380,6 @@
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>SDLPhase</Name>
-          <Label>IEC 62443-4-1 Practice</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>SUM - Security update management</Value>
-          </Values>
-          <Description>IEC 62443-4-1 secure development practice that addresses this threat.</Description>
-          <Id>SDLPhase</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
           <Name>ATTACKICS</Name>
           <Label>MITRE ATTACK for ICS v20</Label>
           <HideFromUI>false</HideFromUI>
@@ -12119,7 +11397,7 @@
           <Values>
             <Value>4-2 CR 3.4; 4-2 EDR 3.10; 4-1 SUM; 4-1 SM</Value>
           </Values>
-          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 practice references. The first one belongs to the stated FR.</Description>
+          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 references. The first one belongs to the stated FR.</Description>
           <Id>IEC62443Req</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
@@ -12211,17 +11489,6 @@
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>SDLPhase</Name>
-          <Label>IEC 62443-4-1 Practice</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>SG - Security guidelines</Value>
-          </Values>
-          <Description>IEC 62443-4-1 secure development practice that addresses this threat.</Description>
-          <Id>SDLPhase</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
           <Name>ATTACKICS</Name>
           <Label>MITRE ATTACK for ICS v20</Label>
           <HideFromUI>false</HideFromUI>
@@ -12239,7 +11506,7 @@
           <Values>
             <Value>4-2 EDR 3.2; 4-2 HDR 3.2; 4-2 CR 7.7; 3-3 SR 2.3</Value>
           </Values>
-          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 practice references. The first one belongs to the stated FR.</Description>
+          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 references. The first one belongs to the stated FR.</Description>
           <Id>IEC62443Req</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
@@ -12331,17 +11598,6 @@
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>SDLPhase</Name>
-          <Label>IEC 62443-4-1 Practice</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>SD - Secure by design</Value>
-          </Values>
-          <Description>IEC 62443-4-1 secure development practice that addresses this threat.</Description>
-          <Id>SDLPhase</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
           <Name>ATTACKICS</Name>
           <Label>MITRE ATTACK for ICS v20</Label>
           <HideFromUI>false</HideFromUI>
@@ -12359,7 +11615,7 @@
           <Values>
             <Value>4-2 CR 3.4; 4-2 CR 2.1</Value>
           </Values>
-          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 practice references. The first one belongs to the stated FR.</Description>
+          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 references. The first one belongs to the stated FR.</Description>
           <Id>IEC62443Req</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
@@ -12451,17 +11707,6 @@
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>SDLPhase</Name>
-          <Label>IEC 62443-4-1 Practice</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>SD - Secure by design</Value>
-          </Values>
-          <Description>IEC 62443-4-1 secure development practice that addresses this threat.</Description>
-          <Id>SDLPhase</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
           <Name>ATTACKICS</Name>
           <Label>MITRE ATTACK for ICS v20</Label>
           <HideFromUI>false</HideFromUI>
@@ -12479,7 +11724,7 @@
           <Values>
             <Value>4-2 CR 3.4; 4-2 EDR 3.14</Value>
           </Values>
-          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 practice references. The first one belongs to the stated FR.</Description>
+          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 references. The first one belongs to the stated FR.</Description>
           <Id>IEC62443Req</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
@@ -12571,17 +11816,6 @@
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>SDLPhase</Name>
-          <Label>IEC 62443-4-1 Practice</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>SD - Secure by design</Value>
-          </Values>
-          <Description>IEC 62443-4-1 secure development practice that addresses this threat.</Description>
-          <Id>SDLPhase</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
           <Name>ATTACKICS</Name>
           <Label>MITRE ATTACK for ICS v20</Label>
           <HideFromUI>false</HideFromUI>
@@ -12599,7 +11833,7 @@
           <Values>
             <Value>4-2 CR 4.1; 4-2 CR 1.5; 4-2 CR 4.3</Value>
           </Values>
-          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 practice references. The first one belongs to the stated FR.</Description>
+          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 references. The first one belongs to the stated FR.</Description>
           <Id>IEC62443Req</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
@@ -12691,17 +11925,6 @@
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>SDLPhase</Name>
-          <Label>IEC 62443-4-1 Practice</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>SG - Security guidelines</Value>
-          </Values>
-          <Description>IEC 62443-4-1 secure development practice that addresses this threat.</Description>
-          <Id>SDLPhase</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
           <Name>ATTACKICS</Name>
           <Label>MITRE ATTACK for ICS v20</Label>
           <HideFromUI>false</HideFromUI>
@@ -12719,7 +11942,7 @@
           <Values>
             <Value>4-2 CR 4.2; 4-1 SG</Value>
           </Values>
-          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 practice references. The first one belongs to the stated FR.</Description>
+          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 references. The first one belongs to the stated FR.</Description>
           <Id>IEC62443Req</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
@@ -12811,17 +12034,6 @@
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>SDLPhase</Name>
-          <Label>IEC 62443-4-1 Practice</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>SD - Secure by design</Value>
-          </Values>
-          <Description>IEC 62443-4-1 secure development practice that addresses this threat.</Description>
-          <Id>SDLPhase</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
           <Name>ATTACKICS</Name>
           <Label>MITRE ATTACK for ICS v20</Label>
           <HideFromUI>false</HideFromUI>
@@ -12839,7 +12051,7 @@
           <Values>
             <Value>4-2 CR 3.9; 4-2 CR 6.1</Value>
           </Values>
-          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 practice references. The first one belongs to the stated FR.</Description>
+          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 references. The first one belongs to the stated FR.</Description>
           <Id>IEC62443Req</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
@@ -12931,17 +12143,6 @@
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>SDLPhase</Name>
-          <Label>IEC 62443-4-1 Practice</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>SD - Secure by design</Value>
-          </Values>
-          <Description>IEC 62443-4-1 secure development practice that addresses this threat.</Description>
-          <Id>SDLPhase</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
           <Name>ATTACKICS</Name>
           <Label>MITRE ATTACK for ICS v20</Label>
           <HideFromUI>false</HideFromUI>
@@ -12959,7 +12160,7 @@
           <Values>
             <Value>4-2 CR 2.9; 4-2 CR 2.10</Value>
           </Values>
-          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 practice references. The first one belongs to the stated FR.</Description>
+          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 references. The first one belongs to the stated FR.</Description>
           <Id>IEC62443Req</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
@@ -13051,17 +12252,6 @@
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>SDLPhase</Name>
-          <Label>IEC 62443-4-1 Practice</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>SG - Security guidelines</Value>
-          </Values>
-          <Description>IEC 62443-4-1 secure development practice that addresses this threat.</Description>
-          <Id>SDLPhase</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
           <Name>ATTACKICS</Name>
           <Label>MITRE ATTACK for ICS v20</Label>
           <HideFromUI>false</HideFromUI>
@@ -13079,7 +12269,7 @@
           <Values>
             <Value>4-2 CR 7.3; 4-2 CR 7.4</Value>
           </Values>
-          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 practice references. The first one belongs to the stated FR.</Description>
+          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 references. The first one belongs to the stated FR.</Description>
           <Id>IEC62443Req</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
@@ -13171,17 +12361,6 @@
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>SDLPhase</Name>
-          <Label>IEC 62443-4-1 Practice</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>SD - Secure by design</Value>
-          </Values>
-          <Description>IEC 62443-4-1 secure development practice that addresses this threat.</Description>
-          <Id>SDLPhase</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
           <Name>ATTACKICS</Name>
           <Label>MITRE ATTACK for ICS v20</Label>
           <HideFromUI>false</HideFromUI>
@@ -13199,7 +12378,7 @@
           <Values>
             <Value>4-2 CR 4.1; 3-3 SR 5.1</Value>
           </Values>
-          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 practice references. The first one belongs to the stated FR.</Description>
+          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 references. The first one belongs to the stated FR.</Description>
           <Id>IEC62443Req</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
@@ -13291,17 +12470,6 @@
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>SDLPhase</Name>
-          <Label>IEC 62443-4-1 Practice</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>SD - Secure by design</Value>
-          </Values>
-          <Description>IEC 62443-4-1 secure development practice that addresses this threat.</Description>
-          <Id>SDLPhase</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
           <Name>ATTACKICS</Name>
           <Label>MITRE ATTACK for ICS v20</Label>
           <HideFromUI>false</HideFromUI>
@@ -13319,7 +12487,7 @@
           <Values>
             <Value>4-2 CR 1.1; 4-2 CR 1.3; 4-2 CR 1.7</Value>
           </Values>
-          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 practice references. The first one belongs to the stated FR.</Description>
+          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 references. The first one belongs to the stated FR.</Description>
           <Id>IEC62443Req</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
@@ -13411,17 +12579,6 @@
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>SDLPhase</Name>
-          <Label>IEC 62443-4-1 Practice</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>SR - Security requirements</Value>
-          </Values>
-          <Description>IEC 62443-4-1 secure development practice that addresses this threat.</Description>
-          <Id>SDLPhase</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
           <Name>ATTACKICS</Name>
           <Label>MITRE ATTACK for ICS v20</Label>
           <HideFromUI>false</HideFromUI>
@@ -13439,7 +12596,7 @@
           <Values>
             <Value>4-2 CR 2.1; 4-2 CR 2.8; 4-2 CR 1.3</Value>
           </Values>
-          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 practice references. The first one belongs to the stated FR.</Description>
+          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 references. The first one belongs to the stated FR.</Description>
           <Id>IEC62443Req</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
@@ -13531,17 +12688,6 @@
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>SDLPhase</Name>
-          <Label>IEC 62443-4-1 Practice</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>SD - Secure by design</Value>
-          </Values>
-          <Description>IEC 62443-4-1 secure development practice that addresses this threat.</Description>
-          <Id>SDLPhase</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
           <Name>ATTACKICS</Name>
           <Label>MITRE ATTACK for ICS v20</Label>
           <HideFromUI>false</HideFromUI>
@@ -13559,7 +12705,7 @@
           <Values>
             <Value>3-3 SR 5.1; 3-3 SR 5.2; 4-2 NDR 5.2</Value>
           </Values>
-          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 practice references. The first one belongs to the stated FR.</Description>
+          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 references. The first one belongs to the stated FR.</Description>
           <Id>IEC62443Req</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
@@ -13651,17 +12797,6 @@
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>SDLPhase</Name>
-          <Label>IEC 62443-4-1 Practice</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>SD - Secure by design</Value>
-          </Values>
-          <Description>IEC 62443-4-1 secure development practice that addresses this threat.</Description>
-          <Id>SDLPhase</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
           <Name>ATTACKICS</Name>
           <Label>MITRE ATTACK for ICS v20</Label>
           <HideFromUI>false</HideFromUI>
@@ -13679,7 +12814,7 @@
           <Values>
             <Value>3-3 SR 5.1; 3-3 SR 5.2; 3-2 ZCR 3</Value>
           </Values>
-          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 practice references. The first one belongs to the stated FR.</Description>
+          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 references. The first one belongs to the stated FR.</Description>
           <Id>IEC62443Req</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
@@ -13771,17 +12906,6 @@
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>SDLPhase</Name>
-          <Label>IEC 62443-4-1 Practice</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>SD - Secure by design</Value>
-          </Values>
-          <Description>IEC 62443-4-1 secure development practice that addresses this threat.</Description>
-          <Id>SDLPhase</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
           <Name>ATTACKICS</Name>
           <Label>MITRE ATTACK for ICS v20</Label>
           <HideFromUI>false</HideFromUI>
@@ -13799,7 +12923,7 @@
           <Values>
             <Value>3-3 SR 5.2; 4-2 CR 2.1; 4-2 CR 3.1</Value>
           </Values>
-          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 practice references. The first one belongs to the stated FR.</Description>
+          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 references. The first one belongs to the stated FR.</Description>
           <Id>IEC62443Req</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
@@ -13891,17 +13015,6 @@
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>SDLPhase</Name>
-          <Label>IEC 62443-4-1 Practice</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>SR - Security requirements</Value>
-          </Values>
-          <Description>IEC 62443-4-1 secure development practice that addresses this threat.</Description>
-          <Id>SDLPhase</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
           <Name>ATTACKICS</Name>
           <Label>MITRE ATTACK for ICS v20</Label>
           <HideFromUI>false</HideFromUI>
@@ -13919,7 +13032,7 @@
           <Values>
             <Value>4-2 CR 4.1; 4-1 SM</Value>
           </Values>
-          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 practice references. The first one belongs to the stated FR.</Description>
+          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 references. The first one belongs to the stated FR.</Description>
           <Id>IEC62443Req</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
@@ -14011,17 +13124,6 @@
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>SDLPhase</Name>
-          <Label>IEC 62443-4-1 Practice</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>SD - Secure by design</Value>
-          </Values>
-          <Description>IEC 62443-4-1 secure development practice that addresses this threat.</Description>
-          <Id>SDLPhase</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
           <Name>ATTACKICS</Name>
           <Label>MITRE ATTACK for ICS v20</Label>
           <HideFromUI>false</HideFromUI>
@@ -14039,7 +13141,7 @@
           <Values>
             <Value>4-2 CR 2.11; 3-3 SR 2.11</Value>
           </Values>
-          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 practice references. The first one belongs to the stated FR.</Description>
+          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 references. The first one belongs to the stated FR.</Description>
           <Id>IEC62443Req</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
@@ -14131,17 +13233,6 @@
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>SDLPhase</Name>
-          <Label>IEC 62443-4-1 Practice</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>SD - Secure by design</Value>
-          </Values>
-          <Description>IEC 62443-4-1 secure development practice that addresses this threat.</Description>
-          <Id>SDLPhase</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
           <Name>ATTACKICS</Name>
           <Label>MITRE ATTACK for ICS v20</Label>
           <HideFromUI>false</HideFromUI>
@@ -14159,7 +13250,7 @@
           <Values>
             <Value>4-2 CR 1.8; 4-2 CR 1.9; 4-2 EDR 3.13</Value>
           </Values>
-          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 practice references. The first one belongs to the stated FR.</Description>
+          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 references. The first one belongs to the stated FR.</Description>
           <Id>IEC62443Req</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
@@ -14251,17 +13342,6 @@
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>SDLPhase</Name>
-          <Label>IEC 62443-4-1 Practice</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>SD - Secure by design</Value>
-          </Values>
-          <Description>IEC 62443-4-1 secure development practice that addresses this threat.</Description>
-          <Id>SDLPhase</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
           <Name>ATTACKICS</Name>
           <Label>MITRE ATTACK for ICS v20</Label>
           <HideFromUI>false</HideFromUI>
@@ -14279,7 +13359,7 @@
           <Values>
             <Value>4-2 CR 3.5; 4-2 CR 3.6</Value>
           </Values>
-          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 practice references. The first one belongs to the stated FR.</Description>
+          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 references. The first one belongs to the stated FR.</Description>
           <Id>IEC62443Req</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
@@ -14371,17 +13451,6 @@
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>SDLPhase</Name>
-          <Label>IEC 62443-4-1 Practice</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>SD - Secure by design</Value>
-          </Values>
-          <Description>IEC 62443-4-1 secure development practice that addresses this threat.</Description>
-          <Id>SDLPhase</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
           <Name>ATTACKICS</Name>
           <Label>MITRE ATTACK for ICS v20</Label>
           <HideFromUI>false</HideFromUI>
@@ -14399,7 +13468,7 @@
           <Values>
             <Value>3-3 SR 5.4; 4-2 CR 2.1; 4-2 CR 7.2</Value>
           </Values>
-          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 practice references. The first one belongs to the stated FR.</Description>
+          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 references. The first one belongs to the stated FR.</Description>
           <Id>IEC62443Req</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
@@ -14491,17 +13560,6 @@
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>SDLPhase</Name>
-          <Label>IEC 62443-4-1 Practice</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>SD - Secure by design</Value>
-          </Values>
-          <Description>IEC 62443-4-1 secure development practice that addresses this threat.</Description>
-          <Id>SDLPhase</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
           <Name>ATTACKICS</Name>
           <Label>MITRE ATTACK for ICS v20</Label>
           <HideFromUI>false</HideFromUI>
@@ -14519,7 +13577,7 @@
           <Values>
             <Value>3-3 SR 5.2; 4-2 CR 3.5; 4-2 CR 2.1</Value>
           </Values>
-          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 practice references. The first one belongs to the stated FR.</Description>
+          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 references. The first one belongs to the stated FR.</Description>
           <Id>IEC62443Req</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
@@ -14611,17 +13669,6 @@
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>SDLPhase</Name>
-          <Label>IEC 62443-4-1 Practice</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>SG - Security guidelines</Value>
-          </Values>
-          <Description>IEC 62443-4-1 secure development practice that addresses this threat.</Description>
-          <Id>SDLPhase</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
           <Name>ATTACKICS</Name>
           <Label>MITRE ATTACK for ICS v20</Label>
           <HideFromUI>false</HideFromUI>
@@ -14639,7 +13686,7 @@
           <Values>
             <Value>4-2 CR 1.2; 4-2 CR 1.8; 4-2 CR 2.1</Value>
           </Values>
-          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 practice references. The first one belongs to the stated FR.</Description>
+          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 references. The first one belongs to the stated FR.</Description>
           <Id>IEC62443Req</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
@@ -14731,17 +13778,6 @@
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>SDLPhase</Name>
-          <Label>IEC 62443-4-1 Practice</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>SD - Secure by design</Value>
-          </Values>
-          <Description>IEC 62443-4-1 secure development practice that addresses this threat.</Description>
-          <Id>SDLPhase</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
           <Name>ATTACKICS</Name>
           <Label>MITRE ATTACK for ICS v20</Label>
           <HideFromUI>false</HideFromUI>
@@ -14759,7 +13795,7 @@
           <Values>
             <Value>4-2 CR 1.3; 4-2 CR 1.1; 3-3 SR 1.3</Value>
           </Values>
-          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 practice references. The first one belongs to the stated FR.</Description>
+          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 references. The first one belongs to the stated FR.</Description>
           <Id>IEC62443Req</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
@@ -14851,17 +13887,6 @@
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>SDLPhase</Name>
-          <Label>IEC 62443-4-1 Practice</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>SD - Secure by design</Value>
-          </Values>
-          <Description>IEC 62443-4-1 secure development practice that addresses this threat.</Description>
-          <Id>SDLPhase</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
           <Name>ATTACKICS</Name>
           <Label>MITRE ATTACK for ICS v20</Label>
           <HideFromUI>false</HideFromUI>
@@ -14879,7 +13904,7 @@
           <Values>
             <Value>4-2 CR 7.1 (essential functions); 4-2 CR 1.11</Value>
           </Values>
-          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 practice references. The first one belongs to the stated FR.</Description>
+          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 references. The first one belongs to the stated FR.</Description>
           <Id>IEC62443Req</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
@@ -14971,17 +13996,6 @@
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>SDLPhase</Name>
-          <Label>IEC 62443-4-1 Practice</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>SR - Security requirements</Value>
-          </Values>
-          <Description>IEC 62443-4-1 secure development practice that addresses this threat.</Description>
-          <Id>SDLPhase</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
           <Name>ATTACKICS</Name>
           <Label>MITRE ATTACK for ICS v20</Label>
           <HideFromUI>false</HideFromUI>
@@ -14999,7 +14013,7 @@
           <Values>
             <Value>4-2 CR 6.1; 4-2 CR 6.2</Value>
           </Values>
-          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 practice references. The first one belongs to the stated FR.</Description>
+          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 references. The first one belongs to the stated FR.</Description>
           <Id>IEC62443Req</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
@@ -15091,17 +14105,6 @@
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>SDLPhase</Name>
-          <Label>IEC 62443-4-1 Practice</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>SVV - Security verification and validation</Value>
-          </Values>
-          <Description>IEC 62443-4-1 secure development practice that addresses this threat.</Description>
-          <Id>SDLPhase</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
           <Name>ATTACKICS</Name>
           <Label>MITRE ATTACK for ICS v20</Label>
           <HideFromUI>false</HideFromUI>
@@ -15119,7 +14122,7 @@
           <Values>
             <Value>4-2 CR 7.1; 4-2 CR 6.2</Value>
           </Values>
-          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 practice references. The first one belongs to the stated FR.</Description>
+          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 references. The first one belongs to the stated FR.</Description>
           <Id>IEC62443Req</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
@@ -15211,17 +14214,6 @@
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>SDLPhase</Name>
-          <Label>IEC 62443-4-1 Practice</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>SD - Secure by design</Value>
-          </Values>
-          <Description>IEC 62443-4-1 secure development practice that addresses this threat.</Description>
-          <Id>SDLPhase</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
           <Name>ATTACKICS</Name>
           <Label>MITRE ATTACK for ICS v20</Label>
           <HideFromUI>false</HideFromUI>
@@ -15239,7 +14231,7 @@
           <Values>
             <Value>4-2 CR 2.1; 4-2 CR 3.4; 4-2 CR 2.8</Value>
           </Values>
-          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 practice references. The first one belongs to the stated FR.</Description>
+          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 references. The first one belongs to the stated FR.</Description>
           <Id>IEC62443Req</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
@@ -15331,17 +14323,6 @@
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>SDLPhase</Name>
-          <Label>IEC 62443-4-1 Practice</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>SR - Security requirements</Value>
-          </Values>
-          <Description>IEC 62443-4-1 secure development practice that addresses this threat.</Description>
-          <Id>SDLPhase</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
           <Name>ATTACKICS</Name>
           <Label>MITRE ATTACK for ICS v20</Label>
           <HideFromUI>false</HideFromUI>
@@ -15359,7 +14340,7 @@
           <Values>
             <Value>4-2 CR 2.12; 4-2 CR 2.8; 4-2 CR 3.4</Value>
           </Values>
-          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 practice references. The first one belongs to the stated FR.</Description>
+          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 references. The first one belongs to the stated FR.</Description>
           <Id>IEC62443Req</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
@@ -15451,17 +14432,6 @@
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>SDLPhase</Name>
-          <Label>IEC 62443-4-1 Practice</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>SD - Secure by design</Value>
-          </Values>
-          <Description>IEC 62443-4-1 secure development practice that addresses this threat.</Description>
-          <Id>SDLPhase</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
           <Name>ATTACKICS</Name>
           <Label>MITRE ATTACK for ICS v20</Label>
           <HideFromUI>false</HideFromUI>
@@ -15479,7 +14449,7 @@
           <Values>
             <Value>4-2 CR 3.9; 4-2 CR 2.9; 4-2 CR 6.1</Value>
           </Values>
-          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 practice references. The first one belongs to the stated FR.</Description>
+          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 references. The first one belongs to the stated FR.</Description>
           <Id>IEC62443Req</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
@@ -15571,17 +14541,6 @@
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>SDLPhase</Name>
-          <Label>IEC 62443-4-1 Practice</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>SR - Security requirements</Value>
-          </Values>
-          <Description>IEC 62443-4-1 secure development practice that addresses this threat.</Description>
-          <Id>SDLPhase</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
           <Name>ATTACKICS</Name>
           <Label>MITRE ATTACK for ICS v20</Label>
           <HideFromUI>false</HideFromUI>
@@ -15599,7 +14558,7 @@
           <Values>
             <Value>4-2 CR 2.8; 4-2 CR 2.11; 4-2 CR 2.12; 4-2 CR 3.9</Value>
           </Values>
-          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 practice references. The first one belongs to the stated FR.</Description>
+          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 references. The first one belongs to the stated FR.</Description>
           <Id>IEC62443Req</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
@@ -15691,17 +14650,6 @@
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>SDLPhase</Name>
-          <Label>IEC 62443-4-1 Practice</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>SD - Secure by design</Value>
-          </Values>
-          <Description>IEC 62443-4-1 secure development practice that addresses this threat.</Description>
-          <Id>SDLPhase</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
           <Name>ATTACKICS</Name>
           <Label>MITRE ATTACK for ICS v20</Label>
           <HideFromUI>false</HideFromUI>
@@ -15719,7 +14667,7 @@
           <Values>
             <Value>4-2 CR 7.1; 4-2 CR 3.6; 4-2 CR 3.1</Value>
           </Values>
-          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 practice references. The first one belongs to the stated FR.</Description>
+          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 references. The first one belongs to the stated FR.</Description>
           <Id>IEC62443Req</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
@@ -15811,17 +14759,6 @@
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>SDLPhase</Name>
-          <Label>IEC 62443-4-1 Practice</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>SD - Secure by design</Value>
-          </Values>
-          <Description>IEC 62443-4-1 secure development practice that addresses this threat.</Description>
-          <Id>SDLPhase</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
           <Name>ATTACKICS</Name>
           <Label>MITRE ATTACK for ICS v20</Label>
           <HideFromUI>false</HideFromUI>
@@ -15839,7 +14776,7 @@
           <Values>
             <Value>4-2 CR 2.1; 4-2 CR 4.1; 4-2 CR 6.2</Value>
           </Values>
-          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 practice references. The first one belongs to the stated FR.</Description>
+          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 references. The first one belongs to the stated FR.</Description>
           <Id>IEC62443Req</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
@@ -15931,17 +14868,6 @@
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>SDLPhase</Name>
-          <Label>IEC 62443-4-1 Practice</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>SG - Security guidelines</Value>
-          </Values>
-          <Description>IEC 62443-4-1 secure development practice that addresses this threat.</Description>
-          <Id>SDLPhase</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
           <Name>ATTACKICS</Name>
           <Label>MITRE ATTACK for ICS v20</Label>
           <HideFromUI>false</HideFromUI>
@@ -15959,7 +14885,7 @@
           <Values>
             <Value>4-2 HDR 3.2; 4-2 SAR 2.4; 4-2 CR 7.7; 4-2 CR 5.1</Value>
           </Values>
-          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 practice references. The first one belongs to the stated FR.</Description>
+          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 references. The first one belongs to the stated FR.</Description>
           <Id>IEC62443Req</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
@@ -16051,17 +14977,6 @@
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>SDLPhase</Name>
-          <Label>IEC 62443-4-1 Practice</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>SD - Secure by design</Value>
-          </Values>
-          <Description>IEC 62443-4-1 secure development practice that addresses this threat.</Description>
-          <Id>SDLPhase</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
           <Name>ATTACKICS</Name>
           <Label>MITRE ATTACK for ICS v20</Label>
           <HideFromUI>false</HideFromUI>
@@ -16079,7 +14994,7 @@
           <Values>
             <Value>4-2 CR 1.2; 4-2 CR 2.1; 4-2 CR 3.1</Value>
           </Values>
-          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 practice references. The first one belongs to the stated FR.</Description>
+          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 references. The first one belongs to the stated FR.</Description>
           <Id>IEC62443Req</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
@@ -16171,17 +15086,6 @@
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>SDLPhase</Name>
-          <Label>IEC 62443-4-1 Practice</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>SM - Security management and supply chain</Value>
-          </Values>
-          <Description>IEC 62443-4-1 secure development practice that addresses this threat.</Description>
-          <Id>SDLPhase</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
           <Name>ATTACKICS</Name>
           <Label>MITRE ATTACK for ICS v20</Label>
           <HideFromUI>false</HideFromUI>
@@ -16199,7 +15103,7 @@
           <Values>
             <Value>4-2 CR 3.4; 4-1 SM-7; 4-1 SM-8; 4-1 SI</Value>
           </Values>
-          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 practice references. The first one belongs to the stated FR.</Description>
+          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 references. The first one belongs to the stated FR.</Description>
           <Id>IEC62443Req</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
@@ -16291,17 +15195,6 @@
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>SDLPhase</Name>
-          <Label>IEC 62443-4-1 Practice</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>SM - Security management and supply chain</Value>
-          </Values>
-          <Description>IEC 62443-4-1 secure development practice that addresses this threat.</Description>
-          <Id>SDLPhase</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
           <Name>ATTACKICS</Name>
           <Label>MITRE ATTACK for ICS v20</Label>
           <HideFromUI>false</HideFromUI>
@@ -16319,7 +15212,7 @@
           <Values>
             <Value>4-2 CR 1.9; 4-2 CR 3.4; 4-2 EDR 3.10; 4-1 SM-8</Value>
           </Values>
-          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 practice references. The first one belongs to the stated FR.</Description>
+          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 references. The first one belongs to the stated FR.</Description>
           <Id>IEC62443Req</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
@@ -16411,17 +15304,6 @@
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
-          <Name>SDLPhase</Name>
-          <Label>IEC 62443-4-1 Practice</Label>
-          <HideFromUI>false</HideFromUI>
-          <Values>
-            <Value>SG - Security guidelines</Value>
-          </Values>
-          <Description>IEC 62443-4-1 secure development practice that addresses this threat.</Description>
-          <Id>SDLPhase</Id>
-          <AttributeType>1</AttributeType>
-        </ThreatMetaDatum>
-        <ThreatMetaDatum>
           <Name>ATTACKICS</Name>
           <Label>MITRE ATTACK for ICS v20</Label>
           <HideFromUI>false</HideFromUI>
@@ -16439,7 +15321,7 @@
           <Values>
             <Value>4-2 CR 1.4; 4-2 CR 1.3; 4-2 CR 1.5</Value>
           </Values>
-          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 practice references. The first one belongs to the stated FR.</Description>
+          <Description>IEC 62443-4-2 CR / 3-3 SR / 4-1 references. The first one belongs to the stated FR.</Description>
           <Id>IEC62443Req</Id>
           <AttributeType>0</AttributeType>
         </ThreatMetaDatum>
