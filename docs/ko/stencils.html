@@ -23,7 +23,7 @@
   
 </header>
 <div class="layout">
-<nav class="sidebar"><h4>시작하기</h4><a href="index.html">개요</a><a href="threat-modeling.html">위협 모델링 기초</a><a href="getting-started.html">설치 및 빠른 시작</a><h4>가이드</h4><a href="using-tmt.html">Microsoft TMT 사용법</a><a href="product-guide.html">제품·시스템 위협 모델</a><a href="plant-guide.html">플랜트·사이트 위험 평가</a><a href="review.html">위협 검토와 위험 평가</a><h4>개념</h4><a href="how-threats-work.html">위협이 생성되는 방식</a><a href="properties.html">속성</a><h4>참조</h4><a href="threats.html">위협 카탈로그</a><a href="stencils.html" class="on">스텐실</a><a href="examples.html">예제</a><h4>고급</h4><a href="tools.html">명령줄 도구</a><a href="customise.html">사용자 정의와 재빌드</a><h4>도움말</h4><a href="faq.html">문제 해결 및 FAQ</a><a href="changelog.html">버전 및 라이선스</a></nav>
+<nav class="sidebar"><h4>시작하기</h4><a href="index.html">개요</a><a href="threat-modeling.html">위협 모델링 기초</a><a href="getting-started.html">설치 및 빠른 시작</a><h4>가이드</h4><a href="using-tmt.html">Microsoft TMT 사용법</a><a href="product-guide.html">제품·시스템 위협 모델</a><a href="plant-guide.html">플랜트·사이트 위험 평가</a><a href="review.html">위협 검토와 위험 평가</a><h4>개념</h4><a href="how-threats-work.html">위협이 생성되는 방식</a><a href="properties.html">속성</a><h4>참조</h4><a href="threats.html">위협 카탈로그</a><a href="stencils.html" class="on">스텐실</a><a href="examples.html">예제</a><h4>도움말</h4><a href="faq.html">문제 해결 및 FAQ</a><a href="changelog.html">버전 및 라이선스</a></nav>
 <main><article class="doc">
 <h1 id="스텐실">스텐실<a class="headerlink" href="#스텐실" title="Permanent link">#</a></h1>
 <p class="lede">두 템플릿이 공유하는 OT 스텐실 82개와 Microsoft 기본 스텐실 52개가 있습니다.</p>
@@ -31,117 +31,116 @@
 <ul>
 <li>구성요소 스텐실 이름 앞에는 IEC 62443-4-2 유형이 붙습니다: <strong>EDR</strong> 임베디드 장치, <strong>HDR</strong> 호스트 장치, <strong>NDR</strong> 네트워크 장치, <strong>SAR</strong> 소프트웨어 애플리케이션.</li>
 <li>아이콘 색은 유형을 나타냅니다: 파랑 임베디드 장치, 청록 호스트 장치, 주황 네트워크 장치, 초록 소프트웨어, 회청 상호작용자, 보라 데이터 저장소, 갈색 프로토콜, 빨강 경계.</li>
-<li><strong>ID</strong>는 <a href="tools.html"><code>build_model.py</code></a>용 아키텍처 명세에서 사용합니다.</li>
 <li>스텐실 이름과 설명은 TMT에 표시되는 그대로 영어로 적었습니다.</li>
 </ul>
 <h3 id="임베디드-장치-edr">임베디드 장치 (EDR) · 7</h3>
-<table><thead><tr><th>스텐실 (TMT 표시 이름)</th><th>ID (build_model.py용)</th><th>나타내는 대상</th></tr></thead><tbody>
-<tr><td><b>EDR PLC or Process Controller</b></td><td><code>SE.P.OT.PLC</code></td><td>Programmable logic controller or DCS controller executing control logic (IEC 61131-3). Typical interfaces: engineering protocol, fieldbus, I/O, web UI.</td></tr>
-<tr><td><b>EDR Safety Controller SIS SIL rated</b></td><td><code>SE.P.OT.SIS</code></td><td>Safety instrumented system logic solver (IEC 61508 / IEC 61511). Treat any compromise as a potential loss-of-safety event.</td></tr>
-<tr><td><b>EDR RTU or Remote Field Controller</b></td><td><code>SE.P.OT.RTU</code></td><td>Remote terminal unit or remote controller, often at unattended sites, using DNP3, IEC 60870-5-104 or Modbus over WAN, radio or cellular.</td></tr>
-<tr><td><b>EDR IED or Protection Relay</b></td><td><code>SE.P.OT.IED</code></td><td>Intelligent electronic device or protection relay (IEC 61850, DNP3). Protection functions are safety- and grid-critical.</td></tr>
-<tr><td><b>EDR Smart Field Device sensor actuator drive analyzer</b></td><td><code>SE.P.OT.SmartField</code></td><td>Level 0/1 device such as a transmitter, positioner, VFD, servo drive or analyzer with digital communication (HART, PROFINET, IO-Link, EtherNet/IP).</td></tr>
-<tr><td><b>EDR IIoT Device or Edge Sensor</b></td><td><code>SE.P.OT.IIoT</code></td><td>Connected sensor or device that sends telemetry to an edge gateway or cloud (MQTT, OPC UA, HTTPS).</td></tr>
-<tr><td><b>EDR Safety IO Module</b></td><td><code>SE.P.OT.SafetyIO</code></td><td>Safety-rated I/O module communicating over a safety protocol (PROFIsafe, CIP Safety, FSoE) on a black channel.</td></tr>
+<table><thead><tr><th>스텐실 (TMT 표시 이름)</th><th>나타내는 대상</th></tr></thead><tbody>
+<tr><td><b>EDR PLC or Process Controller</b></td><td>Programmable logic controller or DCS controller executing control logic (IEC 61131-3). Typical interfaces: engineering protocol, fieldbus, I/O, web UI.</td></tr>
+<tr><td><b>EDR Safety Controller SIS SIL rated</b></td><td>Safety instrumented system logic solver (IEC 61508 / IEC 61511). Treat any compromise as a potential loss-of-safety event.</td></tr>
+<tr><td><b>EDR RTU or Remote Field Controller</b></td><td>Remote terminal unit or remote controller, often at unattended sites, using DNP3, IEC 60870-5-104 or Modbus over WAN, radio or cellular.</td></tr>
+<tr><td><b>EDR IED or Protection Relay</b></td><td>Intelligent electronic device or protection relay (IEC 61850, DNP3). Protection functions are safety- and grid-critical.</td></tr>
+<tr><td><b>EDR Smart Field Device sensor actuator drive analyzer</b></td><td>Level 0/1 device such as a transmitter, positioner, VFD, servo drive or analyzer with digital communication (HART, PROFINET, IO-Link, EtherNet/IP).</td></tr>
+<tr><td><b>EDR IIoT Device or Edge Sensor</b></td><td>Connected sensor or device that sends telemetry to an edge gateway or cloud (MQTT, OPC UA, HTTPS).</td></tr>
+<tr><td><b>EDR Safety IO Module</b></td><td>Safety-rated I/O module communicating over a safety protocol (PROFIsafe, CIP Safety, FSoE) on a black channel.</td></tr>
 </tbody></table>
 <h3 id="호스트-장치-hdr">호스트 장치 (HDR) · 3</h3>
-<table><thead><tr><th>스텐실 (TMT 표시 이름)</th><th>ID (build_model.py용)</th><th>나타내는 대상</th></tr></thead><tbody>
-<tr><td><b>HDR Industrial PC or Panel PC</b></td><td><code>SE.P.OT.IPC</code></td><td>Industrial PC or panel PC hosting HMI, soft-PLC or gateway software, typically Windows or Linux.</td></tr>
-<tr><td><b>HDR OT Server for SCADA DCS or Historian</b></td><td><code>SE.P.OT.Server</code></td><td>Server platform (physical or virtual) hosting OT applications in Level 2/3.</td></tr>
-<tr><td><b>HDR Engineering Workstation</b></td><td><code>SE.P.OT.EWSHost</code></td><td>Workstation or laptop used for engineering, configuration and maintenance. Often has the highest privileges over controllers.</td></tr>
+<table><thead><tr><th>스텐실 (TMT 표시 이름)</th><th>나타내는 대상</th></tr></thead><tbody>
+<tr><td><b>HDR Industrial PC or Panel PC</b></td><td>Industrial PC or panel PC hosting HMI, soft-PLC or gateway software, typically Windows or Linux.</td></tr>
+<tr><td><b>HDR OT Server for SCADA DCS or Historian</b></td><td>Server platform (physical or virtual) hosting OT applications in Level 2/3.</td></tr>
+<tr><td><b>HDR Engineering Workstation</b></td><td>Workstation or laptop used for engineering, configuration and maintenance. Often has the highest privileges over controllers.</td></tr>
 </tbody></table>
 <h3 id="네트워크-장치-ndr">네트워크 장치 (NDR) · 6</h3>
-<table><thead><tr><th>스텐실 (TMT 표시 이름)</th><th>ID (build_model.py용)</th><th>나타내는 대상</th></tr></thead><tbody>
-<tr><td><b>NDR Industrial Firewall or Conduit Device</b></td><td><code>SE.P.OT.Firewall</code></td><td>Firewall or deep-packet-inspection device enforcing a zone boundary / conduit (IEC 62443-4-2 NDR 5.2).</td></tr>
-<tr><td><b>NDR Managed Industrial Switch</b></td><td><code>SE.P.OT.Switch</code></td><td>Layer 2/3 managed switch (VLANs, port security, ring redundancy protocols).</td></tr>
-<tr><td><b>NDR Router Cellular or WAN Gateway</b></td><td><code>SE.P.OT.Router</code></td><td>Router, cellular modem or WAN gateway connecting sites or providing remote connectivity.</td></tr>
-<tr><td><b>NDR Industrial Wireless AP or Wireless Gateway</b></td><td><code>SE.P.OT.WirelessAP</code></td><td>Wi-Fi access point or WirelessHART / ISA100 gateway.</td></tr>
-<tr><td><b>NDR Remote Access Gateway or Jump Host</b></td><td><code>SE.P.OT.RemoteAccess</code></td><td>VPN concentrator, secure remote access appliance or jump server used by operators and vendors.</td></tr>
-<tr><td><b>NDR Unidirectional Gateway or Data Diode</b></td><td><code>SE.P.OT.DataDiode</code></td><td>Hardware-enforced one-way transfer device, usually with protocol replication proxies on each side.</td></tr>
+<table><thead><tr><th>스텐실 (TMT 표시 이름)</th><th>나타내는 대상</th></tr></thead><tbody>
+<tr><td><b>NDR Industrial Firewall or Conduit Device</b></td><td>Firewall or deep-packet-inspection device enforcing a zone boundary / conduit (IEC 62443-4-2 NDR 5.2).</td></tr>
+<tr><td><b>NDR Managed Industrial Switch</b></td><td>Layer 2/3 managed switch (VLANs, port security, ring redundancy protocols).</td></tr>
+<tr><td><b>NDR Router Cellular or WAN Gateway</b></td><td>Router, cellular modem or WAN gateway connecting sites or providing remote connectivity.</td></tr>
+<tr><td><b>NDR Industrial Wireless AP or Wireless Gateway</b></td><td>Wi-Fi access point or WirelessHART / ISA100 gateway.</td></tr>
+<tr><td><b>NDR Remote Access Gateway or Jump Host</b></td><td>VPN concentrator, secure remote access appliance or jump server used by operators and vendors.</td></tr>
+<tr><td><b>NDR Unidirectional Gateway or Data Diode</b></td><td>Hardware-enforced one-way transfer device, usually with protocol replication proxies on each side.</td></tr>
 </tbody></table>
 <h3 id="소프트웨어-애플리케이션-sar">소프트웨어 애플리케이션 (SAR) · 12</h3>
-<table><thead><tr><th>스텐실 (TMT 표시 이름)</th><th>ID (build_model.py용)</th><th>나타내는 대상</th></tr></thead><tbody>
-<tr><td><b>SAR HMI or Operator Application</b></td><td><code>SE.P.OT.HMI</code></td><td>Human-machine interface used by operators to view the process and issue commands.</td></tr>
-<tr><td><b>SAR SCADA or DCS Server Application</b></td><td><code>SE.P.OT.SCADA</code></td><td>Supervisory application that polls controllers, manages alarms and sends commands.</td></tr>
-<tr><td><b>SAR Engineering or Configuration Tool</b></td><td><code>SE.P.OT.EngTool</code></td><td>Software used to program controllers, download logic and firmware, and configure devices.</td></tr>
-<tr><td><b>SAR Historian Application</b></td><td><code>SE.P.OT.HistorianApp</code></td><td>Collects and stores time-series process data; often replicated to the enterprise.</td></tr>
-<tr><td><b>SAR OPC UA Server or Protocol Gateway Software</b></td><td><code>SE.P.OT.OPCServer</code></td><td>OPC UA / OPC Classic server or protocol converter bridging field protocols to higher levels.</td></tr>
-<tr><td><b>SAR Embedded Web Server or Device Management UI</b></td><td><code>SE.P.OT.WebServer</code></td><td>Web-based configuration or diagnostics interface of a device or application.</td></tr>
-<tr><td><b>SAR Edge Computing Platform or Container Runtime</b></td><td><code>SE.P.OT.EdgeApp</code></td><td>Edge platform hosting containerised or third-party apps with access to OT data.</td></tr>
-<tr><td><b>SAR Firmware or Software Update Service</b></td><td><code>SE.P.OT.UpdateService</code></td><td>Service that distributes, validates and installs firmware and software updates (local or vendor-hosted).</td></tr>
-<tr><td><b>SAR Identity or Authentication Service AD LDAP RADIUS</b></td><td><code>SE.P.OT.AuthService</code></td><td>Central identity provider used by OT components for user authentication and authorization.</td></tr>
-<tr><td><b>SAR Security Monitoring or Log Collector SIEM IDS Syslog</b></td><td><code>SE.P.OT.SecurityMonitor</code></td><td>Collects security events and network traffic for detection (passive IDS, syslog, SIEM agent).</td></tr>
-<tr><td><b>SAR Backup and Recovery Service</b></td><td><code>SE.P.OT.BackupService</code></td><td>Backs up and restores controller programs, configurations and host images.</td></tr>
-<tr><td><b>SAR Asset or Device Management Application</b></td><td><code>SE.P.OT.AssetMgmt</code></td><td>Manages device inventory, configuration, certificates and firmware across many devices.</td></tr>
+<table><thead><tr><th>스텐실 (TMT 표시 이름)</th><th>나타내는 대상</th></tr></thead><tbody>
+<tr><td><b>SAR HMI or Operator Application</b></td><td>Human-machine interface used by operators to view the process and issue commands.</td></tr>
+<tr><td><b>SAR SCADA or DCS Server Application</b></td><td>Supervisory application that polls controllers, manages alarms and sends commands.</td></tr>
+<tr><td><b>SAR Engineering or Configuration Tool</b></td><td>Software used to program controllers, download logic and firmware, and configure devices.</td></tr>
+<tr><td><b>SAR Historian Application</b></td><td>Collects and stores time-series process data; often replicated to the enterprise.</td></tr>
+<tr><td><b>SAR OPC UA Server or Protocol Gateway Software</b></td><td>OPC UA / OPC Classic server or protocol converter bridging field protocols to higher levels.</td></tr>
+<tr><td><b>SAR Embedded Web Server or Device Management UI</b></td><td>Web-based configuration or diagnostics interface of a device or application.</td></tr>
+<tr><td><b>SAR Edge Computing Platform or Container Runtime</b></td><td>Edge platform hosting containerised or third-party apps with access to OT data.</td></tr>
+<tr><td><b>SAR Firmware or Software Update Service</b></td><td>Service that distributes, validates and installs firmware and software updates (local or vendor-hosted).</td></tr>
+<tr><td><b>SAR Identity or Authentication Service AD LDAP RADIUS</b></td><td>Central identity provider used by OT components for user authentication and authorization.</td></tr>
+<tr><td><b>SAR Security Monitoring or Log Collector SIEM IDS Syslog</b></td><td>Collects security events and network traffic for detection (passive IDS, syslog, SIEM agent).</td></tr>
+<tr><td><b>SAR Backup and Recovery Service</b></td><td>Backs up and restores controller programs, configurations and host images.</td></tr>
+<tr><td><b>SAR Asset or Device Management Application</b></td><td>Manages device inventory, configuration, certificates and firmware across many devices.</td></tr>
 </tbody></table>
 <h3 id="외부-상호작용자">외부 상호작용자 · 13</h3>
-<table><thead><tr><th>스텐실 (TMT 표시 이름)</th><th>ID (build_model.py용)</th><th>나타내는 대상</th></tr></thead><tbody>
-<tr><td><b>Operator</b></td><td><code>SE.EI.OT.Operator</code></td><td>Control room or field operator using HMI / local panels.</td></tr>
-<tr><td><b>Control or Maintenance Engineer</b></td><td><code>SE.EI.OT.Engineer</code></td><td>Engineer who programs, configures and maintains the system.</td></tr>
-<tr><td><b>System or Security Administrator</b></td><td><code>SE.EI.OT.Admin</code></td><td>Administers accounts, network and security settings.</td></tr>
-<tr><td><b>Vendor or Remote Support</b></td><td><code>SE.EI.OT.Vendor</code></td><td>Product vendor or OEM accessing the system for support, often remotely.</td></tr>
-<tr><td><b>System Integrator or Contractor</b></td><td><code>SE.EI.OT.Integrator</code></td><td>Third party that engineers, commissions or maintains the system.</td></tr>
-<tr><td><b>Enterprise IT System ERP MES IT network</b></td><td><code>SE.EI.OT.EnterpriseIT</code></td><td>Business systems and users at Level 4/5.</td></tr>
-<tr><td><b>Vendor or Cloud Service</b></td><td><code>SE.EI.OT.Cloud</code></td><td>Cloud analytics, remote monitoring or vendor cloud platform.</td></tr>
-<tr><td><b>Physical Process or Equipment</b></td><td><code>SE.EI.OT.PhysicalProcess</code></td><td>The physical process, machinery or environment measured and controlled by the system.</td></tr>
-<tr><td><b>Third Party or Legacy Field Device</b></td><td><code>SE.EI.OT.FieldDevice3P</code></td><td>A device outside the product scope, often without security capabilities.</td></tr>
-<tr><td><b>Removable Media or Transient Device</b></td><td><code>SE.EI.OT.RemovableMedia</code></td><td>USB drives, SD cards, maintenance laptops and other transient cyber assets.</td></tr>
-<tr><td><b>Time Source NTP PTP GNSS</b></td><td><code>SE.EI.OT.TimeSource</code></td><td>External time reference used for logging, sequence-of-events or protection.</td></tr>
-<tr><td><b>PKI or Certificate Authority</b></td><td><code>SE.EI.OT.PKI</code></td><td>Issues and revokes certificates used by components (asset-owner or product-supplier PKI).</td></tr>
-<tr><td><b>Product Supplier and Development Environment</b></td><td><code>SE.EI.OT.Supplier</code></td><td>The product supplier&#x27;s development, build, signing and release environment. Draw one flow from it into the product (Software Supply and Build Pipeline) to get the product supply-chain threats once.</td></tr>
+<table><thead><tr><th>스텐실 (TMT 표시 이름)</th><th>나타내는 대상</th></tr></thead><tbody>
+<tr><td><b>Operator</b></td><td>Control room or field operator using HMI / local panels.</td></tr>
+<tr><td><b>Control or Maintenance Engineer</b></td><td>Engineer who programs, configures and maintains the system.</td></tr>
+<tr><td><b>System or Security Administrator</b></td><td>Administers accounts, network and security settings.</td></tr>
+<tr><td><b>Vendor or Remote Support</b></td><td>Product vendor or OEM accessing the system for support, often remotely.</td></tr>
+<tr><td><b>System Integrator or Contractor</b></td><td>Third party that engineers, commissions or maintains the system.</td></tr>
+<tr><td><b>Enterprise IT System ERP MES IT network</b></td><td>Business systems and users at Level 4/5.</td></tr>
+<tr><td><b>Vendor or Cloud Service</b></td><td>Cloud analytics, remote monitoring or vendor cloud platform.</td></tr>
+<tr><td><b>Physical Process or Equipment</b></td><td>The physical process, machinery or environment measured and controlled by the system.</td></tr>
+<tr><td><b>Third Party or Legacy Field Device</b></td><td>A device outside the product scope, often without security capabilities.</td></tr>
+<tr><td><b>Removable Media or Transient Device</b></td><td>USB drives, SD cards, maintenance laptops and other transient cyber assets.</td></tr>
+<tr><td><b>Time Source NTP PTP GNSS</b></td><td>External time reference used for logging, sequence-of-events or protection.</td></tr>
+<tr><td><b>PKI or Certificate Authority</b></td><td>Issues and revokes certificates used by components (asset-owner or product-supplier PKI).</td></tr>
+<tr><td><b>Product Supplier and Development Environment</b></td><td>The product supplier&#x27;s development, build, signing and release environment. Draw one flow from it into the product (Software Supply and Build Pipeline) to get the product supply-chain threats once.</td></tr>
 </tbody></table>
 <h3 id="데이터-저장소">데이터 저장소 · 8</h3>
-<table><thead><tr><th>스텐실 (TMT 표시 이름)</th><th>ID (build_model.py용)</th><th>나타내는 대상</th></tr></thead><tbody>
-<tr><td><b>Control Logic or Project Files</b></td><td><code>SE.DS.OT.ProjectFiles</code></td><td>PLC/DCS programs and engineering project files.</td></tr>
-<tr><td><b>Device Configuration and Parameters</b></td><td><code>SE.DS.OT.Config</code></td><td>Device configuration, setpoints, calibration and tuning parameters.</td></tr>
-<tr><td><b>Recipes or Batch Data</b></td><td><code>SE.DS.OT.Recipe</code></td><td>Recipes and batch parameters (ISA-88).</td></tr>
-<tr><td><b>Firmware or Software Image</b></td><td><code>SE.DS.OT.Firmware</code></td><td>Firmware and software packages, on the device or in a repository.</td></tr>
-<tr><td><b>Credential or Key Store TPM secure element keystore</b></td><td><code>SE.DS.OT.KeyStore</code></td><td>Passwords, private keys, certificates and roots of trust.</td></tr>
-<tr><td><b>Historian Database</b></td><td><code>SE.DS.OT.HistorianDB</code></td><td>Time-series process data.</td></tr>
-<tr><td><b>Security or Audit Log</b></td><td><code>SE.DS.OT.AuditLog</code></td><td>Security event and audit records (IEC 62443-4-2 CR 2.8).</td></tr>
-<tr><td><b>Backup Archive</b></td><td><code>SE.DS.OT.Backup</code></td><td>Backups of programs, configurations and system images.</td></tr>
+<table><thead><tr><th>스텐실 (TMT 표시 이름)</th><th>나타내는 대상</th></tr></thead><tbody>
+<tr><td><b>Control Logic or Project Files</b></td><td>PLC/DCS programs and engineering project files.</td></tr>
+<tr><td><b>Device Configuration and Parameters</b></td><td>Device configuration, setpoints, calibration and tuning parameters.</td></tr>
+<tr><td><b>Recipes or Batch Data</b></td><td>Recipes and batch parameters (ISA-88).</td></tr>
+<tr><td><b>Firmware or Software Image</b></td><td>Firmware and software packages, on the device or in a repository.</td></tr>
+<tr><td><b>Credential or Key Store TPM secure element keystore</b></td><td>Passwords, private keys, certificates and roots of trust.</td></tr>
+<tr><td><b>Historian Database</b></td><td>Time-series process data.</td></tr>
+<tr><td><b>Security or Audit Log</b></td><td>Security event and audit records (IEC 62443-4-2 CR 2.8).</td></tr>
+<tr><td><b>Backup Archive</b></td><td>Backups of programs, configurations and system images.</td></tr>
 </tbody></table>
 <h3 id="데이터-흐름-프로토콜">데이터 흐름 (프로토콜) · 23</h3>
-<table><thead><tr><th>스텐실 (TMT 표시 이름)</th><th>ID (build_model.py용)</th><th>나타내는 대상</th></tr></thead><tbody>
-<tr><td><b>Modbus TCP</b></td><td><code>SE.DF.OT.ModbusTCP</code></td><td>Modbus over TCP/502. Natively no authentication or encryption (Modbus/TCP Security over TLS exists).</td></tr>
-<tr><td><b>Modbus RTU Serial RS232 RS485</b></td><td><code>SE.DF.OT.Serial</code></td><td>Serial fieldbus traffic. No native security.</td></tr>
-<tr><td><b>DNP3</b></td><td><code>SE.DF.OT.DNP3</code></td><td>DNP3 over serial or TCP/20000. DNP3 Secure Authentication (SAv5/SAv6) optional.</td></tr>
-<tr><td><b>IEC 104 Telecontrol</b></td><td><code>SE.DF.OT.IEC104</code></td><td>Telecontrol protocol. Security per IEC 62351-3/-5 optional.</td></tr>
-<tr><td><b>IEC 61850 MMS</b></td><td><code>SE.DF.OT.IEC61850MMS</code></td><td>Client/server substation protocol. Security per IEC 62351-4/-6.</td></tr>
-<tr><td><b>IEC 61850 GOOSE or Sampled Values</b></td><td><code>SE.DF.OT.GOOSE</code></td><td>Multicast, time-critical protection messages. Authentication per IEC 62351-6 rarely deployed.</td></tr>
-<tr><td><b>EtherNet IP CIP</b></td><td><code>SE.DF.OT.EtherNetIP</code></td><td>CIP over Ethernet. CIP Security (TLS/DTLS) optional.</td></tr>
-<tr><td><b>PROFINET</b></td><td><code>SE.DF.OT.PROFINET</code></td><td>Real-time industrial Ethernet. PROFINET Security classes optional.</td></tr>
-<tr><td><b>Safety Protocol PROFIsafe CIP Safety FSoE</b></td><td><code>SE.DF.OT.SafetyProtocol</code></td><td>Functional safety protocol over a black channel. Protects against random errors, not deliberate attacks.</td></tr>
-<tr><td><b>Vendor Engineering Protocol</b></td><td><code>SE.DF.OT.EngProtocol</code></td><td>Proprietary programming / engineering protocol (e.g. download, upload, mode change, diagnostics).</td></tr>
-<tr><td><b>OPC UA</b></td><td><code>SE.DF.OT.OPCUA</code></td><td>OPC UA binary or HTTPS. Security modes None / Sign / SignAndEncrypt.</td></tr>
-<tr><td><b>OPC Classic DA HDA AE over DCOM</b></td><td><code>SE.DF.OT.OPCDA</code></td><td>Legacy OPC using DCOM. Hard to secure and to firewall.</td></tr>
-<tr><td><b>MQTT</b></td><td><code>SE.DF.OT.MQTT</code></td><td>Publish/subscribe telemetry. TLS and client authentication optional.</td></tr>
-<tr><td><b>HTTP or HTTPS Web REST</b></td><td><code>SE.DF.OT.HTTP</code></td><td>Web UI or REST API traffic.</td></tr>
-<tr><td><b>Remote Desktop or Remote Shell RDP VNC SSH</b></td><td><code>SE.DF.OT.RemoteDesktop</code></td><td>Interactive remote sessions.</td></tr>
-<tr><td><b>SNMP or Network Management</b></td><td><code>SE.DF.OT.SNMP</code></td><td>Device management. SNMPv1/v2c use cleartext community strings.</td></tr>
-<tr><td><b>Syslog or Security Event Forwarding</b></td><td><code>SE.DF.OT.Syslog</code></td><td>Security log transport (UDP/TCP/TLS).</td></tr>
-<tr><td><b>Time Synchronisation NTP PTP</b></td><td><code>SE.DF.OT.TimeSync</code></td><td>Time distribution. Unauthenticated by default.</td></tr>
-<tr><td><b>Wireless Link WiFi WirelessHART ISA100 BT</b></td><td><code>SE.DF.OT.Wireless</code></td><td>Radio link. Set Physical Medium to &#x27;Wireless (RF)&#x27;.</td></tr>
-<tr><td><b>File or Firmware Transfer FTP TFTP SMB USB</b></td><td><code>SE.DF.OT.FileTransfer</code></td><td>Transfer of files, projects or firmware.</td></tr>
-<tr><td><b>HART 4 to 20 mA with HART</b></td><td><code>SE.DF.OT.HART</code></td><td>Analog signal with digital HART overlay; can change device configuration.</td></tr>
-<tr><td><b>BACnet</b></td><td><code>SE.DF.OT.BACnet</code></td><td>Building automation protocol. BACnet/SC adds TLS.</td></tr>
-<tr><td><b>Software Supply and Build Pipeline</b></td><td><code>SE.DF.OT.SupplyChain</code></td><td>Delivery of the product&#x27;s software from the supplier&#x27;s development and build environment. Carries the build pipeline and signing key threats; no other threats are generated on it.</td></tr>
+<table><thead><tr><th>스텐실 (TMT 표시 이름)</th><th>나타내는 대상</th></tr></thead><tbody>
+<tr><td><b>Modbus TCP</b></td><td>Modbus over TCP/502. Natively no authentication or encryption (Modbus/TCP Security over TLS exists).</td></tr>
+<tr><td><b>Modbus RTU Serial RS232 RS485</b></td><td>Serial fieldbus traffic. No native security.</td></tr>
+<tr><td><b>DNP3</b></td><td>DNP3 over serial or TCP/20000. DNP3 Secure Authentication (SAv5/SAv6) optional.</td></tr>
+<tr><td><b>IEC 104 Telecontrol</b></td><td>Telecontrol protocol. Security per IEC 62351-3/-5 optional.</td></tr>
+<tr><td><b>IEC 61850 MMS</b></td><td>Client/server substation protocol. Security per IEC 62351-4/-6.</td></tr>
+<tr><td><b>IEC 61850 GOOSE or Sampled Values</b></td><td>Multicast, time-critical protection messages. Authentication per IEC 62351-6 rarely deployed.</td></tr>
+<tr><td><b>EtherNet IP CIP</b></td><td>CIP over Ethernet. CIP Security (TLS/DTLS) optional.</td></tr>
+<tr><td><b>PROFINET</b></td><td>Real-time industrial Ethernet. PROFINET Security classes optional.</td></tr>
+<tr><td><b>Safety Protocol PROFIsafe CIP Safety FSoE</b></td><td>Functional safety protocol over a black channel. Protects against random errors, not deliberate attacks.</td></tr>
+<tr><td><b>Vendor Engineering Protocol</b></td><td>Proprietary programming / engineering protocol (e.g. download, upload, mode change, diagnostics).</td></tr>
+<tr><td><b>OPC UA</b></td><td>OPC UA binary or HTTPS. Security modes None / Sign / SignAndEncrypt.</td></tr>
+<tr><td><b>OPC Classic DA HDA AE over DCOM</b></td><td>Legacy OPC using DCOM. Hard to secure and to firewall.</td></tr>
+<tr><td><b>MQTT</b></td><td>Publish/subscribe telemetry. TLS and client authentication optional.</td></tr>
+<tr><td><b>HTTP or HTTPS Web REST</b></td><td>Web UI or REST API traffic.</td></tr>
+<tr><td><b>Remote Desktop or Remote Shell RDP VNC SSH</b></td><td>Interactive remote sessions.</td></tr>
+<tr><td><b>SNMP or Network Management</b></td><td>Device management. SNMPv1/v2c use cleartext community strings.</td></tr>
+<tr><td><b>Syslog or Security Event Forwarding</b></td><td>Security log transport (UDP/TCP/TLS).</td></tr>
+<tr><td><b>Time Synchronisation NTP PTP</b></td><td>Time distribution. Unauthenticated by default.</td></tr>
+<tr><td><b>Wireless Link WiFi WirelessHART ISA100 BT</b></td><td>Radio link. Set Physical Medium to &#x27;Wireless (RF)&#x27;.</td></tr>
+<tr><td><b>File or Firmware Transfer FTP TFTP SMB USB</b></td><td>Transfer of files, projects or firmware.</td></tr>
+<tr><td><b>HART 4 to 20 mA with HART</b></td><td>Analog signal with digital HART overlay; can change device configuration.</td></tr>
+<tr><td><b>BACnet</b></td><td>Building automation protocol. BACnet/SC adds TLS.</td></tr>
+<tr><td><b>Software Supply and Build Pipeline</b></td><td>Delivery of the product&#x27;s software from the supplier&#x27;s development and build environment. Carries the build pipeline and signing key threats; no other threats are generated on it.</td></tr>
 </tbody></table>
 <h3 id="영역-경계-상자">영역 (경계 상자) · 6</h3>
-<table><thead><tr><th>스텐실 (TMT 표시 이름)</th><th>ID (build_model.py용)</th><th>나타내는 대상</th></tr></thead><tbody>
-<tr><td><b>IEC 62443 Security Zone</b></td><td><code>SE.TB.B.OT.Zone</code></td><td>A zone of assets sharing common security requirements (IEC 62443-3-2). Set Purdue level and SL-T.</td></tr>
-<tr><td><b>Safety Zone SIS</b></td><td><code>SE.TB.B.OT.SafetyZone</code></td><td>Zone containing the safety instrumented system. Should be separate from the BPCS zone.</td></tr>
-<tr><td><b>Industrial DMZ Level 3.5</b></td><td><code>SE.TB.B.OT.DMZ</code></td><td>Buffer zone between enterprise and OT networks.</td></tr>
-<tr><td><b>Component or Device Boundary</b></td><td><code>SE.TB.B.OT.Device</code></td><td>Boundary of the product itself (enclosure, firmware, hardware root of trust). Use for IEC 62443-4-2 component models.</td></tr>
-<tr><td><b>Enterprise or IT Zone</b></td><td><code>SE.TB.B.OT.Enterprise</code></td><td>Corporate IT network (Level 4/5).</td></tr>
-<tr><td><b>Vendor or Cloud Boundary</b></td><td><code>SE.TB.B.OT.Cloud</code></td><td>Infrastructure owned by the vendor or a cloud provider.</td></tr>
+<table><thead><tr><th>스텐실 (TMT 표시 이름)</th><th>나타내는 대상</th></tr></thead><tbody>
+<tr><td><b>IEC 62443 Security Zone</b></td><td>A zone of assets sharing common security requirements (IEC 62443-3-2). Set Purdue level and SL-T.</td></tr>
+<tr><td><b>Safety Zone SIS</b></td><td>Zone containing the safety instrumented system. Should be separate from the BPCS zone.</td></tr>
+<tr><td><b>Industrial DMZ Level 3.5</b></td><td>Buffer zone between enterprise and OT networks.</td></tr>
+<tr><td><b>Component or Device Boundary</b></td><td>Boundary of the product itself (enclosure, firmware, hardware root of trust). Use for IEC 62443-4-2 component models.</td></tr>
+<tr><td><b>Enterprise or IT Zone</b></td><td>Corporate IT network (Level 4/5).</td></tr>
+<tr><td><b>Vendor or Cloud Boundary</b></td><td>Infrastructure owned by the vendor or a cloud provider.</td></tr>
 </tbody></table>
 <h3 id="선-경계">선 경계 · 4</h3>
-<table><thead><tr><th>스텐실 (TMT 표시 이름)</th><th>ID (build_model.py용)</th><th>나타내는 대상</th></tr></thead><tbody>
-<tr><td><b>IEC 62443 Conduit</b></td><td><code>SE.TB.L.OT.Conduit</code></td><td>Communication channel between zones (IEC 62443-3-2).</td></tr>
-<tr><td><b>Internet or Untrusted Network Boundary</b></td><td><code>SE.TB.L.OT.Internet</code></td><td>Boundary to the Internet, cellular or other untrusted network (IEC 62443-3-3 SR 1.13).</td></tr>
-<tr><td><b>Physical Access Boundary</b></td><td><code>SE.TB.L.OT.Physical</code></td><td>Cabinet, enclosure or site perimeter. Flows crossing it involve physical access.</td></tr>
-<tr><td><b>Process or Privilege Boundary</b></td><td><code>SE.TB.L.OT.Privilege</code></td><td>Boundary inside a component (kernel/user, container, safety/non-safety partition).</td></tr>
+<table><thead><tr><th>스텐실 (TMT 표시 이름)</th><th>나타내는 대상</th></tr></thead><tbody>
+<tr><td><b>IEC 62443 Conduit</b></td><td>Communication channel between zones (IEC 62443-3-2).</td></tr>
+<tr><td><b>Internet or Untrusted Network Boundary</b></td><td>Boundary to the Internet, cellular or other untrusted network (IEC 62443-3-3 SR 1.13).</td></tr>
+<tr><td><b>Physical Access Boundary</b></td><td>Cabinet, enclosure or site perimeter. Flows crossing it involve physical access.</td></tr>
+<tr><td><b>Process or Privilege Boundary</b></td><td>Boundary inside a component (kernel/user, container, safety/non-safety partition).</td></tr>
 </tbody></table>
 <nav class="pager"><a class="prev" href="threats.html"><small>← 이전</small>위협 카탈로그</a><a class="next" href="examples.html"><small>다음 →</small>예제</a></nav>
 <footer>OT TMT 템플릿 · MIT 라이선스 · Microsoft, MITRE, IEC와 제휴 관계가 없습니다.</footer>

@@ -23,7 +23,7 @@
   
 </header>
 <div class="layout">
-<nav class="sidebar"><h4>시작하기</h4><a href="index.html">개요</a><a href="threat-modeling.html">위협 모델링 기초</a><a href="getting-started.html">설치 및 빠른 시작</a><h4>가이드</h4><a href="using-tmt.html">Microsoft TMT 사용법</a><a href="product-guide.html">제품·시스템 위협 모델</a><a href="plant-guide.html">플랜트·사이트 위험 평가</a><a href="review.html">위협 검토와 위험 평가</a><h4>개념</h4><a href="how-threats-work.html" class="on">위협이 생성되는 방식</a><a href="properties.html">속성</a><h4>참조</h4><a href="threats.html">위협 카탈로그</a><a href="stencils.html">스텐실</a><a href="examples.html">예제</a><h4>고급</h4><a href="tools.html">명령줄 도구</a><a href="customise.html">사용자 정의와 재빌드</a><h4>도움말</h4><a href="faq.html">문제 해결 및 FAQ</a><a href="changelog.html">버전 및 라이선스</a></nav>
+<nav class="sidebar"><h4>시작하기</h4><a href="index.html">개요</a><a href="threat-modeling.html">위협 모델링 기초</a><a href="getting-started.html">설치 및 빠른 시작</a><h4>가이드</h4><a href="using-tmt.html">Microsoft TMT 사용법</a><a href="product-guide.html">제품·시스템 위협 모델</a><a href="plant-guide.html">플랜트·사이트 위험 평가</a><a href="review.html">위협 검토와 위험 평가</a><h4>개념</h4><a href="how-threats-work.html" class="on">위협이 생성되는 방식</a><a href="properties.html">속성</a><h4>참조</h4><a href="threats.html">위협 카탈로그</a><a href="stencils.html">스텐실</a><a href="examples.html">예제</a><h4>도움말</h4><a href="faq.html">문제 해결 및 FAQ</a><a href="changelog.html">버전 및 라이선스</a></nav>
 <main><article class="doc">
 <h1 id="위협이-생성되는-방식">위협이 생성되는 방식<a class="headerlink" href="#위협이-생성되는-방식" title="Permanent link">#</a></h1>
 <p class="lede">TMT는 데이터 흐름마다 위협을 생성합니다. 템플릿 2.0은 각 위협이 제자리에서 한 번만 나타나도록 합니다.</p>
@@ -141,8 +141,8 @@
 </tbody>
 </table>
 <div class="admonition tip">
-<p class="admonition-title">도구에 맡기세요</p>
-<p><code>build_model.py</code>는 각 요소로 들어오는 흐름 중 가장 노출되고, 네트워크를 쓰고, 제어 명령을 전달하는 흐름에 <em>All</em>을, 나머지에 <em>Without component threats</em>를 설정합니다. <code>check_model.py</code>는 위협이 반복되거나 빠질 구성요소를 알려 줍니다. <a href="tools.html">명령줄 도구</a> 참조.</p>
+<p class="admonition-title">어떤 흐름을 앵커로 할까요?</p>
+<p>각 구성요소로 들어오는 흐름 중 가장 노출된 흐름, 즉 신뢰 경계를 넘거나 외부에서 오고, 제어 명령을 전달하며, 네트워크를 쓰는 흐름에 <em>All</em>을 설정하세요. 나머지 들어오는 흐름에는 <em>Without component threats</em>를 설정합니다. Analysis View에서 Threat List를 <em>Title</em>로 정렬했을 때 같은 구성요소에 같은 구성요소 위협이 두 번 보이면, 다른 흐름이 아직 <em>All</em>이나 <em>Auto</em>로 남아 있다는 뜻입니다.</p>
 </div>
 <h2 id="그-밖의-규칙">그 밖의 규칙<a class="headerlink" href="#그-밖의-규칙" title="Permanent link">#</a></h2>
 <ul>

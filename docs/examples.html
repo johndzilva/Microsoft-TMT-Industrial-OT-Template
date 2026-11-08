@@ -23,7 +23,7 @@
   
 </header>
 <div class="layout">
-<nav class="sidebar"><h4>Get started</h4><a href="index.html">Overview</a><a href="threat-modeling.html">Threat modeling basics</a><a href="getting-started.html">Install and quick start</a><h4>Guides</h4><a href="using-tmt.html">Using Microsoft TMT</a><a href="product-guide.html">Product and system threat model</a><a href="plant-guide.html">Plant and site risk assessment</a><a href="review.html">Reviewing threats and scoring risk</a><h4>Concepts</h4><a href="how-threats-work.html">How threats are generated</a><a href="properties.html">Properties</a><h4>Reference</h4><a href="threats.html">Threat catalogue</a><a href="stencils.html">Stencils</a><a href="examples.html" class="on">Examples</a><h4>Advanced</h4><a href="tools.html">Command-line tools</a><a href="customise.html">Customise and rebuild</a><h4>Help</h4><a href="faq.html">Troubleshooting and FAQ</a><a href="changelog.html">Versions and licence</a></nav>
+<nav class="sidebar"><h4>Get started</h4><a href="index.html">Overview</a><a href="threat-modeling.html">Threat modeling basics</a><a href="getting-started.html">Install and quick start</a><h4>Guides</h4><a href="using-tmt.html">Using Microsoft TMT</a><a href="product-guide.html">Product and system threat model</a><a href="plant-guide.html">Plant and site risk assessment</a><a href="review.html">Reviewing threats and scoring risk</a><h4>Concepts</h4><a href="how-threats-work.html">How threats are generated</a><a href="properties.html">Properties</a><h4>Reference</h4><a href="threats.html">Threat catalogue</a><a href="stencils.html">Stencils</a><a href="examples.html" class="on">Examples</a><h4>Help</h4><a href="faq.html">Troubleshooting and FAQ</a><a href="changelog.html">Versions and licence</a></nav>
 <main><article class="doc">
 <h1 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">#</a></h1>
 <p class="lede">Two complete models are in the <code>examples</code> folder. Open them with <em>Open A Model</em> and switch to <em>Analysis View</em>.</p>
@@ -109,12 +109,10 @@
 <li><strong>Safety:</strong> the compressor PLC can reset the ESD remotely, so the safety system is reachable from the control side (<a href="threats.html#PL-E10">PL-E10</a>, <a href="threats.html#PL-T07">PL-T07</a>). The hard-wired trip inputs carry the field wiring threat (<a href="threats.html#PL-T11">PL-T11</a>).</li>
 <li><strong>Site practice:</strong> shared accounts, unhardened RTUs, no monitoring at remote sites, an always-on OEM VPN (<a href="threats.html#PL-E05">PL-E05</a>), and a field laptop used for PLC programming (<a href="threats.html#PL-T09">PL-T09</a>).</li>
 </ul>
-<h2 id="build-them-yourself">Build them yourself<a class="headerlink" href="#build-them-yourself" title="Permanent link">#</a></h2>
-<p>Both examples are also described as JSON in <code>examples/specs/</code>. Rebuild them, or use them as a starting point for your own system, with <a href="tools.html"><code>build_model.py</code></a>.</p>
-<nav class="pager"><a class="prev" href="stencils.html"><small>← Previous</small>Stencils</a><a class="next" href="tools.html"><small>Next →</small>Command-line tools</a></nav>
+<nav class="pager"><a class="prev" href="stencils.html"><small>← Previous</small>Stencils</a><a class="next" href="faq.html"><small>Next →</small>Troubleshooting and FAQ</a></nav>
 <footer>OT TMT Templates · MIT licence · Not affiliated with Microsoft, MITRE or the IEC.</footer>
 </article></main>
-<aside class="toc"><h5>On this page</h5><a href="#industrial-edge-gateway-product-template">Industrial edge gateway (product template)</a><a href="#natural-gas-pipeline-plant-template">Natural gas pipeline (plant template)</a><a href="#build-them-yourself">Build them yourself</a></aside>
+<aside class="toc"><h5>On this page</h5><a href="#industrial-edge-gateway-product-template">Industrial edge gateway (product template)</a><a href="#natural-gas-pipeline-plant-template">Natural gas pipeline (plant template)</a></aside>
 </div>
 </body>
 </html>
