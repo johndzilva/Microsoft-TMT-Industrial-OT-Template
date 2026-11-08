@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>문제 해결 및 FAQ · OT TMT 템플릿</title>
+<meta name="description" content="문제 해결 및 FAQ# TMT가 모델이 손상되었다고 표시합니다# 보통 &quot;Line element coordinates are corrupted&quot;나 &quot;Border … will be corrected&quot; 메시지가 나옵니다. 요소나 선이 TMT 그리기 영역 밖에 있다는 뜻입니다. 다이어그램을 약">
+<link rel="alternate" hreflang="en" href="../faq.html">
+<link rel="alternate" hreflang="ko" href="faq.html">
+<link rel="icon" href="../assets/favicon.svg">
+<link rel="stylesheet" href="../assets/style.css">
+<script src="../assets/app.js"></script>
+<script src="../assets/search-ko.js" defer></script>
+</head>
+<body data-base="">
+<header class="topbar">
+  <button class="iconbtn menubtn" id="menu" aria-label="메뉴"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+  <a class="brand" href="index.html"><svg width="28" height="28" viewBox="0 0 32 32" aria-hidden="true"><rect x="1" y="1" width="30" height="30" rx="8" fill="currentColor" opacity=".12"/><path d="M16 5l9 4v6.5c0 5.4-3.7 9.6-9 11.5-5.3-1.9-9-6.1-9-11.5V9z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/><circle cx="12" cy="15" r="2" fill="currentColor"/><circle cx="20" cy="15" r="2" fill="currentColor"/><path d="M14 15h4M16 15v5" stroke="currentColor" stroke-width="2"/></svg><span class="full">OT TMT 템플릿</span><small>IEC 62443 위협 모델링</small></a>
+  <span class="spacer"></span>
+  <div class="search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg><input id="q" type="search" placeholder="문서 검색  /" aria-label="문서 검색" autocomplete="off"><div class="results" id="results" data-empty="검색 결과가 없습니다"></div></div>
+  <span class="lang"><a href="../faq.html" hreflang="en">EN</a><a href="faq.html" class="on" hreflang="ko">한국어</a></span>
+  <button class="iconbtn" id="theme" title="밝은/어두운 테마 전환" aria-label="밝은/어두운 테마 전환"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></button>
+  
+</header>
+<div class="layout">
+<nav class="sidebar"><h4>시작하기</h4><a href="index.html">개요</a><a href="threat-modeling.html">위협 모델링 기초</a><a href="getting-started.html">설치 및 빠른 시작</a><h4>가이드</h4><a href="using-tmt.html">Microsoft TMT 사용법</a><a href="product-guide.html">제품·시스템 위협 모델</a><a href="plant-guide.html">플랜트·사이트 위험 평가</a><a href="review.html">위협 검토와 위험 평가</a><h4>개념</h4><a href="how-threats-work.html">위협이 생성되는 방식</a><a href="properties.html">속성</a><h4>참조</h4><a href="threats.html">위협 카탈로그</a><a href="stencils.html">스텐실</a><a href="examples.html">예제</a><h4>고급</h4><a href="tools.html">명령줄 도구</a><a href="customise.html">사용자 정의와 재빌드</a><h4>도움말</h4><a href="faq.html" class="on">문제 해결 및 FAQ</a><a href="changelog.html">버전 및 라이선스</a></nav>
+<main><article class="doc">
+<h1 id="문제-해결-및-faq">문제 해결 및 FAQ<a class="headerlink" href="#문제-해결-및-faq" title="Permanent link">#</a></h1>
+<h2 id="tmt가-모델이-손상되었다고-표시합니다">TMT가 모델이 손상되었다고 표시합니다<a class="headerlink" href="#tmt가-모델이-손상되었다고-표시합니다" title="Permanent link">#</a></h2>
+<p>보통 "Line element coordinates are corrupted"나 "Border … will be corrected" 메시지가 나옵니다. 요소나 선이 TMT 그리기 영역 밖에 있다는 뜻입니다. 다이어그램을 약 1800 × 1100 픽셀 안에 그리세요. <code>build_model.py</code>로 만든 모델은 자동으로 이 영역 안에 배치됩니다.</p>
+<h2 id="두-번째-모델을-열면-tmt가-종료됩니다">두 번째 모델을 열면 TMT가 종료됩니다<a class="headerlink" href="#두-번째-모델을-열면-tmt가-종료됩니다" title="Permanent link">#</a></h2>
+<p>TMT 2016은 한 모델의 위협 목록이 표시된 상태에서 다른 모델을 열면 비정상 종료("Unhandled exception")될 수 있습니다. 다음 모델을 열기 전에 <em>File &gt; Close Model</em>로 현재 모델을 닫으세요.</p>
+<h2 id="같은-위협이-여러-흐름에-나타납니다">같은 위협이 여러 흐름에 나타납니다<a class="headerlink" href="#같은-위협이-여러-흐름에-나타납니다" title="Permanent link">#</a></h2>
+<p>구성요소로 들어오는 흐름 하나에 <strong>Threats on this Flow = All</strong>, 나머지에 <strong>Without component threats</strong>를 설정하거나 <code>check_model.py</code>를 실행하세요. 같은 채널의 병렬 흐름은 하나만 남기고 나머지를 <strong>Path threats only</strong>로 설정합니다. <a href="how-threats-work.html">위협이 생성되는 방식</a> 참조.</p>
+<h2 id="우리-시스템에-적용될-수-없는-위협이-있습니다">우리 시스템에 적용될 수 없는 위협이 있습니다<a class="headerlink" href="#우리-시스템에-적용될-수-없는-위협이-있습니다" title="Permanent link">#</a></h2>
+<p>먼저 그 위협을 없애는 속성이 있는지 확인하세요. <a href="properties.html">속성</a> 페이지에 어떤 값이 어떤 위협을 제거하는지 나와 있습니다. 속성에 답하면 위협이 완전히 사라집니다. 해당하는 속성이 없으면 사유와 함께 <strong>Not Applicable</strong>로 표시하세요.</p>
+<h2 id="영역-자체에는-위협이-없습니다">영역 자체에는 위협이 없습니다<a class="headerlink" href="#영역-자체에는-위협이-없습니다" title="Permanent link">#</a></h2>
+<p>TMT는 데이터 흐름에만 위협을 생성합니다. 영역 속성은 위험 평가 입력을 기록하는 용도입니다. 영역에 따라 달라지는 위협은 영역 안 자산과 흐름의 속성을 사용합니다.</p>
+<h2 id="microsoft-자체-위협도-쓸-수-있나요">Microsoft 자체 위협도 쓸 수 있나요?<a class="headerlink" href="#microsoft-자체-위협도-쓸-수-있나요" title="Permanent link">#</a></h2>
+<p>이 템플릿에는 OT 위협만 있습니다. Microsoft 스텐실은 시스템의 IT 부분을 그릴 수 있도록 포함했습니다. Microsoft의 웹·클라우드 위협이 필요하면 해당 부분을 Microsoft 템플릿으로 모델링하세요.</p>
+<h2 id="템플릿이-영어인데-한국-프로젝트에-써도-되나요">템플릿이 영어인데 한국 프로젝트에 써도 되나요?<a class="headerlink" href="#템플릿이-영어인데-한국-프로젝트에-써도-되나요" title="Permanent link">#</a></h2>
+<p>네. 스텐실, 속성, 위협 텍스트는 TMT에 영어로 표시되므로 팀 간에 위협 ID와 표준 참조를 일관되게 쓸 수 있습니다. 요소 이름, 사유, 검토 필드는 한국어로 입력해도 되며, TMT는 입력한 그대로 저장합니다.</p>
+<h2 id="버전-1x로-만든-모델이-있습니다">버전 1.x로 만든 모델이 있습니다<a class="headerlink" href="#버전-1x로-만든-모델이-있습니다" title="Permanent link">#</a></h2>
+<p><em>File &gt; Apply Template</em>로 2.0 템플릿을 적용한 뒤 <code>check_model.py</code>를 실행하세요. 위협 ID는 그대로이므로 기존 검토 결과도 유효합니다. <a href="changelog.html">버전 및 라이선스</a>와 <code>MIGRATION.md</code>를 참고하세요.</p>
+<h2 id="cvss가-필요한가요">CVSS가 필요한가요?<a class="headerlink" href="#cvss가-필요한가요" title="Permanent link">#</a></h2>
+<p>필요하지 않습니다. <a href="review.html#cvss가-필요한가요">위협 검토</a> 참조.</p>
+<nav class="pager"><a class="prev" href="customise.html"><small>← 이전</small>사용자 정의와 재빌드</a><a class="next" href="changelog.html"><small>다음 →</small>버전 및 라이선스</a></nav>
+<footer>OT TMT 템플릿 · MIT 라이선스 · Microsoft, MITRE, IEC와 제휴 관계가 없습니다.</footer>
+</article></main>
+<aside class="toc"><h5>이 페이지의 내용</h5><a href="#tmt가-모델이-손상되었다고-표시합니다">TMT가 모델이 손상되었다고 표시합니다</a><a href="#두-번째-모델을-열면-tmt가-종료됩니다">두 번째 모델을 열면 TMT가 종료됩니다</a><a href="#같은-위협이-여러-흐름에-나타납니다">같은 위협이 여러 흐름에 나타납니다</a><a href="#우리-시스템에-적용될-수-없는-위협이-있습니다">우리 시스템에 적용될 수 없는 위협이 있습니다</a><a href="#영역-자체에는-위협이-없습니다">영역 자체에는 위협이 없습니다</a><a href="#microsoft-자체-위협도-쓸-수-있나요">Microsoft 자체 위협도 쓸 수 있나요?</a><a href="#템플릿이-영어인데-한국-프로젝트에-써도-되나요">템플릿이 영어인데 한국 프로젝트에 써도 되나요?</a><a href="#버전-1x로-만든-모델이-있습니다">버전 1.x로 만든 모델이 있습니다</a><a href="#cvss가-필요한가요">CVSS가 필요한가요?</a></aside>
+</div>
+</body>
+</html>

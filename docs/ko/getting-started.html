@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>설치 및 빠른 시작 · OT TMT 템플릿</title>
+<meta name="description" content="설치 및 빠른 시작# 다운로드부터 첫 OT 위협 목록까지 약 5분이면 됩니다. 준비물# Windows와 무료 Microsoft Threat Modeling Tool. 템플릿은 TMT 2016에서 검증했습니다. 이 저장소의 템플릿 파일 두 개. Python은 선택 사항인 명령줄 도구에만 ">
+<link rel="alternate" hreflang="en" href="../getting-started.html">
+<link rel="alternate" hreflang="ko" href="getting-started.html">
+<link rel="icon" href="../assets/favicon.svg">
+<link rel="stylesheet" href="../assets/style.css">
+<script src="../assets/app.js"></script>
+<script src="../assets/search-ko.js" defer></script>
+</head>
+<body data-base="">
+<header class="topbar">
+  <button class="iconbtn menubtn" id="menu" aria-label="메뉴"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+  <a class="brand" href="index.html"><svg width="28" height="28" viewBox="0 0 32 32" aria-hidden="true"><rect x="1" y="1" width="30" height="30" rx="8" fill="currentColor" opacity=".12"/><path d="M16 5l9 4v6.5c0 5.4-3.7 9.6-9 11.5-5.3-1.9-9-6.1-9-11.5V9z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/><circle cx="12" cy="15" r="2" fill="currentColor"/><circle cx="20" cy="15" r="2" fill="currentColor"/><path d="M14 15h4M16 15v5" stroke="currentColor" stroke-width="2"/></svg><span class="full">OT TMT 템플릿</span><small>IEC 62443 위협 모델링</small></a>
+  <span class="spacer"></span>
+  <div class="search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg><input id="q" type="search" placeholder="문서 검색  /" aria-label="문서 검색" autocomplete="off"><div class="results" id="results" data-empty="검색 결과가 없습니다"></div></div>
+  <span class="lang"><a href="../getting-started.html" hreflang="en">EN</a><a href="getting-started.html" class="on" hreflang="ko">한국어</a></span>
+  <button class="iconbtn" id="theme" title="밝은/어두운 테마 전환" aria-label="밝은/어두운 테마 전환"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></button>
+  
+</header>
+<div class="layout">
+<nav class="sidebar"><h4>시작하기</h4><a href="index.html">개요</a><a href="threat-modeling.html">위협 모델링 기초</a><a href="getting-started.html" class="on">설치 및 빠른 시작</a><h4>가이드</h4><a href="using-tmt.html">Microsoft TMT 사용법</a><a href="product-guide.html">제품·시스템 위협 모델</a><a href="plant-guide.html">플랜트·사이트 위험 평가</a><a href="review.html">위협 검토와 위험 평가</a><h4>개념</h4><a href="how-threats-work.html">위협이 생성되는 방식</a><a href="properties.html">속성</a><h4>참조</h4><a href="threats.html">위협 카탈로그</a><a href="stencils.html">스텐실</a><a href="examples.html">예제</a><h4>고급</h4><a href="tools.html">명령줄 도구</a><a href="customise.html">사용자 정의와 재빌드</a><h4>도움말</h4><a href="faq.html">문제 해결 및 FAQ</a><a href="changelog.html">버전 및 라이선스</a></nav>
+<main><article class="doc">
+<h1 id="설치-및-빠른-시작">설치 및 빠른 시작<a class="headerlink" href="#설치-및-빠른-시작" title="Permanent link">#</a></h1>
+<p class="lede">다운로드부터 첫 OT 위협 목록까지 약 5분이면 됩니다.</p>
+
+<h2 id="준비물">준비물<a class="headerlink" href="#준비물" title="Permanent link">#</a></h2>
+<ul>
+<li>Windows와 무료 <strong><a href="https://aka.ms/threatmodelingtool">Microsoft Threat Modeling Tool</a></strong>. 템플릿은 TMT 2016에서 검증했습니다.</li>
+<li>이 저장소의 템플릿 파일 두 개. Python은 선택 사항인 <a href="tools.html">명령줄 도구</a>에만 필요합니다.</li>
+</ul>
+<h2 id="빠른-시작">빠른 시작<a class="headerlink" href="#빠른-시작" title="Permanent link">#</a></h2>
+<ol class="steps">
+<li><b>TMT 설치</b>Microsoft Threat Modeling Tool을 내려받아 설치합니다.</li>
+<li><b>템플릿 받기</b>이 저장소를 내려받습니다(초록색 <em>Code</em> 버튼 &gt; <em>Download ZIP</em>, 또는 <code>git clone</code>).</li>
+<li><b>템플릿 선택</b>TMT를 열고 <em>Template For New Models</em> 아래의 <em>Browse</em>를 눌러 <code>OT Product and System Threat Template (IEC 62443).tb7</code> 또는 <code>OT Plant and Site Risk Assessment Template (IEC 62443).tb7</code>을 선택합니다.</li>
+<li><b>모델 만들기</b><em>Create A Model</em>을 누르면 오른쪽 Stencils 창에 OT 스텐실이 나타납니다.</li>
+<li><b>그리고 답하기</b>스텐실을 끌어다 놓고, 프로토콜 흐름으로 연결하고, 영역을 그려 감싼 다음, 각 요소와 흐름의 속성에 답합니다.</li>
+<li><b>위협 생성</b><em>View &gt; Analysis View</em>를 선택하면 TMT가 모든 흐름의 위협을 생성합니다.</li>
+<li><b>검토와 보고서</b>위협을 하나씩 검토한 뒤 <em>Reports &gt; Create Full Report</em>로 보고서를 만듭니다.</li>
+</ol>
+
+<div class="admonition tip">
+<p class="admonition-title">먼저 동작을 확인해 보세요</p>
+<p><a href="examples.html">예제</a> 중 하나를 <em>Open A Model</em>로 열고 <em>Analysis View</em>로 전환해 보세요. 엣지 게이트웨이는 위협 138개, 가스 배관은 114개를 생성합니다.</p>
+</div>
+<h2 id="내려받은-파일-구성">내려받은 파일 구성<a class="headerlink" href="#내려받은-파일-구성" title="Permanent link">#</a></h2>
+<pre><code>OT Product and System Threat Template (IEC 62443).tb7         제품·시스템 템플릿
+OT Plant and Site Risk Assessment Template (IEC 62443).tb7    플랜트·사이트 템플릿
+MIGRATION.md                                                  1.x 모델을 2.0으로 옮기는 방법
+docs/                                                         이 웹사이트
+examples/                                                     예제 모델 두 개와 JSON 명세
+source/                                                       템플릿과 모델을 만드는 Python 도구
+site/                                                         이 웹사이트의 원본
+</code></pre>
+<h2 id="다음-단계">다음 단계<a class="headerlink" href="#다음-단계" title="Permanent link">#</a></h2>
+<ul>
+<li><a href="using-tmt.html">Microsoft TMT 사용법</a>: 화면 구성, 그리기, 위협 생성과 검토.</li>
+<li><a href="product-guide.html">제품·시스템 위협 모델</a> 또는 <a href="plant-guide.html">플랜트·사이트 위험 평가</a>: 전체 절차.</li>
+</ul>
+<nav class="pager"><a class="prev" href="threat-modeling.html"><small>← 이전</small>위협 모델링 기초</a><a class="next" href="using-tmt.html"><small>다음 →</small>Microsoft TMT 사용법</a></nav>
+<footer>OT TMT 템플릿 · MIT 라이선스 · Microsoft, MITRE, IEC와 제휴 관계가 없습니다.</footer>
+</article></main>
+<aside class="toc"><h5>이 페이지의 내용</h5><a href="#준비물">준비물</a><a href="#빠른-시작">빠른 시작</a><a href="#내려받은-파일-구성">내려받은 파일 구성</a><a href="#다음-단계">다음 단계</a></aside>
+</div>
+</body>
+</html>

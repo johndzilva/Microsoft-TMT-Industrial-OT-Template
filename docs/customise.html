@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Customise and rebuild · OT TMT Templates</title>
+<meta name="description" content="Customise and rebuild# The templates are generated from Python, so changes are reviewable, repeatable and easy to merge. Source files# File Holds elements.py St">
+<link rel="alternate" hreflang="en" href="customise.html">
+<link rel="alternate" hreflang="ko" href="ko/customise.html">
+<link rel="icon" href="assets/favicon.svg">
+<link rel="stylesheet" href="assets/style.css">
+<script src="assets/app.js"></script>
+<script src="assets/search-en.js" defer></script>
+</head>
+<body data-base="">
+<header class="topbar">
+  <button class="iconbtn menubtn" id="menu" aria-label="Menu"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+  <a class="brand" href="index.html"><svg width="28" height="28" viewBox="0 0 32 32" aria-hidden="true"><rect x="1" y="1" width="30" height="30" rx="8" fill="currentColor" opacity=".12"/><path d="M16 5l9 4v6.5c0 5.4-3.7 9.6-9 11.5-5.3-1.9-9-6.1-9-11.5V9z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/><circle cx="12" cy="15" r="2" fill="currentColor"/><circle cx="20" cy="15" r="2" fill="currentColor"/><path d="M14 15h4M16 15v5" stroke="currentColor" stroke-width="2"/></svg><span class="full">OT TMT Templates</span><small>IEC 62443 threat modeling</small></a>
+  <span class="spacer"></span>
+  <div class="search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg><input id="q" type="search" placeholder="Search the docs  /" aria-label="Search the docs" autocomplete="off"><div class="results" id="results" data-empty="No results"></div></div>
+  <span class="lang"><a href="customise.html" class="on" hreflang="en">EN</a><a href="ko/customise.html" hreflang="ko">한국어</a></span>
+  <button class="iconbtn" id="theme" title="Switch light or dark" aria-label="Switch light or dark"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></button>
+  
+</header>
+<div class="layout">
+<nav class="sidebar"><h4>Get started</h4><a href="index.html">Overview</a><a href="threat-modeling.html">Threat modeling basics</a><a href="getting-started.html">Install and quick start</a><h4>Guides</h4><a href="using-tmt.html">Using Microsoft TMT</a><a href="product-guide.html">Product and system threat model</a><a href="plant-guide.html">Plant and site risk assessment</a><a href="review.html">Reviewing threats and scoring risk</a><h4>Concepts</h4><a href="how-threats-work.html">How threats are generated</a><a href="properties.html">Properties</a><h4>Reference</h4><a href="threats.html">Threat catalogue</a><a href="stencils.html">Stencils</a><a href="examples.html">Examples</a><h4>Advanced</h4><a href="tools.html">Command-line tools</a><a href="customise.html" class="on">Customise and rebuild</a><h4>Help</h4><a href="faq.html">Troubleshooting and FAQ</a><a href="changelog.html">Versions and licence</a></nav>
+<main><article class="doc">
+<h1 id="customise-and-rebuild">Customise and rebuild<a class="headerlink" href="#customise-and-rebuild" title="Permanent link">#</a></h1>
+<p class="lede">The templates are generated from Python, so changes are reviewable, repeatable and easy to merge.</p>
+
+<h2 id="source-files">Source files<a class="headerlink" href="#source-files" title="Permanent link">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Holds</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>elements.py</code></td>
+<td>Stencils and properties: what appears in the Stencils and Element Properties panes</td>
+</tr>
+<tr>
+<td><code>threats.py</code></td>
+<td>The product threats: text, rules, references, family</td>
+</tr>
+<tr>
+<td><code>threats_plant.py</code></td>
+<td>The plant threats</td>
+</tr>
+<tr>
+<td><code>icons.py</code></td>
+<td>Stencil icons (<a href="https://tabler.io/icons">Tabler Icons</a>, MIT)</td>
+</tr>
+<tr>
+<td><code>build.py</code></td>
+<td>Writes a <code>.tb7</code>; use <code>--plant</code> for the plant template</td>
+</tr>
+<tr>
+<td><code>validate.py</code></td>
+<td>Checks a <code>.tb7</code> against the rules TMT enforces</td>
+</tr>
+<tr>
+<td><code>readme_properties.py</code></td>
+<td>Property help text, used for the tables on this site</td>
+</tr>
+<tr>
+<td><code>site/build_site.py</code></td>
+<td>Builds this website into <code>docs/</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="rebuild">Rebuild<a class="headerlink" href="#rebuild" title="Permanent link">#</a></h2>
+<p>Requirements: Python 3, Pillow, and Playwright with Chromium to render the icons. You also need TMT's own <code>default.tb7</code>, copied from the TMT install folder into <code>source/</code>; it supplies Microsoft's built-in stencils.</p>
+<pre><code class="language-bash">cd source
+python build.py &quot;../OT Product and System Threat Template (IEC 62443).tb7&quot;
+python build.py --plant &quot;../OT Plant and Site Risk Assessment Template (IEC 62443).tb7&quot;
+python validate.py &quot;../OT Product and System Threat Template (IEC 62443).tb7&quot; default.tb7
+python validate.py &quot;../OT Plant and Site Risk Assessment Template (IEC 62443).tb7&quot; default.tb7
+python release_check.py &quot;../OT Product and System Threat Template (IEC 62443).tb7&quot; &quot;../OT Plant and Site Risk Assessment Template (IEC 62443).tb7&quot;
+cd ../site
+python build_site.py
+</code></pre>
+<h2 id="add-a-stencil">Add a stencil<a class="headerlink" href="#add-a-stencil" title="Permanent link">#</a></h2>
+<p>Add it to <code>STANDARD</code> in <code>elements.py</code> and give it an icon in <code>icons.py</code>. It appears in both templates. If a property cannot apply to it or is implied by it, add the fixed value to <code>STATIC</code>.</p>
+<h2 id="add-a-threat">Add a threat<a class="headerlink" href="#add-a-threat" title="Permanent link">#</a></h2>
+<ol>
+<li>Add an <code>add(...)</code> entry in <code>threats.py</code> or <code>threats_plant.py</code>, with the title, description, mitigation, the include and exclude rules, ATT&amp;CK, IEC references, FR and SL.</li>
+<li>Give it a family in <code>FAM</code>. For families 2, 3, 4 and 8, also decide whether <em>Auto</em> shows it only on exposed flows (<code>GATED</code>).</li>
+<li>Rebuild and run <code>release_check.py</code>. It fails if a threat has no family.</li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">Rules TMT enforces</p>
+<p><code>validate.py</code> checks these:</p>
+<ul>
+<li>Property display names are unique.</li>
+<li>Stencil names use only letters, numbers, spaces, underscores and periods.</li>
+<li>Property values used in rules are plain words, without hyphens or commas.</li>
+<li>Zone stencils keep the <code>BorderBoundary</code> representation.</li>
+</ul>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Keep IDs stable</p>
+<p>Others reference threat IDs from requirements and risk registers. Add new IDs; never renumber.</p>
+</div>
+<h2 id="publish-this-site">Publish this site<a class="headerlink" href="#publish-this-site" title="Permanent link">#</a></h2>
+<p>The site is plain HTML in <code>docs/</code>, with no build step on GitHub. In your repository, open <strong>Settings &gt; Pages</strong>, choose <strong>Deploy from a branch</strong>, branch <code>main</code>, folder <code>/docs</code>. To show a GitHub link in the top bar, set <code>OTTM_REPO=https://github.com/&lt;you&gt;/&lt;repo&gt;</code> before running <code>build_site.py</code>.</p>
+<nav class="pager"><a class="prev" href="tools.html"><small>← Previous</small>Command-line tools</a><a class="next" href="faq.html"><small>Next →</small>Troubleshooting and FAQ</a></nav>
+<footer>OT TMT Templates · MIT licence · Not affiliated with Microsoft, MITRE or the IEC.</footer>
+</article></main>
+<aside class="toc"><h5>On this page</h5><a href="#source-files">Source files</a><a href="#rebuild">Rebuild</a><a href="#add-a-stencil">Add a stencil</a><a href="#add-a-threat">Add a threat</a><a href="#publish-this-site">Publish this site</a></aside>
+</div>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>플랜트·사이트 위험 평가 · OT TMT 템플릿</title>
+<meta name="description" content="플랜트·사이트 위험 평가# 자산 소유자가 OT Plant and Site Risk Assessment 템플릿으로 운영 중인 사이트를 평가하는 절차입니다. IEC 62443-3-2의 영역·도관 요구사항(ZCR)을 따릅니다. 플랜트 위협이 다루는 범위# 영역과 도관: 필터링되지 않은 영역 ">
+<link rel="alternate" hreflang="en" href="../plant-guide.html">
+<link rel="alternate" hreflang="ko" href="plant-guide.html">
+<link rel="icon" href="../assets/favicon.svg">
+<link rel="stylesheet" href="../assets/style.css">
+<script src="../assets/app.js"></script>
+<script src="../assets/search-ko.js" defer></script>
+</head>
+<body data-base="">
+<header class="topbar">
+  <button class="iconbtn menubtn" id="menu" aria-label="메뉴"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+  <a class="brand" href="index.html"><svg width="28" height="28" viewBox="0 0 32 32" aria-hidden="true"><rect x="1" y="1" width="30" height="30" rx="8" fill="currentColor" opacity=".12"/><path d="M16 5l9 4v6.5c0 5.4-3.7 9.6-9 11.5-5.3-1.9-9-6.1-9-11.5V9z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/><circle cx="12" cy="15" r="2" fill="currentColor"/><circle cx="20" cy="15" r="2" fill="currentColor"/><path d="M14 15h4M16 15v5" stroke="currentColor" stroke-width="2"/></svg><span class="full">OT TMT 템플릿</span><small>IEC 62443 위협 모델링</small></a>
+  <span class="spacer"></span>
+  <div class="search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg><input id="q" type="search" placeholder="문서 검색  /" aria-label="문서 검색" autocomplete="off"><div class="results" id="results" data-empty="검색 결과가 없습니다"></div></div>
+  <span class="lang"><a href="../plant-guide.html" hreflang="en">EN</a><a href="plant-guide.html" class="on" hreflang="ko">한국어</a></span>
+  <button class="iconbtn" id="theme" title="밝은/어두운 테마 전환" aria-label="밝은/어두운 테마 전환"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></button>
+  
+</header>
+<div class="layout">
+<nav class="sidebar"><h4>시작하기</h4><a href="index.html">개요</a><a href="threat-modeling.html">위협 모델링 기초</a><a href="getting-started.html">설치 및 빠른 시작</a><h4>가이드</h4><a href="using-tmt.html">Microsoft TMT 사용법</a><a href="product-guide.html">제품·시스템 위협 모델</a><a href="plant-guide.html" class="on">플랜트·사이트 위험 평가</a><a href="review.html">위협 검토와 위험 평가</a><h4>개념</h4><a href="how-threats-work.html">위협이 생성되는 방식</a><a href="properties.html">속성</a><h4>참조</h4><a href="threats.html">위협 카탈로그</a><a href="stencils.html">스텐실</a><a href="examples.html">예제</a><h4>고급</h4><a href="tools.html">명령줄 도구</a><a href="customise.html">사용자 정의와 재빌드</a><h4>도움말</h4><a href="faq.html">문제 해결 및 FAQ</a><a href="changelog.html">버전 및 라이선스</a></nav>
+<main><article class="doc">
+<h1 id="플랜트사이트-위험-평가">플랜트·사이트 위험 평가<a class="headerlink" href="#플랜트사이트-위험-평가" title="Permanent link">#</a></h1>
+<p class="lede">자산 소유자가 OT Plant and Site Risk Assessment 템플릿으로 운영 중인 사이트를 평가하는 절차입니다. IEC 62443-3-2의 영역·도관 요구사항(ZCR)을 따릅니다.</p>
+
+<h2 id="플랜트-위협이-다루는-범위">플랜트 위협이 다루는 범위<a class="headerlink" href="#플랜트-위협이-다루는-범위" title="Permanent link">#</a></h2>
+<ul>
+<li><strong>영역과 도관:</strong> 필터링되지 않은 영역 간 흐름, 인증되지 않은 제어 트래픽, 업무망이나 인터넷에서 제어기로 가는 경로, 관리되지 않는 셀룰러 라우터, 무선.</li>
+<li><strong>원격·제3자 접근:</strong> 원격 접속 자격 증명 탈취, 상시 연결된 벤더 접속, 운전원 세션 원격 탈취, 보안 요구사항 없이 일하는 통합업체.</li>
+<li><strong>자산:</strong> 패치되지 않았거나 지원이 끝난 시스템, 악성코드 방지 부재, 하드닝되지 않은 구성, 공유·방치 계정, 모니터링 부재, 복원 시험을 하지 않은 백업, 영역 목표에 못 미치는 능력(SL-C &lt; SL-T), 랜섬웨어 확산.</li>
+<li><strong>운영과 공정:</strong> 공정을 위험 상태로 몰고 가는 공격, 관리되지 않는 로직 변경, 안전 시스템 침해와 SIS 독립성, 수동 대체 수단 없는 감시 기능 상실, 알람 억제, 과도하게 허용하는 방화벽 규칙, 취약한 장치에 대한 IT 스캔.</li>
+<li><strong>사람, 매체, 데이터:</strong> USB 매체와 외부 노트북, 피싱, 내부자 오용, 추적되지 않는 작업, 플랜트 문서 유출, 플랜트와 함께 암호화되는 백업, 검토되지 않는 경보, 무인 사이트의 물리적 접근, 클라우드 서비스 침해.</li>
+</ul>
+<p>참조는 IEC 62443-2-1:2024 프로그램 요소(예: <code>2-1 NET 3</code> 보안 원격 접속), IEC 62443-2-4 서비스 제공자 역량(<code>2-4 SP.07</code>), IEC 62443-3-2(<code>3-2 ZCR 5</code>), IEC 62443-3-3 시스템 요구사항, IEC 61511-1 8.2.4항을 사용합니다.</p>
+<h2 id="단계별-절차">단계별 절차<a class="headerlink" href="#단계별-절차" title="Permanent link">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>단계</th>
+<th>IEC 62443-3-2</th>
+<th>TMT에서 할 일</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1. 평가 대상 시스템</td>
+<td>ZCR 1</td>
+<td>제품 템플릿과 같은 스텐실로 사이트 자산을 그립니다. 벤더, 기업 IT, 클라우드, 노트북, USB 매체 같은 사람과 외부 연결도 포함합니다.</td>
+</tr>
+<tr>
+<td>2. 초기 위험</td>
+<td>ZCR 2</td>
+<td>영역 속성에 각 영역의 최악 결과를 기록합니다.</td>
+</tr>
+<tr>
+<td>3. 영역과 도관</td>
+<td>ZCR 3</td>
+<td>각 영역을 상자형 경계로 그리고, 실제로 존재하는 흐름으로만 영역을 연결합니다. 영역 사이의 방화벽이나 데이터 다이오드는 경로 위의 구성요소(NDR 스텐실)로 그립니다.</td>
+</tr>
+<tr>
+<td>4. 영역 속성</td>
+<td>ZCR 4, 6</td>
+<td>Purdue 수준, 영역 SL-T, 최악 결과, 안전·환경 기능, 물리적 접근, 달성 SL(SL-A)을 설정합니다. 평가 입력을 기록하는 용도이며 위협을 바꾸지는 않습니다.</td>
+</tr>
+<tr>
+<td>5. 자산·흐름 속성</td>
+<td>ZCR 5</td>
+<td>자산마다 사이트 상태를 설정합니다: 패치 상태, 하드닝, 악성코드 방지, 공유 계정, 모니터링, 백업 복원 시험, SL-C의 영역 SL-T 충족 여부, 최악 결과. 흐름마다: 프로토콜 보안, 방화벽·도관 장치 통과 여부, 상시 연결 여부. <strong>이 값들이 나타나는 위협을 결정합니다.</strong></td>
+</tr>
+<tr>
+<td>6. 상세 위험 평가</td>
+<td>ZCR 5</td>
+<td>Analysis View에서 위협마다 현재 대책, 결과 심각도, 가능성, 현재 위험, 허용 가능 위험 이내인지, 처리 방안, 계획된 대책, 잔여 위험을 기록합니다.</td>
+</tr>
+<tr>
+<td>7. 문서화와 추적</td>
+<td>ZCR 6, 7</td>
+<td>전체 보고서를 만들고, <em>Action Owner</em>, <em>Due Date</em>, <em>Verification Evidence</em>로 처리 계획을 추적합니다.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="안전계장시스템sis">안전계장시스템(SIS)<a class="headerlink" href="#안전계장시스템sis" title="Permanent link">#</a></h2>
+<p>사이트에 SIS가 있으면, 플랜트 위협은 IEC 61511-1 8.2.4항 보안 위험 평가도 다룹니다: SIS 독립성, ESD 원격 리셋, 안전 네트워크 연결.</p>
+<ul>
+<li>SIS는 별도의 <strong>Safety Zone SIS</strong>에 둡니다.</li>
+<li>안전 제어기와 안전 I/O는 안전 관련으로 표시합니다. 해당 스텐실은 이미 그렇게 고정되어 있습니다.</li>
+<li>하드와이어 트립 입력은 <em>Physical Medium = Hardwired signal</em>로 그립니다. 그러면 네트워크 위협 대신 현장 배선 위협(PL-T11)이 적용됩니다.</li>
+<li><em>HAZOP or Cyber HAZOP Reference</em> 필드로 각 위협을 공정 위험 시나리오와 연결합니다.</li>
+</ul>
+<h2 id="제품-모델과-함께-쓰기">제품 모델과 함께 쓰기<a class="headerlink" href="#제품-모델과-함께-쓰기" title="Permanent link">#</a></h2>
+<p>공급업체가 제품 템플릿으로 제품을 모델링했다면, 그 능력 보안 수준(SL-C)을 가져와 자산의 <em>Component Capability (SL-C) Meets Zone SL-T</em>에 답합니다. <em>No</em>이면 SL 격차 위협이 나타나 격차를 기록하고 처리할 수 있습니다.</p>
+<p>완성된 평가 예는 <a href="examples.html#천연가스-배관-플랜트-템플릿">가스 배관 예제</a>를 참고하세요.</p>
+<nav class="pager"><a class="prev" href="product-guide.html"><small>← 이전</small>제품·시스템 위협 모델</a><a class="next" href="review.html"><small>다음 →</small>위협 검토와 위험 평가</a></nav>
+<footer>OT TMT 템플릿 · MIT 라이선스 · Microsoft, MITRE, IEC와 제휴 관계가 없습니다.</footer>
+</article></main>
+<aside class="toc"><h5>이 페이지의 내용</h5><a href="#플랜트-위협이-다루는-범위">플랜트 위협이 다루는 범위</a><a href="#단계별-절차">단계별 절차</a><a href="#안전계장시스템sis">안전계장시스템(SIS)</a><a href="#제품-모델과-함께-쓰기">제품 모델과 함께 쓰기</a></aside>
+</div>
+</body>
+</html>

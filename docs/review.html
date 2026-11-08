@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reviewing threats and scoring risk · OT TMT Templates</title>
+<meta name="description" content="Reviewing threats and scoring risk# Each generated threat comes with content you read and fields you fill in. This page explains both, and gives a review routin">
+<link rel="alternate" hreflang="en" href="review.html">
+<link rel="alternate" hreflang="ko" href="ko/review.html">
+<link rel="icon" href="assets/favicon.svg">
+<link rel="stylesheet" href="assets/style.css">
+<script src="assets/app.js"></script>
+<script src="assets/search-en.js" defer></script>
+</head>
+<body data-base="">
+<header class="topbar">
+  <button class="iconbtn menubtn" id="menu" aria-label="Menu"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+  <a class="brand" href="index.html"><svg width="28" height="28" viewBox="0 0 32 32" aria-hidden="true"><rect x="1" y="1" width="30" height="30" rx="8" fill="currentColor" opacity=".12"/><path d="M16 5l9 4v6.5c0 5.4-3.7 9.6-9 11.5-5.3-1.9-9-6.1-9-11.5V9z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/><circle cx="12" cy="15" r="2" fill="currentColor"/><circle cx="20" cy="15" r="2" fill="currentColor"/><path d="M14 15h4M16 15v5" stroke="currentColor" stroke-width="2"/></svg><span class="full">OT TMT Templates</span><small>IEC 62443 threat modeling</small></a>
+  <span class="spacer"></span>
+  <div class="search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg><input id="q" type="search" placeholder="Search the docs  /" aria-label="Search the docs" autocomplete="off"><div class="results" id="results" data-empty="No results"></div></div>
+  <span class="lang"><a href="review.html" class="on" hreflang="en">EN</a><a href="ko/review.html" hreflang="ko">한국어</a></span>
+  <button class="iconbtn" id="theme" title="Switch light or dark" aria-label="Switch light or dark"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></button>
+  
+</header>
+<div class="layout">
+<nav class="sidebar"><h4>Get started</h4><a href="index.html">Overview</a><a href="threat-modeling.html">Threat modeling basics</a><a href="getting-started.html">Install and quick start</a><h4>Guides</h4><a href="using-tmt.html">Using Microsoft TMT</a><a href="product-guide.html">Product and system threat model</a><a href="plant-guide.html">Plant and site risk assessment</a><a href="review.html" class="on">Reviewing threats and scoring risk</a><h4>Concepts</h4><a href="how-threats-work.html">How threats are generated</a><a href="properties.html">Properties</a><h4>Reference</h4><a href="threats.html">Threat catalogue</a><a href="stencils.html">Stencils</a><a href="examples.html">Examples</a><h4>Advanced</h4><a href="tools.html">Command-line tools</a><a href="customise.html">Customise and rebuild</a><h4>Help</h4><a href="faq.html">Troubleshooting and FAQ</a><a href="changelog.html">Versions and licence</a></nav>
+<main><article class="doc">
+<h1 id="reviewing-threats-and-scoring-risk">Reviewing threats and scoring risk<a class="headerlink" href="#reviewing-threats-and-scoring-risk" title="Permanent link">#</a></h1>
+<p class="lede">Each generated threat comes with content you read and fields you fill in. This page explains both, and gives a review routine that works.</p>
+
+<h2 id="what-each-threat-tells-you">What each threat tells you<a class="headerlink" href="#what-each-threat-tells-you" title="Permanent link">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Title</strong></td>
+<td>Names the real source and target, for example "Spoofing of Engineering Workstation towards Line 3 PLC"</td>
+</tr>
+<tr>
+<td><strong>Description</strong></td>
+<td>What could happen and why</td>
+</tr>
+<tr>
+<td><strong>Priority</strong></td>
+<td>High, Medium or Low</td>
+</tr>
+<tr>
+<td><strong>Category</strong></td>
+<td>STRIDE</td>
+</tr>
+<tr>
+<td><strong>Possible Mitigation(s)</strong> / <strong>Recommended Countermeasure(s)</strong></td>
+<td>Controls that address it</td>
+</tr>
+<tr>
+<td><strong>MITRE ATT&amp;CK for ICS</strong></td>
+<td>Related techniques (v20 IDs)</td>
+</tr>
+<tr>
+<td><strong>IEC 62443 Requirement(s)</strong></td>
+<td>4-2 CR/EDR/HDR/NDR/SAR, 3-3 SR, 2-1, 2-4, 3-2 or IEC 61511 references</td>
+</tr>
+<tr>
+<td><strong>Foundational Requirement</strong></td>
+<td>FR1 to FR7</td>
+</tr>
+<tr>
+<td><strong>Relevant from SL</strong></td>
+<td>Lowest SL-T at which countermeasures are normally required</td>
+</tr>
+<tr>
+<td><strong>OT Consequence</strong></td>
+<td>Safety, environment, equipment, production, view or control, IP</td>
+</tr>
+</tbody>
+</table>
+<h2 id="fields-you-fill-in">Fields you fill in<a class="headerlink" href="#fields-you-fill-in" title="Permanent link">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Product and System template</th>
+<th>Plant and Site template</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Likelihood (1-5)</td>
+<td>Existing Countermeasures</td>
+</tr>
+<tr>
+<td>Impact (1-5)</td>
+<td>HAZOP or Cyber HAZOP Reference</td>
+</tr>
+<tr>
+<td>Risk Rating</td>
+<td>Consequence Category</td>
+</tr>
+<tr>
+<td>Risk Treatment</td>
+<td>Consequence Severity (1-5) and Likelihood (1-5)</td>
+</tr>
+<tr>
+<td>Implemented Mitigation(s)</td>
+<td>Current Risk and Within Tolerable Risk</td>
+</tr>
+<tr>
+<td>Verification Evidence</td>
+<td>Risk Treatment, Planned Countermeasure(s) and Residual Risk</td>
+</tr>
+<tr>
+<td>Owner</td>
+<td>Action Owner, Due Date, Verification Evidence</td>
+</tr>
+</tbody>
+</table>
+<h2 id="risk-matrix">Risk matrix<a class="headerlink" href="#risk-matrix" title="Permanent link">#</a></h2>
+<p>Risk = likelihood × impact (or consequence severity), on a 5 × 5 matrix.</p>
+<table>
+<thead>
+<tr>
+<th>Score</th>
+<th>Rating</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>20-25</td>
+<td><strong>Critical</strong></td>
+</tr>
+<tr>
+<td>12-19</td>
+<td><strong>High</strong></td>
+</tr>
+<tr>
+<td>6-11</td>
+<td><strong>Medium</strong></td>
+</tr>
+<tr>
+<td>1-5</td>
+<td><strong>Low</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Treatment options are <em>mitigate</em>, <em>transfer</em>, <em>avoid</em> or <em>accept</em>. Record accepted risks together with the owner who accepted them.</p>
+<h2 id="a-review-routine-that-works">A review routine that works<a class="headerlink" href="#a-review-routine-that-works" title="Permanent link">#</a></h2>
+<ol class="steps">
+<li><b>Go flow by flow</b>Sort the Threat List by <em>Interaction</em> and walk the diagram one flow at a time.</li>
+<li><b>Fix properties, not threats</b>If a threat cannot apply because of something you forgot to answer, such as "this device has no web interface", correct the property. The threat then disappears for good, and also from the next model built on it.</li>
+<li><b>Mark the rest</b>Use <em>Not Applicable</em> with a one-line justification, or <em>Mitigated</em> with the controls named.</li>
+<li><b>Score and treat</b>Fill in likelihood, impact and treatment for what remains.</li>
+<li><b>Check against your SL-T</b>Sort by <em>Relevant from SL</em>. Everything at or below your target SL should be mitigated or explicitly accepted.</li>
+</ol>
+
+<h2 id="do-i-need-cvss">Do I need CVSS?<a class="headerlink" href="#do-i-need-cvss" title="Permanent link">#</a></h2>
+<p>No. CVSS scores known vulnerabilities in products. A threat model looks at design-level threats before any vulnerability exists, so it uses likelihood × impact (or consequence severity), as IEC 62443-3-2 does. CVSS becomes useful later, when a specific vulnerability (a CVE) is found in a component you modelled.</p>
+<nav class="pager"><a class="prev" href="plant-guide.html"><small>← Previous</small>Plant and site risk assessment</a><a class="next" href="how-threats-work.html"><small>Next →</small>How threats are generated</a></nav>
+<footer>OT TMT Templates · MIT licence · Not affiliated with Microsoft, MITRE or the IEC.</footer>
+</article></main>
+<aside class="toc"><h5>On this page</h5><a href="#what-each-threat-tells-you">What each threat tells you</a><a href="#fields-you-fill-in">Fields you fill in</a><a href="#risk-matrix">Risk matrix</a><a href="#a-review-routine-that-works">A review routine that works</a><a href="#do-i-need-cvss">Do I need CVSS?</a></aside>
+</div>
+</body>
+</html>

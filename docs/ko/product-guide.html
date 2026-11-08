@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>제품·시스템 위협 모델 · OT TMT 템플릿</title>
+<meta name="description" content="제품·시스템 위협 모델# OT Product and System 템플릿으로 IEC 62443-4-2 구성요소(PLC, 게이트웨이, HMI 소프트웨어)나 IEC 62443-3-3 시스템(제어 시스템 솔루션)을 모델링하는 절차입니다. 1 범위→2 그리기→3 속성→4 앵커→5 생성→6 검토→">
+<link rel="alternate" hreflang="en" href="../product-guide.html">
+<link rel="alternate" hreflang="ko" href="product-guide.html">
+<link rel="icon" href="../assets/favicon.svg">
+<link rel="stylesheet" href="../assets/style.css">
+<script src="../assets/app.js"></script>
+<script src="../assets/search-ko.js" defer></script>
+</head>
+<body data-base="">
+<header class="topbar">
+  <button class="iconbtn menubtn" id="menu" aria-label="메뉴"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+  <a class="brand" href="index.html"><svg width="28" height="28" viewBox="0 0 32 32" aria-hidden="true"><rect x="1" y="1" width="30" height="30" rx="8" fill="currentColor" opacity=".12"/><path d="M16 5l9 4v6.5c0 5.4-3.7 9.6-9 11.5-5.3-1.9-9-6.1-9-11.5V9z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/><circle cx="12" cy="15" r="2" fill="currentColor"/><circle cx="20" cy="15" r="2" fill="currentColor"/><path d="M14 15h4M16 15v5" stroke="currentColor" stroke-width="2"/></svg><span class="full">OT TMT 템플릿</span><small>IEC 62443 위협 모델링</small></a>
+  <span class="spacer"></span>
+  <div class="search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg><input id="q" type="search" placeholder="문서 검색  /" aria-label="문서 검색" autocomplete="off"><div class="results" id="results" data-empty="검색 결과가 없습니다"></div></div>
+  <span class="lang"><a href="../product-guide.html" hreflang="en">EN</a><a href="product-guide.html" class="on" hreflang="ko">한국어</a></span>
+  <button class="iconbtn" id="theme" title="밝은/어두운 테마 전환" aria-label="밝은/어두운 테마 전환"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></button>
+  
+</header>
+<div class="layout">
+<nav class="sidebar"><h4>시작하기</h4><a href="index.html">개요</a><a href="threat-modeling.html">위협 모델링 기초</a><a href="getting-started.html">설치 및 빠른 시작</a><h4>가이드</h4><a href="using-tmt.html">Microsoft TMT 사용법</a><a href="product-guide.html" class="on">제품·시스템 위협 모델</a><a href="plant-guide.html">플랜트·사이트 위험 평가</a><a href="review.html">위협 검토와 위험 평가</a><h4>개념</h4><a href="how-threats-work.html">위협이 생성되는 방식</a><a href="properties.html">속성</a><h4>참조</h4><a href="threats.html">위협 카탈로그</a><a href="stencils.html">스텐실</a><a href="examples.html">예제</a><h4>고급</h4><a href="tools.html">명령줄 도구</a><a href="customise.html">사용자 정의와 재빌드</a><h4>도움말</h4><a href="faq.html">문제 해결 및 FAQ</a><a href="changelog.html">버전 및 라이선스</a></nav>
+<main><article class="doc">
+<h1 id="제품시스템-위협-모델">제품·시스템 위협 모델<a class="headerlink" href="#제품시스템-위협-모델" title="Permanent link">#</a></h1>
+<p class="lede">OT Product and System 템플릿으로 IEC 62443-4-2 <b>구성요소</b>(PLC, 게이트웨이, HMI 소프트웨어)나 IEC 62443-3-3 <b>시스템</b>(제어 시스템 솔루션)을 모델링하는 절차입니다.</p>
+
+<div class="flow"><span>1 범위</span><i>→</i><span>2 그리기</span><i>→</i><span>3 속성</span><i>→</i><span>4 앵커</span><i>→</i><span>5 생성</span><i>→</i><span>6 검토</span><i>→</i><span>7 요구사항</span><i>→</i><span>8 보고와 유지</span></div>
+
+<h2 id="1-범위와-가정">1. 범위와 가정<a class="headerlink" href="#1-범위와-가정" title="Permanent link">#</a></h2>
+<p>범위에 포함되는 것(제품, 인터페이스, 개발·업데이트 절차), 의도된 사용 방식, 그리고 가정을 적습니다. 예: "SL-T 2 영역의 잠긴 캐비닛에 설치". 이 내용은 <em>File &gt; Threat Model Information</em>에 기록합니다.</p>
+<h2 id="2-다이어그램-그리기">2. 다이어그램 그리기<a class="headerlink" href="#2-다이어그램-그리기" title="Permanent link">#</a></h2>
+<h3 id="구성요소-모델-iec-62443-4-2">구성요소 모델 (IEC 62443-4-2)<a class="headerlink" href="#구성요소-모델-iec-62443-4-2" title="Permanent link">#</a></h3>
+<ul>
+<li>제품을 <strong>Component or Device Boundary</strong>로 감쌉니다.</li>
+<li>경계 안에서 제품을 기능별로 나눕니다: 런타임, 웹 인터페이스, 업데이트 서비스, 키 저장소, 펌웨어 이미지.</li>
+<li>컨테이너, 커널·사용자 공간, 안전 파티션처럼 격리가 중요한 곳은 <strong>Process or Privilege Boundary</strong>로 기능을 나눕니다.</li>
+<li>경계 밖에는 제품과 통신하는 모든 대상을 둡니다: 엔지니어, 운전원, 폴링하는 PLC, 클라우드, USB 메모리.</li>
+</ul>
+<h3 id="시스템-모델-iec-62443-3-3">시스템 모델 (IEC 62443-3-3)<a class="headerlink" href="#시스템-모델-iec-62443-3-3" title="Permanent link">#</a></h3>
+<ul>
+<li>영역마다 <strong>IEC 62443 Security Zone</strong>을 하나씩 그립니다. 필요하면 <strong>Safety Zone SIS</strong>, <strong>Industrial DMZ Level 3.5</strong>, <strong>Enterprise or IT Zone</strong>을 추가합니다. 각 영역에 Purdue 수준과 영역 SL-T를 설정합니다.</li>
+<li>실제로 존재하는 흐름으로만 영역을 연결합니다. 영역 사이 경로에는 <strong>IEC 62443 Conduit</strong>와 <strong>Internet or Untrusted Network Boundary</strong> 선을 씁니다.</li>
+<li>각 장치에 맞는 스텐실을 고릅니다. IEC 62443-4-2 구성요소 유형(EDR, HDR, NDR, SAR)은 스텐실이 고정합니다.</li>
+</ul>
+<h3 id="공통">공통<a class="headerlink" href="#공통" title="Permanent link">#</a></h3>
+<p>제품 쪽으로 <strong>Software Supply and Build Pipeline</strong> 흐름 하나와 함께 <strong>Product Supplier and Development Environment</strong>를 추가합니다. 빌드·코드 서명 위협이 정확히 한 번 나타납니다.</p>
+<h2 id="3-속성에-답하기">3. 속성에 답하기<a class="headerlink" href="#3-속성에-답하기" title="Permanent link">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>대상</th>
+<th>답할 내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>각 구성요소</td>
+<td>웹 인터페이스, 사용자 계정, 저장된 비밀정보, 현장 업데이트, 서드파티 코드, 디버그 포트, 물리적 노출, 무선, USB, 레거시 플랫폼</td>
+</tr>
+<tr>
+<td>각 흐름</td>
+<td>프로토콜 보안, 제어 명령, 안전 데이터, 비밀정보, 물리적 매체</td>
+</tr>
+<tr>
+<td>각 데이터 저장소</td>
+<td>민감 데이터, 제어에 중요한 데이터</td>
+</tr>
+</tbody>
+</table>
+<p>없는 기능에는 <strong>No</strong>로 답해 적용될 수 없는 위협을 없애세요. 소프트웨어 스텐실은 하드웨어 질문을 이미 <em>Not applicable</em>로 고정합니다. 모든 질문과 각 질문이 좌우하는 위협은 <a href="properties.html">속성</a>에 있습니다.</p>
+<h2 id="4-구성요소마다-앵커-흐름-하나">4. 구성요소마다 앵커 흐름 하나<a class="headerlink" href="#4-구성요소마다-앵커-흐름-하나" title="Permanent link">#</a></h2>
+<p>기본 비밀번호, 서명되지 않은 펌웨어, 로깅 부재 같은 구성요소 자체의 위협은 들어오는 흐름마다가 아니라 한 번만 나타나야 합니다.</p>
+<ul>
+<li>각 구성요소로 들어오는 흐름 하나(보통 가장 노출된 흐름)에 <strong>Threats on this Flow = All</strong>을 설정합니다.</li>
+<li>나머지 들어오는 흐름에는 <strong>Without component threats</strong>를 설정합니다.</li>
+</ul>
+<p><a href="tools.html">명령줄 도구</a>가 이 설정을 자동으로 해 주며, <code>check_model.py</code>는 빠진 곳을 알려 줍니다. 모두 <em>Auto</em>로 두면 일부 위협이 반복되는 1.x 방식으로 동작합니다. <a href="how-threats-work.html">위협이 생성되는 방식</a> 참조.</p>
+<h2 id="5-위협-생성">5. 위협 생성<a class="headerlink" href="#5-위협-생성" title="Permanent link">#</a></h2>
+<p><em>View &gt; Analysis View</em>로 전환합니다.</p>
+<h2 id="6-검토와-평가">6. 검토와 평가<a class="headerlink" href="#6-검토와-평가" title="Permanent link">#</a></h2>
+<p>모든 위협을 살펴봅니다. 적용되는지, 이미 무엇이 대응하는지 판단한 뒤 가능성과 영향을 평가합니다. <em>Relevant from SL</em>로 정렬하면 목표 SL이 요구하는 항목을 볼 수 있습니다. <a href="review.html">위협 검토와 위험 평가</a> 참조.</p>
+<h2 id="7-요구사항과-대응책">7. 요구사항과 대응책<a class="headerlink" href="#7-요구사항과-대응책" title="Permanent link">#</a></h2>
+<p>각 위협에는 이를 다루는 IEC 62443-4-2 구성요소 요구사항(CR, EDR, HDR, NDR, SAR)이나 3-3 시스템 요구사항(SR)이 적혀 있습니다. 이를 제품 요구사항, 시험 항목, 인증 증거로 활용하세요.</p>
+<div class="admonition tip">
+<p class="admonition-title">고정 ID</p>
+<p>OT-S01, OT-T23R 같은 위협 ID는 버전이 바뀌어도 변하지 않으므로 요구사항, 시험 보고서, 위험 등록부에서 참조할 수 있습니다.</p>
+</div>
+<h2 id="8-보고와-유지">8. 보고와 유지<a class="headerlink" href="#8-보고와-유지" title="Permanent link">#</a></h2>
+<p>전체 보고서를 만듭니다. <code>.tm7</code> 파일을 설계 문서와 함께 보관하세요. 인터페이스, 프로토콜, 업데이트 절차가 바뀌면 갱신하고, IEC 62443-4-1 실무 2(SR-2, 위협 모델)가 요구하는 대로 릴리스마다 검토합니다.</p>
+<nav class="pager"><a class="prev" href="using-tmt.html"><small>← 이전</small>Microsoft TMT 사용법</a><a class="next" href="plant-guide.html"><small>다음 →</small>플랜트·사이트 위험 평가</a></nav>
+<footer>OT TMT 템플릿 · MIT 라이선스 · Microsoft, MITRE, IEC와 제휴 관계가 없습니다.</footer>
+</article></main>
+<aside class="toc"><h5>이 페이지의 내용</h5><a href="#1-범위와-가정">1. 범위와 가정</a><a href="#2-다이어그램-그리기">2. 다이어그램 그리기</a><a class="l3" href="#구성요소-모델-iec-62443-4-2">구성요소 모델 (IEC 62443-4-2)</a><a class="l3" href="#시스템-모델-iec-62443-3-3">시스템 모델 (IEC 62443-3-3)</a><a class="l3" href="#공통">공통</a><a href="#3-속성에-답하기">3. 속성에 답하기</a><a href="#4-구성요소마다-앵커-흐름-하나">4. 구성요소마다 앵커 흐름 하나</a><a href="#5-위협-생성">5. 위협 생성</a><a href="#6-검토와-평가">6. 검토와 평가</a><a href="#7-요구사항과-대응책">7. 요구사항과 대응책</a><a href="#8-보고와-유지">8. 보고와 유지</a></aside>
+</div>
+</body>
+</html>

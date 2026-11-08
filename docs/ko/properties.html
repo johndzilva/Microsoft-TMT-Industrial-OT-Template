@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>속성 · OT TMT 템플릿</title>
+<meta name="description" content="속성# 속성은 TMT의 Element Properties 창에 있는 질문입니다. 답에 따라 나타나는 위협이 정해집니다. 속성의 동작 방식# 모든 속성은 Unknown에서 시작하며, 이 상태에서는 위협이 남습니다. 적용될 수 없는 위협은 No로 답해 없앱니다. 스텐실에 적용될 수 없거나 ">
+<link rel="alternate" hreflang="en" href="../properties.html">
+<link rel="alternate" hreflang="ko" href="properties.html">
+<link rel="icon" href="../assets/favicon.svg">
+<link rel="stylesheet" href="../assets/style.css">
+<script src="../assets/app.js"></script>
+<script src="../assets/search-ko.js" defer></script>
+</head>
+<body data-base="">
+<header class="topbar">
+  <button class="iconbtn menubtn" id="menu" aria-label="메뉴"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+  <a class="brand" href="index.html"><svg width="28" height="28" viewBox="0 0 32 32" aria-hidden="true"><rect x="1" y="1" width="30" height="30" rx="8" fill="currentColor" opacity=".12"/><path d="M16 5l9 4v6.5c0 5.4-3.7 9.6-9 11.5-5.3-1.9-9-6.1-9-11.5V9z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/><circle cx="12" cy="15" r="2" fill="currentColor"/><circle cx="20" cy="15" r="2" fill="currentColor"/><path d="M14 15h4M16 15v5" stroke="currentColor" stroke-width="2"/></svg><span class="full">OT TMT 템플릿</span><small>IEC 62443 위협 모델링</small></a>
+  <span class="spacer"></span>
+  <div class="search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg><input id="q" type="search" placeholder="문서 검색  /" aria-label="문서 검색" autocomplete="off"><div class="results" id="results" data-empty="검색 결과가 없습니다"></div></div>
+  <span class="lang"><a href="../properties.html" hreflang="en">EN</a><a href="properties.html" class="on" hreflang="ko">한국어</a></span>
+  <button class="iconbtn" id="theme" title="밝은/어두운 테마 전환" aria-label="밝은/어두운 테마 전환"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></button>
+  
+</header>
+<div class="layout">
+<nav class="sidebar"><h4>시작하기</h4><a href="index.html">개요</a><a href="threat-modeling.html">위협 모델링 기초</a><a href="getting-started.html">설치 및 빠른 시작</a><h4>가이드</h4><a href="using-tmt.html">Microsoft TMT 사용법</a><a href="product-guide.html">제품·시스템 위협 모델</a><a href="plant-guide.html">플랜트·사이트 위험 평가</a><a href="review.html">위협 검토와 위험 평가</a><h4>개념</h4><a href="how-threats-work.html">위협이 생성되는 방식</a><a href="properties.html" class="on">속성</a><h4>참조</h4><a href="threats.html">위협 카탈로그</a><a href="stencils.html">스텐실</a><a href="examples.html">예제</a><h4>고급</h4><a href="tools.html">명령줄 도구</a><a href="customise.html">사용자 정의와 재빌드</a><h4>도움말</h4><a href="faq.html">문제 해결 및 FAQ</a><a href="changelog.html">버전 및 라이선스</a></nav>
+<main><article class="doc">
+<h1 id="속성">속성<a class="headerlink" href="#속성" title="Permanent link">#</a></h1>
+<p class="lede">속성은 TMT의 Element Properties 창에 있는 질문입니다. 답에 따라 나타나는 위협이 정해집니다.</p>
+
+<h2 id="속성의-동작-방식">속성의 동작 방식<a class="headerlink" href="#속성의-동작-방식" title="Permanent link">#</a></h2>
+<ul>
+<li>모든 속성은 <strong>Unknown</strong>에서 시작하며, 이 상태에서는 위협이 남습니다. 적용될 수 없는 위협은 <strong>No</strong>로 답해 없앱니다.</li>
+<li>스텐실에 적용될 수 없거나 스텐실이 이미 답을 아는 속성은 고정되어 <strong>Predefined Static Attributes</strong> 아래에 회색으로 표시됩니다. 소프트웨어에는 디버그 포트, USB, 무선, 물리적 노출이 없습니다. 안전 제어기는 항상 안전 관련입니다. 무선 링크의 매체는 항상 Wireless입니다. HTTPS와 IPsec은 항상 무결성과 암호화를 제공합니다.</li>
+<li><strong>(record only)</strong> 표시가 있는 속성과 영역 속성은 모델을 기록할 뿐 위협을 바꾸지 않습니다. TMT 규칙은 흐름의 양 끝과 흐름 자체만 볼 수 있고, 주변 영역은 볼 수 없기 때문입니다.</li>
+<li>Microsoft 기본 스텐실(OS Process, SQL Database, HTTPS 등)도 그릴 수 있으며, OT 속성만 가집니다.</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">TMT 화면은 영어입니다</p>
+<p>속성 이름과 값(Unknown, Yes, No 등)은 TMT에 영어로 표시되므로 아래 표에서도 영어 그대로 적고, 의미는 한국어로 설명했습니다.</p>
+</div>
+<h2 id="한눈에-보기">한눈에 보기<a class="headerlink" href="#한눈에-보기" title="Permanent link">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>요소</th>
+<th>제품·시스템 템플릿</th>
+<th>플랜트 템플릿에서 추가</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>구성요소</strong></td>
+<td>구성요소 유형 · SL-T <em>(기록용)</em> · 안전 관련 · 영역 밖에서 접근 가능 · 웹 인터페이스 · 사용자 계정 · 자격 증명·키 저장 · 현장 업데이트 · 서드파티 구성요소 · 디버그 포트 · 물리적 노출 · 무선 · 이동식 매체 · 레거시 플랫폼 · 모델에 그려진 호스트에서 실행 · 평가 범위</td>
+<td>패치 상태 · 하드닝 · 악성코드 방지 · 공유 계정 · 모니터링 · 백업 복원 시험 · SL-C의 영역 SL-T 충족 · 최악 결과</td>
+</tr>
+<tr>
+<td><strong>데이터 흐름</strong></td>
+<td>프로토콜 보안 · 제어 명령 전달 · 안전 데이터 전달 · 비밀정보 전달 · 물리적 매체 · Threats on this Flow · 원본 저장소 위협 표시</td>
+<td>방화벽·도관 장치 통과 · 상시 연결</td>
+</tr>
+<tr>
+<td><strong>데이터 저장소</strong></td>
+<td>민감 데이터 · 제어에 중요한 데이터 · 평가 범위</td>
+<td>오프라인·불변 사본</td>
+</tr>
+<tr>
+<td><strong>외부 상호작용자</strong></td>
+<td>신뢰 수준 <em>(기록용)</em> · 평가 범위</td>
+<td>제3자·원격 접근 · 보안 교육</td>
+</tr>
+<tr>
+<td><strong>영역</strong></td>
+<td>Purdue 수준 · 영역 SL-T</td>
+<td>최악 결과 · 안전·환경 기능 · 물리적 접근 · SL-A</td>
+</tr>
+</tbody>
+</table>
+<h2 id="제품시스템-템플릿">제품·시스템 템플릿<a class="headerlink" href="#제품시스템-템플릿" title="Permanent link">#</a></h2>
+<p>마지막 열은 각 값이 <strong>추가</strong>하는 위협(그 값일 때만 생성됨) 또는 <strong>제거</strong>하는 위협입니다. ID를 누르면 위협 카탈로그에서 열립니다.</p>
+<h4>구성요소 및 자산 (프로세스)</h4>
+<table><thead><tr><th>속성 (TMT 표시 이름)</th><th>의미와 설정 방법</th><th>값</th><th>영향받는 위협</th></tr></thead><tbody>
+<tr><td><b>IEC 62443-4-2 Component Type</b></td><td>IEC 62443-4-2 구성요소 유형. 선택한 스텐실이 고정합니다(EDR 임베디드 장치, HDR 호스트 장치, NDR 네트워크 장치, SAR 소프트웨어 애플리케이션). 어떤 장치 유형별 위협이 적용될지 결정합니다. Generic Process에서만 직접 설정합니다.</td><td>Not Selected, EDR - Embedded device, HDR - Host device, NDR - Network device, SAR - Software application</td><td>스텐실을 통해: 장치 유형별 위협</td></tr>
+<tr><td><b>Security Level Target (SL-T IEC 62443) (record only)</b></td><td>구성요소가 충족해야 하는 보안 수준(SL-T). 기록용: 영역 또는 제품 요구사항에서 가져오며, 생성되는 위협에는 영향을 주지 않습니다.</td><td>Not Selected, SL 1, SL 2, SL 3, SL 4</td><td>없음 (기록용)</td></tr>
+<tr><td><b>Performs Safety-Related Function (SIS or SIL)</b></td><td>구성요소가 안전 기능을 수행하거나 보호하면 Yes (SIS 로직 솔버, 안전 I/O, 위험을 일으킬 수 있는 장치). 안전 관련 위협이 추가됩니다.</td><td>Unknown, Yes, No</td><td><b>Yes</b>: 추가 <a href="threats.html#OT-T10">OT-T10</a>, <a href="threats.html#OT-E04">OT-E04</a>, <a href="threats.html#OT-E05">OT-E05</a>; 제거 <a href="threats.html#OT-T04">OT-T04</a></td></tr>
+<tr><td><b>Reachable from Outside its Zone (remote or vendor access)</b></td><td>VPN, 원격 데스크톱, 벤더 연결 등으로 자기 영역 밖에서 접근할 수 있으면 Yes.</td><td>Unknown, Yes, No</td><td><b>Yes</b>: 추가 <a href="threats.html#OT-S06">OT-S06</a></td></tr>
+<tr><td><b>Has Web or HTTP(S) Management Interface</b></td><td>웹 또는 HTTP(S) 관리·진단 인터페이스가 있으면 Yes (평소 꺼져 있어도 해당).</td><td>Unknown, Yes, No</td><td><b>Yes</b>: 추가 <a href="threats.html#OT-E09">OT-E09</a>, <a href="threats.html#OT-S03">OT-S03</a>, <a href="threats.html#OT-I07">OT-I07</a></td></tr>
+<tr><td><b>Has Human User Accounts or Login</b></td><td>사람이 로그인하면 Yes (로컬 계정, 도메인 계정, PIN). 사람 로그인이 전혀 없으면 No로 설정하며, 비밀번호 관련 위협이 제거됩니다.</td><td>Unknown, Yes, No</td><td><b>Unknown</b>: 추가 <a href="threats.html#OT-E06">OT-E06</a>, <a href="threats.html#OT-S13">OT-S13</a><br><b>Yes</b>: 추가 <a href="threats.html#OT-E06">OT-E06</a>, <a href="threats.html#OT-S13">OT-S13</a><br><b>No</b>: 제거 <a href="threats.html#OT-S04">OT-S04</a>, <a href="threats.html#OT-S05">OT-S05</a></td></tr>
+<tr><td><b>Stores Credentials Keys or Certificates</b></td><td>비밀번호, 키, 인증서를 저장하면 Yes (TLS, VPN, 사용자 로그인 등). No이면 키 추출 및 약한 암호 위협이 제거됩니다.</td><td>Unknown, Yes, No</td><td><b>No</b>: 제거 <a href="threats.html#OT-I05">OT-I05</a>, <a href="threats.html#OT-I08">OT-I08</a></td></tr>
+<tr><td><b>Firmware or Software Updatable in the Field</b></td><td>설치 후 펌웨어나 소프트웨어를 업데이트할 수 있으면 Yes. No이면 펌웨어 및 업데이트 위협이 제거됩니다.</td><td>Unknown, Yes, No</td><td><b>No</b>: 제거 <a href="threats.html#OT-T06">OT-T06</a>, <a href="threats.html#OT-D07">OT-D07</a></td></tr>
+<tr><td><b>Uses Third-Party or Open-Source Components</b></td><td>서드파티 또는 오픈소스 소프트웨어(RTOS, 프로토콜 스택, 라이브러리)를 포함하면 Yes. 거의 모든 제품이 해당합니다.</td><td>Unknown, Yes, No</td><td><b>No</b>: 제거 <a href="threats.html#OT-T17">OT-T17</a></td></tr>
+<tr><td><b>Physical Debug or Service Ports (JTAG UART USB console)</b></td><td>하드웨어에 JTAG, UART 콘솔, USB 서비스 또는 테스트 인터페이스가 있으면 Yes. No이면 디버그 인터페이스 위협이 제거됩니다. 자체 하드웨어가 없는 소프트웨어는 Not applicable (소프트웨어 스텐실에서 고정).</td><td>Unknown, Yes, No, Not applicable</td><td><b>No</b>: 제거 <a href="threats.html#OT-E03">OT-E03</a></td></tr>
+<tr><td><b>Installed in Physically Accessible or Unattended Location</b></td><td>권한 없는 사람이 접근할 수 있는 장소(현장 캐비닛, 원격·무인 사이트, 개방된 플랜트 구역)에 있으면 Yes. 소프트웨어는 Not applicable이며, 물리적 노출은 실행되는 호스트에 속합니다.</td><td>Unknown, Yes, No, Not applicable</td><td><b>No</b>: 제거 <a href="threats.html#OT-T08">OT-T08</a></td></tr>
+<tr><td><b>Has Wireless Interface (Wi-Fi BT ISA100 WirelessHART cellular)</b></td><td>Wi-Fi, Bluetooth, WirelessHART, ISA100, 셀룰러 등 무선 기능이 있으면 Yes. 소프트웨어는 Not applicable.</td><td>Unknown, Yes, No, Not applicable</td><td><b>Yes</b>: 추가 <a href="threats.html#OT-S07">OT-S07</a></td></tr>
+<tr><td><b>Accepts Removable Media (USB SD card)</b></td><td>USB 드라이브, SD 카드 등 이동식 매체를 받으면 Yes. 소프트웨어는 Not applicable.</td><td>Unknown, Yes, No, Not applicable</td><td><b>Yes</b>: 추가 <a href="threats.html#OT-T22">OT-T22</a></td></tr>
+<tr><td><b>Legacy or Unsupported Platform (OS firmware or runtime)</b></td><td>벤더 지원이 끝난 운영체제, 펌웨어 또는 런타임에서 실행되면 Yes (예: Windows 7, 구형 VxWorks, 지원 종료된 Java·.NET 런타임).</td><td>Unknown, Yes, No</td><td><b>No</b>: 제거 <a href="threats.html#OT-E07">OT-E07</a></td></tr>
+<tr><td><b>Runs on a Host Shown in the Model (host threats stay on the host)</b></td><td>소프트웨어 애플리케이션 전용. 실행되는 호스트가 모델에 별도 구성요소로 그려져 있으면 Yes. 그러면 호스트 수준 위협(악성코드, OS 하드닝, 랜섬웨어)은 호스트에만 남고 각 애플리케이션에 반복되지 않습니다. 장치 스텐실에서는 Not applicable.</td><td>Unknown, Yes, No, Not applicable</td><td><b>Yes</b>: 제거 <a href="threats.html#OT-T14">OT-T14</a>, <a href="threats.html#OT-D06">OT-D06</a>, <a href="threats.html#OT-E07">OT-E07</a>, <a href="threats.html#OT-E22">OT-E22</a></td></tr>
+<tr><td><b>Assessment Scope</b></td><td>In scope: 여기서 평가합니다. Supplier evidence: 평가하지만 통제는 공급업체의 인증서나 문서로 제공됩니다(위협은 남기고 증거를 대응책으로 기록). Out of scope: 이 요소로 들어오는 흐름에 위협을 생성하지 않습니다.</td><td>In scope, Supplier evidence, Out of scope</td><td>Out of scope: 이 요소로 들어오는 흐름의 모든 OT 위협 제거</td></tr>
+</tbody></table>
+<h4>데이터 흐름</h4>
+<table><thead><tr><th>속성 (TMT 표시 이름)</th><th>의미와 설정 방법</th><th>값</th><th>영향받는 위협</th></tr></thead><tbody>
+<tr><td><b>Protocol Security in Use</b></td><td>가장 중요한 흐름 속성. None: 인증·암호화 없음(Modbus, SA 없는 DNP3, 보안 모드 None인 OPC UA). Integrity only: 메시지는 인증·서명되지만 읽을 수 있음. Integrity and encryption: 인증과 암호화(TLS, OPC UA SignAndEncrypt, IPsec).</td><td>Unknown, None, Integrity only, Integrity and encryption</td><td><b>Unknown</b>: 추가 <a href="threats.html#OT-I02">OT-I02</a>, <a href="threats.html#OT-T02">OT-T02</a>, <a href="threats.html#OT-E20">OT-E20</a>, <a href="threats.html#OT-I15">OT-I15</a><br><b>None</b>: 추가 <a href="threats.html#OT-I02">OT-I02</a>, <a href="threats.html#OT-T02">OT-T02</a>, <a href="threats.html#OT-E20">OT-E20</a>, <a href="threats.html#OT-I15">OT-I15</a><br><b>Integrity only</b>: 추가 <a href="threats.html#OT-I02">OT-I02</a>; 제거 <a href="threats.html#OT-T01">OT-T01</a><br><b>Integrity and encryption</b>: 제거 <a href="threats.html#OT-T01">OT-T01</a>, <a href="threats.html#OT-I01">OT-I01</a></td></tr>
+<tr><td><b>Carries Control Commands Setpoints or Logic</b></td><td>공정이나 장치의 동작을 바꾸는 명령, 설정값, 로직, 구성을 전달하면 Yes. 상태나 보고서 같은 읽기 전용 데이터는 No.</td><td>Unknown, Yes, No</td><td><b>Unknown</b>: 추가 <a href="threats.html#OT-T02">OT-T02</a>, <a href="threats.html#OT-T03">OT-T03</a>, <a href="threats.html#OT-T04">OT-T04</a><br><b>Yes</b>: 추가 <a href="threats.html#OT-T02">OT-T02</a>, <a href="threats.html#OT-T03">OT-T03</a>, <a href="threats.html#OT-T04">OT-T04</a>, <a href="threats.html#OT-D14">OT-D14</a></td></tr>
+<tr><td><b>Carries Safety-Function Data</b></td><td>안전 기능 데이터(트립 신호, 안전 프로토콜 프레임)를 전달하면 Yes.</td><td>Unknown, Yes, No</td><td><b>Yes</b>: 추가 <a href="threats.html#OT-T11">OT-T11</a>, <a href="threats.html#OT-D14">OT-D14</a>; 제거 <a href="threats.html#OT-T01">OT-T01</a>, <a href="threats.html#OT-T02">OT-T02</a></td></tr>
+<tr><td><b>Carries Credentials Keys or Sensitive IP</b></td><td>비밀번호, 키, 민감한 지적재산(로그인, 프로젝트 다운로드 등)을 전달하면 Yes.</td><td>Unknown, Yes, No</td><td><b>Unknown</b>: 추가 <a href="threats.html#OT-I02">OT-I02</a><br><b>Yes</b>: 추가 <a href="threats.html#OT-I02">OT-I02</a></td></tr>
+<tr><td><b>Physical Medium</b></td><td>흐름의 물리적 전달 방식. Cellular, Internet or WAN은 신뢰할 수 없는 네트워크 위협, Wireless는 무선 위협, Serial or fieldbus는 비인가 마스터 위협, Removable media는 USB·임시 장치 위협을 추가합니다. Hardwired signal(4-20 mA, 디지털 I/O)과 Local operator input(키패드, 터치 패널)은 네트워크 채널이 아니므로 네트워크 위협 대신 배선 위협이 적용됩니다.</td><td>Unknown, Wired Ethernet, Serial or fieldbus, Wireless, Cellular, Internet or WAN, Removable media or file transfer, Hardwired signal, Local operator input</td><td><b>Serial or fieldbus</b>: 추가 <a href="threats.html#OT-S02">OT-S02</a><br><b>Wireless</b>: 추가 <a href="threats.html#OT-I10">OT-I10</a>, <a href="threats.html#OT-D09">OT-D09</a>; 제거 <a href="threats.html#OT-I01">OT-I01</a><br><b>Cellular</b>: 추가 <a href="threats.html#OT-E15">OT-E15</a><br><b>Internet or WAN</b>: 추가 <a href="threats.html#OT-E15">OT-E15</a><br><b>Removable media or file transfer</b>: 추가 <a href="threats.html#OT-T22">OT-T22</a>; 제거 <a href="threats.html#OT-S01">OT-S01</a>, <a href="threats.html#OT-T01">OT-T01</a>, <a href="threats.html#OT-I01">OT-I01</a>, <a href="threats.html#OT-I02">OT-I02</a>, <a href="threats.html#OT-T02">OT-T02</a>, <a href="threats.html#OT-D01">OT-D01</a>, <a href="threats.html#OT-R01">OT-R01</a>, <a href="threats.html#OT-E01">OT-E01</a>, <a href="threats.html#OT-I03">OT-I03</a>, <a href="threats.html#OT-E02">OT-E02</a>, <a href="threats.html#OT-D02">OT-D02</a>, <a href="threats.html#OT-I04">OT-I04</a>, <a href="threats.html#OT-T06">OT-T06</a>, <a href="threats.html#OT-T07">OT-T07</a>, <a href="threats.html#OT-D03">OT-D03</a>, <a href="threats.html#OT-D04">OT-D04</a>, <a href="threats.html#OT-T08">OT-T08</a>, <a href="threats.html#OT-E03">OT-E03</a>, <a href="threats.html#OT-I05">OT-I05</a>, <a href="threats.html#OT-S02">OT-S02</a>, <a href="threats.html#OT-T11">OT-T11</a>, <a href="threats.html#OT-E06">OT-E06</a>, <a href="threats.html#OT-T14">OT-T14</a>, <a href="threats.html#OT-D06">OT-D06</a>, <a href="threats.html#OT-E07">OT-E07</a>, <a href="threats.html#OT-I07">OT-I07</a>, <a href="threats.html#OT-S04">OT-S04</a>, <a href="threats.html#OT-S05">OT-S05</a>, <a href="threats.html#OT-E11">OT-E11</a>, <a href="threats.html#OT-E12">OT-E12</a>, <a href="threats.html#OT-T17">OT-T17</a>, <a href="threats.html#OT-T18">OT-T18</a>, <a href="threats.html#OT-T19">OT-T19</a>, <a href="threats.html#OT-D07">OT-D07</a>, <a href="threats.html#OT-I08">OT-I08</a>, <a href="threats.html#OT-E15">OT-E15</a>, <a href="threats.html#OT-I10">OT-I10</a>, <a href="threats.html#OT-D09">OT-D09</a>, <a href="threats.html#OT-S09">OT-S09</a>, <a href="threats.html#OT-R06">OT-R06</a>, <a href="threats.html#OT-D14">OT-D14</a>, <a href="threats.html#OT-I15">OT-I15</a>, <a href="threats.html#OT-E22">OT-E22</a>, <a href="threats.html#OT-T29">OT-T29</a>, <a href="threats.html#OT-S13">OT-S13</a><br><b>Hardwired signal</b>: 추가 <a href="threats.html#OT-T30">OT-T30</a>; 제거 <a href="threats.html#OT-S01">OT-S01</a>, <a href="threats.html#OT-T01">OT-T01</a>, <a href="threats.html#OT-I01">OT-I01</a>, <a href="threats.html#OT-I02">OT-I02</a>, <a href="threats.html#OT-T02">OT-T02</a>, <a href="threats.html#OT-D01">OT-D01</a>, <a href="threats.html#OT-R01">OT-R01</a>, <a href="threats.html#OT-E01">OT-E01</a>, <a href="threats.html#OT-I03">OT-I03</a>, <a href="threats.html#OT-E02">OT-E02</a>, <a href="threats.html#OT-D02">OT-D02</a>, <a href="threats.html#OT-I04">OT-I04</a>, <a href="threats.html#OT-T06">OT-T06</a>, <a href="threats.html#OT-T07">OT-T07</a>, <a href="threats.html#OT-D03">OT-D03</a>, <a href="threats.html#OT-D04">OT-D04</a>, <a href="threats.html#OT-T08">OT-T08</a>, <a href="threats.html#OT-E03">OT-E03</a>, <a href="threats.html#OT-I05">OT-I05</a>, <a href="threats.html#OT-S02">OT-S02</a>, <a href="threats.html#OT-T11">OT-T11</a>, <a href="threats.html#OT-E06">OT-E06</a>, <a href="threats.html#OT-T14">OT-T14</a>, <a href="threats.html#OT-D06">OT-D06</a>, <a href="threats.html#OT-E07">OT-E07</a>, <a href="threats.html#OT-I07">OT-I07</a>, <a href="threats.html#OT-S04">OT-S04</a>, <a href="threats.html#OT-S05">OT-S05</a>, <a href="threats.html#OT-E11">OT-E11</a>, <a href="threats.html#OT-E12">OT-E12</a>, <a href="threats.html#OT-T17">OT-T17</a>, <a href="threats.html#OT-T18">OT-T18</a>, <a href="threats.html#OT-T19">OT-T19</a>, <a href="threats.html#OT-D07">OT-D07</a>, <a href="threats.html#OT-I08">OT-I08</a>, <a href="threats.html#OT-E15">OT-E15</a>, <a href="threats.html#OT-I10">OT-I10</a>, <a href="threats.html#OT-D09">OT-D09</a>, <a href="threats.html#OT-S09">OT-S09</a>, <a href="threats.html#OT-R06">OT-R06</a>, <a href="threats.html#OT-D14">OT-D14</a>, <a href="threats.html#OT-I15">OT-I15</a>, <a href="threats.html#OT-E22">OT-E22</a>, <a href="threats.html#OT-T29">OT-T29</a>, <a href="threats.html#OT-S13">OT-S13</a><br><b>Local operator input</b>: 제거 <a href="threats.html#OT-S01">OT-S01</a>, <a href="threats.html#OT-T01">OT-T01</a>, <a href="threats.html#OT-I01">OT-I01</a>, <a href="threats.html#OT-I02">OT-I02</a>, <a href="threats.html#OT-T02">OT-T02</a>, <a href="threats.html#OT-D01">OT-D01</a>, <a href="threats.html#OT-R01">OT-R01</a>, <a href="threats.html#OT-E01">OT-E01</a>, <a href="threats.html#OT-I03">OT-I03</a>, <a href="threats.html#OT-E02">OT-E02</a>, <a href="threats.html#OT-D02">OT-D02</a>, <a href="threats.html#OT-I04">OT-I04</a>, <a href="threats.html#OT-T06">OT-T06</a>, <a href="threats.html#OT-T07">OT-T07</a>, <a href="threats.html#OT-D03">OT-D03</a>, <a href="threats.html#OT-D04">OT-D04</a>, <a href="threats.html#OT-T08">OT-T08</a>, <a href="threats.html#OT-E03">OT-E03</a>, <a href="threats.html#OT-I05">OT-I05</a>, <a href="threats.html#OT-S02">OT-S02</a>, <a href="threats.html#OT-T11">OT-T11</a>, <a href="threats.html#OT-E06">OT-E06</a>, <a href="threats.html#OT-T14">OT-T14</a>, <a href="threats.html#OT-D06">OT-D06</a>, <a href="threats.html#OT-E07">OT-E07</a>, <a href="threats.html#OT-I07">OT-I07</a>, <a href="threats.html#OT-S04">OT-S04</a>, <a href="threats.html#OT-S05">OT-S05</a>, <a href="threats.html#OT-E11">OT-E11</a>, <a href="threats.html#OT-E12">OT-E12</a>, <a href="threats.html#OT-T17">OT-T17</a>, <a href="threats.html#OT-T18">OT-T18</a>, <a href="threats.html#OT-T19">OT-T19</a>, <a href="threats.html#OT-D07">OT-D07</a>, <a href="threats.html#OT-I08">OT-I08</a>, <a href="threats.html#OT-E15">OT-E15</a>, <a href="threats.html#OT-I10">OT-I10</a>, <a href="threats.html#OT-D09">OT-D09</a>, <a href="threats.html#OT-S09">OT-S09</a>, <a href="threats.html#OT-R06">OT-R06</a>, <a href="threats.html#OT-D14">OT-D14</a>, <a href="threats.html#OT-I15">OT-I15</a>, <a href="threats.html#OT-E22">OT-E22</a>, <a href="threats.html#OT-T29">OT-T29</a>, <a href="threats.html#OT-S13">OT-S13</a></td></tr>
+<tr><td><b>Threats on this Flow</b></td><td>이 흐름에 표시할 위협. Auto: 채널·경로 위협, 그리고 흐름이 신뢰 경계를 넘거나 외부 상호작용자에서 오면 대상의 구성요소 위협(v1.x 동작). All: 대상의 구성요소 위협까지 모두. Without component threats: 채널·경로 위협만(구성요소로 들어오는 나머지 흐름용). Component threats only: 구성요소 위협만 표시할 흐름. Path threats only: 이미 표시된 채널과 병렬인 흐름. None: 표시 안 함(맥락 설명용 흐름). 각 구성요소로 들어오는 흐름 하나에 All, 나머지에 Without component threats를 설정하면 구성요소 위협이 정확히 한 번 나타납니다.</td><td>Auto, All, Without component threats, Component threats only, Path threats only, None</td><td>흐름에 표시할 위협 계열을 결정; None이면 모든 OT 위협 제거</td></tr>
+<tr><td><b>Show Data Store Threats for Source Store</b></td><td>읽기만 하는(들어오는 흐름이 없는) 데이터 저장소용: 나가는 흐름 하나에 Yes로 설정하면 그 저장소의 저장 데이터 위협이 생성됩니다(ID가 R로 끝남).</td><td>No, Yes</td><td>Yes: 원본 저장소의 저장 데이터 위협 추가 (ID가 R로 끝남)</td></tr>
+</tbody></table>
+<h4>외부 상호작용자</h4>
+<table><thead><tr><th>속성 (TMT 표시 이름)</th><th>의미와 설정 방법</th><th>값</th><th>영향받는 위협</th></tr></thead><tbody>
+<tr><td><b>Trust Level (record only)</b></td><td>사람이나 시스템을 얼마나 신뢰하는지. 기록용: 생성되는 위협에 영향을 주지 않습니다.</td><td>Unknown, Trusted internal, Semi-trusted third party, Untrusted</td><td>없음 (기록용)</td></tr>
+<tr><td><b>Interactor Assessment Scope</b></td><td>구성요소의 Assessment Scope와 같습니다. Out of scope이면 이 상호작용자로 들어오는 흐름의 OT 위협이 제거됩니다.</td><td>In scope, Supplier evidence, Out of scope</td><td>Out of scope: 이 요소로 들어오는 흐름의 모든 OT 위협 제거</td></tr>
+</tbody></table>
+<h4>데이터 저장소</h4>
+<table><thead><tr><th>속성 (TMT 표시 이름)</th><th>의미와 설정 방법</th><th>값</th><th>영향받는 위협</th></tr></thead><tbody>
+<tr><td><b>Contains Sensitive Data (credentials keys IP personal data)</b></td><td>자격 증명, 키, 지적재산, 개인정보를 보관하면 Yes.</td><td>Unknown, Yes, No</td><td><b>Yes</b>: 추가 <a href="threats.html#OT-I11">OT-I11</a>, <a href="threats.html#OT-I11R">OT-I11R</a><br><b>No</b>: 제거 <a href="threats.html#OT-I12">OT-I12</a>, <a href="threats.html#OT-I12R">OT-I12R</a></td></tr>
+<tr><td><b>Contains Control-Critical Data (logic setpoints recipes config)</b></td><td>공정이 의존하는 로직, 설정값, 레시피, 구성을 보관하면 Yes.</td><td>Unknown, Yes, No</td><td><b>Yes</b>: 추가 <a href="threats.html#OT-T23">OT-T23</a>, <a href="threats.html#OT-T23R">OT-T23R</a></td></tr>
+<tr><td><b>Data Store Assessment Scope</b></td><td>구성요소의 Assessment Scope와 같습니다. Out of scope이면 이 저장소로 들어오는(읽기 전용 저장소는 나가는) 흐름의 OT 위협이 제거됩니다.</td><td>In scope, Supplier evidence, Out of scope</td><td>Out of scope: 이 요소로 들어오는 흐름의 모든 OT 위협 제거</td></tr>
+</tbody></table>
+<h4>영역 (경계 상자)</h4>
+<table><thead><tr><th>속성 (TMT 표시 이름)</th><th>의미와 설정 방법</th><th>값</th><th>영향받는 위협</th></tr></thead><tbody>
+<tr><td><b>Purdue or ISA-95 Level</b></td><td>영역의 Purdue / ISA-95 수준. 기록용이며, TMT는 영역 속성을 위협 규칙에 사용할 수 없습니다.</td><td>Not Selected, Level 0 - Process, Level 1 - Basic control, Level 2 - Supervisory, Level 3 - Site operations, Industrial DMZ, Level 4 and 5 - Enterprise, Cloud or external</td><td>없음 (기록용)</td></tr>
+<tr><td><b>Zone Security Level Target (SL-T)</b></td><td>IEC 62443-3-2 위험 평가로 정한 영역의 목표 보안 수준(SL-T). 기록용.</td><td>Not Selected, SL 1, SL 2, SL 3, SL 4</td><td>없음 (기록용)</td></tr>
+</tbody></table>
+
+<h2 id="플랜트사이트-템플릿">플랜트·사이트 템플릿<a class="headerlink" href="#플랜트사이트-템플릿" title="Permanent link">#</a></h2>
+<p>플랜트 템플릿은 위의 속성을 모두 유지하고, 사이트 운영 방식에 관한 다음 질문을 추가합니다.</p>
+<h4>구성요소 및 자산 (프로세스)</h4>
+<table><thead><tr><th>속성 (TMT 표시 이름)</th><th>의미와 설정 방법</th><th>값</th><th>영향받는 위협</th></tr></thead><tbody>
+<tr><td><b>Patch Status</b></td><td>Up to date: 벤더 승인 최신 패치 설치됨. Patches pending: 알려진 패치 미설치. End of life or unpatchable: 더 이상 벤더 수정 없음. Unknown은 미패치로 간주합니다.</td><td>Unknown, Up to date, Patches pending, End of life or unpatchable</td><td><b>Unknown</b>: 추가 <a href="threats.html#PL-E06">PL-E06</a><br><b>Patches pending</b>: 추가 <a href="threats.html#PL-E06">PL-E06</a><br><b>End of life or unpatchable</b>: 추가 <a href="threats.html#PL-E07">PL-E07</a></td></tr>
+<tr><td><b>Hardened to Site Security Baseline</b></td><td>자산이 사이트 보안 기준에 맞게 구성되어 있으면 Yes (불필요한 서비스·포트·계정 제거, 벤더 하드닝 가이드 적용).</td><td>Unknown, Yes, No</td><td><b>Unknown</b>: 추가 <a href="threats.html#PL-E08">PL-E08</a><br><b>No</b>: 추가 <a href="threats.html#PL-E08">PL-E08</a></td></tr>
+<tr><td><b>Malware Protection or Application Allow-listing</b></td><td>악성코드 방지 또는 애플리케이션 허용 목록이 설치되어 유지되면 Yes. 이를 실행할 수 없는 장치(PLC, 드라이브)는 Not applicable.</td><td>Unknown, Yes, No, Not applicable</td><td><b>Unknown</b>: 추가 <a href="threats.html#PL-T04">PL-T04</a><br><b>No</b>: 추가 <a href="threats.html#PL-T04">PL-T04</a></td></tr>
+<tr><td><b>Shared or Generic Accounts in Use</b></td><td>기본, 공유 또는 일반 계정(&#x27;operator&#x27;, &#x27;admin&#x27; 등)으로 로그인하면 Yes.</td><td>Unknown, Yes, No</td><td><b>Unknown</b>: 추가 <a href="threats.html#PL-S03">PL-S03</a>, <a href="threats.html#PL-R02">PL-R02</a><br><b>Yes</b>: 추가 <a href="threats.html#PL-S03">PL-S03</a>, <a href="threats.html#PL-R02">PL-R02</a></td></tr>
+<tr><td><b>Logs or Traffic Monitored by Security Team</b></td><td>자산의 보안 이벤트를 수집하여 누군가 검토하거나, 네트워크 트래픽을 OT IDS로 감시하면 Yes.</td><td>Unknown, Yes, No</td><td><b>Unknown</b>: 추가 <a href="threats.html#PL-R01">PL-R01</a><br><b>No</b>: 추가 <a href="threats.html#PL-R01">PL-R01</a></td></tr>
+<tr><td><b>Backup Exists and Restore Tested</b></td><td>최신 백업이 있고 복원을 실제로 시험한 경우에만 Yes.</td><td>Unknown, Yes, No</td><td><b>Unknown</b>: 추가 <a href="threats.html#PL-D02">PL-D02</a><br><b>No</b>: 추가 <a href="threats.html#PL-D02">PL-D02</a></td></tr>
+<tr><td><b>Component Capability (SL-C) Meets Zone SL-T</b></td><td>자산의 능력 보안 수준(SL-C, 공급업체의 IEC 62443-4-2 인증서 또는 평가 기준)이 영역의 SL-T 이상이면 Yes.</td><td>Unknown, Yes, No</td><td><b>Unknown</b>: 추가 <a href="threats.html#PL-E09">PL-E09</a><br><b>No</b>: 추가 <a href="threats.html#PL-E09">PL-E09</a></td></tr>
+<tr><td><b>Worst-Case Consequence if Compromised</b></td><td>공격자가 이 자산을 장악했을 때 사이트 위험 매트릭스상 최악의 현실적 결과. Major 또는 Catastrophic이면 제어기에 위험 공정 상태 위협이 추가됩니다.</td><td>Not assessed, Negligible, Minor, Moderate, Major, Catastrophic</td><td><b>Not assessed</b>: 추가 <a href="threats.html#PL-T05">PL-T05</a><br><b>Major</b>: 추가 <a href="threats.html#PL-T05">PL-T05</a><br><b>Catastrophic</b>: 추가 <a href="threats.html#PL-T05">PL-T05</a></td></tr>
+</tbody></table>
+<h4>데이터 흐름</h4>
+<table><thead><tr><th>속성 (TMT 표시 이름)</th><th>의미와 설정 방법</th><th>값</th><th>영향받는 위협</th></tr></thead><tbody>
+<tr><td><b>Filtered by Firewall or Conduit Device</b></td><td>이 트래픽만 허용하는 방화벽, 데이터 다이오드 등 도관 장치를 통과하면 Yes. 영역 경계를 넘는 흐름에만 의미가 있습니다.</td><td>Unknown, Yes, No</td><td><b>Unknown</b>: 추가 <a href="threats.html#PL-E01">PL-E01</a><br><b>No</b>: 추가 <a href="threats.html#PL-E01">PL-E01</a></td></tr>
+<tr><td><b>Connection Is Permanent (not on demand)</b></td><td>연결이 항상 유지되면 Yes. 필요할 때만 연결되면 No.</td><td>Unknown, Yes, No</td><td><b>Unknown</b>: 추가 <a href="threats.html#PL-E05">PL-E05</a><br><b>Yes</b>: 추가 <a href="threats.html#PL-E05">PL-E05</a></td></tr>
+</tbody></table>
+<h4>외부 상호작용자</h4>
+<table><thead><tr><th>속성 (TMT 표시 이름)</th><th>의미와 설정 방법</th><th>값</th><th>영향받는 위협</th></tr></thead><tbody>
+<tr><td><b>Third Party or Remote Access</b></td><td>이 제3자나 원격 사용자가 접근하는 방식. On request approved and recorded: 필요할 때만 승인·기록 후 활성화. Always on or unsupervised: 언제든 연결 가능.</td><td>Unknown, On request approved and recorded, Always on or unsupervised, Not applicable</td><td><b>Unknown</b>: 추가 <a href="threats.html#PL-E05">PL-E05</a><br><b>Always on or unsupervised</b>: 추가 <a href="threats.html#PL-E05">PL-E05</a></td></tr>
+<tr><td><b>Security Awareness Training Completed</b></td><td>이 그룹이 OT 보안 인식 교육을 이수했으면 Yes.</td><td>Unknown, Yes, No</td><td><b>Unknown</b>: 추가 <a href="threats.html#PL-S05">PL-S05</a><br><b>No</b>: 추가 <a href="threats.html#PL-S05">PL-S05</a></td></tr>
+</tbody></table>
+<h4>데이터 저장소</h4>
+<table><thead><tr><th>속성 (TMT 표시 이름)</th><th>의미와 설정 방법</th><th>값</th><th>영향받는 위협</th></tr></thead><tbody>
+<tr><td><b>Offline or Immutable Copy Exists</b></td><td>백업 사본 중 하나 이상이 오프라인이거나 변경 불가능하여 랜섬웨어가 닿을 수 없으면 Yes.</td><td>Unknown, Yes, No</td><td><b>No</b>: 제거 <a href="threats.html#PL-D07">PL-D07</a></td></tr>
+</tbody></table>
+<h4>영역 (경계 상자)</h4>
+<table><thead><tr><th>속성 (TMT 표시 이름)</th><th>의미와 설정 방법</th><th>값</th><th>영향받는 위협</th></tr></thead><tbody>
+<tr><td><b>Worst-Case Consequence of Zone Compromise</b></td><td>영역 전체가 침해되었을 때 최악의 현실적 결과. SL-T 결정의 입력(IEC 62443-3-2 ZCR 5); 기록용.</td><td>Not assessed, Negligible, Minor, Moderate, Major, Catastrophic</td><td>없음 (기록용)</td></tr>
+<tr><td><b>Zone Contains Safety or Environmental Functions</b></td><td>영역에 안전 또는 환경 보호 기능이 있으면 Yes. 기록용.</td><td>Unknown, Yes, No</td><td>없음 (기록용)</td></tr>
+<tr><td><b>Physical Access to Zone</b></td><td>누가 영역에 물리적으로 접근할 수 있는지. 기록용이며, 위협에 반영하려면 자산에 Physically Exposed를 설정합니다.</td><td>Unknown, Controlled and monitored, Controlled, Uncontrolled or unattended</td><td>없음 (기록용)</td></tr>
+<tr><td><b>Achieved Security Level (SL-A)</b></td><td>영역이 현재 실제로 달성한 보안 수준(SL-A). SL-T와 비교하여 격차를 찾습니다. 기록용.</td><td>Not assessed, SL 0, SL 1, SL 2, SL 3, SL 4</td><td>없음 (기록용)</td></tr>
+</tbody></table>
+<nav class="pager"><a class="prev" href="how-threats-work.html"><small>← 이전</small>위협이 생성되는 방식</a><a class="next" href="threats.html"><small>다음 →</small>위협 카탈로그</a></nav>
+<footer>OT TMT 템플릿 · MIT 라이선스 · Microsoft, MITRE, IEC와 제휴 관계가 없습니다.</footer>
+</article></main>
+<aside class="toc"><h5>이 페이지의 내용</h5><a href="#속성의-동작-방식">속성의 동작 방식</a><a href="#한눈에-보기">한눈에 보기</a><a href="#제품시스템-템플릿">제품·시스템 템플릿</a><a href="#플랜트사이트-템플릿">플랜트·사이트 템플릿</a></aside>
+</div>
+</body>
+</html>

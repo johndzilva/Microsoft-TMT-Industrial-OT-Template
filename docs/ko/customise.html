@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>사용자 정의와 재빌드 · OT TMT 템플릿</title>
+<meta name="description" content="사용자 정의와 재빌드# 템플릿은 Python으로 생성되므로, 변경 사항을 검토하고 반복하고 병합하기 쉽습니다. 소스 파일# 파일 내용 elements.py 스텐실과 속성: Stencils 창과 Element Properties 창에 나타나는 것 threats.py 제품 위협: 텍스트, ">
+<link rel="alternate" hreflang="en" href="../customise.html">
+<link rel="alternate" hreflang="ko" href="customise.html">
+<link rel="icon" href="../assets/favicon.svg">
+<link rel="stylesheet" href="../assets/style.css">
+<script src="../assets/app.js"></script>
+<script src="../assets/search-ko.js" defer></script>
+</head>
+<body data-base="">
+<header class="topbar">
+  <button class="iconbtn menubtn" id="menu" aria-label="메뉴"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+  <a class="brand" href="index.html"><svg width="28" height="28" viewBox="0 0 32 32" aria-hidden="true"><rect x="1" y="1" width="30" height="30" rx="8" fill="currentColor" opacity=".12"/><path d="M16 5l9 4v6.5c0 5.4-3.7 9.6-9 11.5-5.3-1.9-9-6.1-9-11.5V9z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/><circle cx="12" cy="15" r="2" fill="currentColor"/><circle cx="20" cy="15" r="2" fill="currentColor"/><path d="M14 15h4M16 15v5" stroke="currentColor" stroke-width="2"/></svg><span class="full">OT TMT 템플릿</span><small>IEC 62443 위협 모델링</small></a>
+  <span class="spacer"></span>
+  <div class="search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg><input id="q" type="search" placeholder="문서 검색  /" aria-label="문서 검색" autocomplete="off"><div class="results" id="results" data-empty="검색 결과가 없습니다"></div></div>
+  <span class="lang"><a href="../customise.html" hreflang="en">EN</a><a href="customise.html" class="on" hreflang="ko">한국어</a></span>
+  <button class="iconbtn" id="theme" title="밝은/어두운 테마 전환" aria-label="밝은/어두운 테마 전환"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></button>
+  
+</header>
+<div class="layout">
+<nav class="sidebar"><h4>시작하기</h4><a href="index.html">개요</a><a href="threat-modeling.html">위협 모델링 기초</a><a href="getting-started.html">설치 및 빠른 시작</a><h4>가이드</h4><a href="using-tmt.html">Microsoft TMT 사용법</a><a href="product-guide.html">제품·시스템 위협 모델</a><a href="plant-guide.html">플랜트·사이트 위험 평가</a><a href="review.html">위협 검토와 위험 평가</a><h4>개념</h4><a href="how-threats-work.html">위협이 생성되는 방식</a><a href="properties.html">속성</a><h4>참조</h4><a href="threats.html">위협 카탈로그</a><a href="stencils.html">스텐실</a><a href="examples.html">예제</a><h4>고급</h4><a href="tools.html">명령줄 도구</a><a href="customise.html" class="on">사용자 정의와 재빌드</a><h4>도움말</h4><a href="faq.html">문제 해결 및 FAQ</a><a href="changelog.html">버전 및 라이선스</a></nav>
+<main><article class="doc">
+<h1 id="사용자-정의와-재빌드">사용자 정의와 재빌드<a class="headerlink" href="#사용자-정의와-재빌드" title="Permanent link">#</a></h1>
+<p class="lede">템플릿은 Python으로 생성되므로, 변경 사항을 검토하고 반복하고 병합하기 쉽습니다.</p>
+
+<h2 id="소스-파일">소스 파일<a class="headerlink" href="#소스-파일" title="Permanent link">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>파일</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>elements.py</code></td>
+<td>스텐실과 속성: Stencils 창과 Element Properties 창에 나타나는 것</td>
+</tr>
+<tr>
+<td><code>threats.py</code></td>
+<td>제품 위협: 텍스트, 규칙, 참조, 계열</td>
+</tr>
+<tr>
+<td><code>threats_plant.py</code></td>
+<td>플랜트 위협</td>
+</tr>
+<tr>
+<td><code>icons.py</code></td>
+<td>스텐실 아이콘 (<a href="https://tabler.io/icons">Tabler Icons</a>, MIT)</td>
+</tr>
+<tr>
+<td><code>build.py</code></td>
+<td><code>.tb7</code>을 만듭니다. 플랜트 템플릿은 <code>--plant</code></td>
+</tr>
+<tr>
+<td><code>validate.py</code></td>
+<td>TMT가 강제하는 규칙에 맞는지 <code>.tb7</code>을 점검합니다</td>
+</tr>
+<tr>
+<td><code>readme_properties.py</code></td>
+<td>속성 도움말 텍스트. 이 사이트의 표에 사용됩니다</td>
+</tr>
+<tr>
+<td><code>site/build_site.py</code></td>
+<td>이 웹사이트를 <code>docs/</code>에 만듭니다</td>
+</tr>
+</tbody>
+</table>
+<h2 id="재빌드">재빌드<a class="headerlink" href="#재빌드" title="Permanent link">#</a></h2>
+<p>필요 조건: Python 3, Pillow, 아이콘 렌더링용 Playwright와 Chromium. 그리고 TMT 설치 폴더의 <code>default.tb7</code>을 <code>source/</code>에 복사해야 합니다. Microsoft 기본 스텐실이 이 파일에서 옵니다.</p>
+<pre><code class="language-bash">cd source
+python build.py &quot;../OT Product and System Threat Template (IEC 62443).tb7&quot;
+python build.py --plant &quot;../OT Plant and Site Risk Assessment Template (IEC 62443).tb7&quot;
+python validate.py &quot;../OT Product and System Threat Template (IEC 62443).tb7&quot; default.tb7
+python validate.py &quot;../OT Plant and Site Risk Assessment Template (IEC 62443).tb7&quot; default.tb7
+python release_check.py &quot;../OT Product and System Threat Template (IEC 62443).tb7&quot; &quot;../OT Plant and Site Risk Assessment Template (IEC 62443).tb7&quot;
+cd ../site
+python build_site.py
+</code></pre>
+<h2 id="스텐실-추가">스텐실 추가<a class="headerlink" href="#스텐실-추가" title="Permanent link">#</a></h2>
+<p><code>elements.py</code>의 <code>STANDARD</code>에 추가하고 <code>icons.py</code>에서 아이콘을 지정합니다. 두 템플릿 모두에 나타납니다. 적용될 수 없거나 스텐실이 암시하는 속성이 있으면 고정값을 <code>STATIC</code>에 추가합니다.</p>
+<h2 id="위협-추가">위협 추가<a class="headerlink" href="#위협-추가" title="Permanent link">#</a></h2>
+<ol>
+<li><code>threats.py</code> 또는 <code>threats_plant.py</code>에 <code>add(...)</code> 항목을 추가합니다. 제목, 설명, 대응책, 포함·제외 규칙, ATT&amp;CK, IEC 참조, FR, SL을 넣습니다.</li>
+<li><code>FAM</code>에서 계열을 지정합니다. 계열 2, 3, 4, 8은 <em>Auto</em>일 때 노출된 흐름에만 표시할지도 정합니다(<code>GATED</code>).</li>
+<li>다시 빌드하고 <code>release_check.py</code>를 실행합니다. 계열이 없는 위협이 있으면 실패합니다.</li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">TMT가 강제하는 규칙</p>
+<p><code>validate.py</code>가 다음을 점검합니다.</p>
+<ul>
+<li>속성 표시 이름은 고유해야 합니다.</li>
+<li>스텐실 이름에는 영문자, 숫자, 공백, 밑줄, 마침표만 씁니다.</li>
+<li>규칙에 쓰는 속성 값은 하이픈이나 쉼표 없는 평범한 단어여야 합니다.</li>
+<li>영역 스텐실은 <code>BorderBoundary</code> 표현을 유지합니다.</li>
+</ul>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">ID는 바꾸지 마세요</p>
+<p>다른 사람들이 요구사항과 위험 등록부에서 위협 ID를 참조합니다. 새 ID를 추가하고, 번호를 다시 매기지 마세요.</p>
+</div>
+<h2 id="이-사이트-게시하기">이 사이트 게시하기<a class="headerlink" href="#이-사이트-게시하기" title="Permanent link">#</a></h2>
+<p>사이트는 <code>docs/</code>에 있는 일반 HTML이며, GitHub에서 별도 빌드가 필요 없습니다. 저장소의 <strong>Settings &gt; Pages</strong>에서 <strong>Deploy from a branch</strong>, 브랜치 <code>main</code>, 폴더 <code>/docs</code>를 선택하세요. 상단 바에 GitHub 링크를 표시하려면 <code>build_site.py</code> 실행 전에 <code>OTTM_REPO=https://github.com/&lt;사용자&gt;/&lt;저장소&gt;</code>를 설정합니다.</p>
+<nav class="pager"><a class="prev" href="tools.html"><small>← 이전</small>명령줄 도구</a><a class="next" href="faq.html"><small>다음 →</small>문제 해결 및 FAQ</a></nav>
+<footer>OT TMT 템플릿 · MIT 라이선스 · Microsoft, MITRE, IEC와 제휴 관계가 없습니다.</footer>
+</article></main>
+<aside class="toc"><h5>이 페이지의 내용</h5><a href="#소스-파일">소스 파일</a><a href="#재빌드">재빌드</a><a href="#스텐실-추가">스텐실 추가</a><a href="#위협-추가">위협 추가</a><a href="#이-사이트-게시하기">이 사이트 게시하기</a></aside>
+</div>
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>위협 검토와 위험 평가 · OT TMT 템플릿</title>
+<meta name="description" content="위협 검토와 위험 평가# 생성된 위협마다 읽을 내용과 채워야 할 필드가 있습니다. 두 가지를 설명하고, 효과적인 검토 절차를 소개합니다. 위협이 알려 주는 내용# 필드 내용 Title 실제 출발지와 대상을 명시합니다. 예: &quot;Spoofing of Engineering Workstatio">
+<link rel="alternate" hreflang="en" href="../review.html">
+<link rel="alternate" hreflang="ko" href="review.html">
+<link rel="icon" href="../assets/favicon.svg">
+<link rel="stylesheet" href="../assets/style.css">
+<script src="../assets/app.js"></script>
+<script src="../assets/search-ko.js" defer></script>
+</head>
+<body data-base="">
+<header class="topbar">
+  <button class="iconbtn menubtn" id="menu" aria-label="메뉴"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+  <a class="brand" href="index.html"><svg width="28" height="28" viewBox="0 0 32 32" aria-hidden="true"><rect x="1" y="1" width="30" height="30" rx="8" fill="currentColor" opacity=".12"/><path d="M16 5l9 4v6.5c0 5.4-3.7 9.6-9 11.5-5.3-1.9-9-6.1-9-11.5V9z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/><circle cx="12" cy="15" r="2" fill="currentColor"/><circle cx="20" cy="15" r="2" fill="currentColor"/><path d="M14 15h4M16 15v5" stroke="currentColor" stroke-width="2"/></svg><span class="full">OT TMT 템플릿</span><small>IEC 62443 위협 모델링</small></a>
+  <span class="spacer"></span>
+  <div class="search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg><input id="q" type="search" placeholder="문서 검색  /" aria-label="문서 검색" autocomplete="off"><div class="results" id="results" data-empty="검색 결과가 없습니다"></div></div>
+  <span class="lang"><a href="../review.html" hreflang="en">EN</a><a href="review.html" class="on" hreflang="ko">한국어</a></span>
+  <button class="iconbtn" id="theme" title="밝은/어두운 테마 전환" aria-label="밝은/어두운 테마 전환"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></button>
+  
+</header>
+<div class="layout">
+<nav class="sidebar"><h4>시작하기</h4><a href="index.html">개요</a><a href="threat-modeling.html">위협 모델링 기초</a><a href="getting-started.html">설치 및 빠른 시작</a><h4>가이드</h4><a href="using-tmt.html">Microsoft TMT 사용법</a><a href="product-guide.html">제품·시스템 위협 모델</a><a href="plant-guide.html">플랜트·사이트 위험 평가</a><a href="review.html" class="on">위협 검토와 위험 평가</a><h4>개념</h4><a href="how-threats-work.html">위협이 생성되는 방식</a><a href="properties.html">속성</a><h4>참조</h4><a href="threats.html">위협 카탈로그</a><a href="stencils.html">스텐실</a><a href="examples.html">예제</a><h4>고급</h4><a href="tools.html">명령줄 도구</a><a href="customise.html">사용자 정의와 재빌드</a><h4>도움말</h4><a href="faq.html">문제 해결 및 FAQ</a><a href="changelog.html">버전 및 라이선스</a></nav>
+<main><article class="doc">
+<h1 id="위협-검토와-위험-평가">위협 검토와 위험 평가<a class="headerlink" href="#위협-검토와-위험-평가" title="Permanent link">#</a></h1>
+<p class="lede">생성된 위협마다 읽을 내용과 채워야 할 필드가 있습니다. 두 가지를 설명하고, 효과적인 검토 절차를 소개합니다.</p>
+
+<h2 id="위협이-알려-주는-내용">위협이 알려 주는 내용<a class="headerlink" href="#위협이-알려-주는-내용" title="Permanent link">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>필드</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Title</strong></td>
+<td>실제 출발지와 대상을 명시합니다. 예: "Spoofing of Engineering Workstation towards Line 3 PLC"</td>
+</tr>
+<tr>
+<td><strong>Description</strong></td>
+<td>무엇이 왜 일어날 수 있는지</td>
+</tr>
+<tr>
+<td><strong>Priority</strong></td>
+<td>High, Medium, Low</td>
+</tr>
+<tr>
+<td><strong>Category</strong></td>
+<td>STRIDE</td>
+</tr>
+<tr>
+<td><strong>Possible Mitigation(s)</strong> / <strong>Recommended Countermeasure(s)</strong></td>
+<td>위협에 대응하는 통제</td>
+</tr>
+<tr>
+<td><strong>MITRE ATT&amp;CK for ICS</strong></td>
+<td>관련 기법 (v20 ID)</td>
+</tr>
+<tr>
+<td><strong>IEC 62443 Requirement(s)</strong></td>
+<td>4-2 CR/EDR/HDR/NDR/SAR, 3-3 SR, 2-1, 2-4, 3-2 또는 IEC 61511 참조</td>
+</tr>
+<tr>
+<td><strong>Foundational Requirement</strong></td>
+<td>FR1~FR7</td>
+</tr>
+<tr>
+<td><strong>Relevant from SL</strong></td>
+<td>대응책이 보통 요구되기 시작하는 최저 SL-T</td>
+</tr>
+<tr>
+<td><strong>OT Consequence</strong></td>
+<td>안전, 환경, 설비, 생산, 감시·제어, 지적재산</td>
+</tr>
+</tbody>
+</table>
+<h2 id="직접-채우는-필드">직접 채우는 필드<a class="headerlink" href="#직접-채우는-필드" title="Permanent link">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>제품·시스템 템플릿</th>
+<th>플랜트·사이트 템플릿</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Likelihood (1-5): 가능성</td>
+<td>Existing Countermeasures: 현재 대책</td>
+</tr>
+<tr>
+<td>Impact (1-5): 영향</td>
+<td>HAZOP or Cyber HAZOP Reference</td>
+</tr>
+<tr>
+<td>Risk Rating: 위험 등급</td>
+<td>Consequence Category: 결과 범주</td>
+</tr>
+<tr>
+<td>Risk Treatment: 위험 처리</td>
+<td>Consequence Severity (1-5), Likelihood (1-5)</td>
+</tr>
+<tr>
+<td>Implemented Mitigation(s): 적용된 대응책</td>
+<td>Current Risk, Within Tolerable Risk: 현재 위험과 허용 여부</td>
+</tr>
+<tr>
+<td>Verification Evidence: 검증 증거</td>
+<td>Risk Treatment, Planned Countermeasure(s), Residual Risk</td>
+</tr>
+<tr>
+<td>Owner: 담당자</td>
+<td>Action Owner, Due Date, Verification Evidence</td>
+</tr>
+</tbody>
+</table>
+<h2 id="위험-매트릭스">위험 매트릭스<a class="headerlink" href="#위험-매트릭스" title="Permanent link">#</a></h2>
+<p>위험 = 가능성 × 영향(또는 결과 심각도). 5 × 5 매트릭스를 씁니다.</p>
+<table>
+<thead>
+<tr>
+<th>점수</th>
+<th>등급</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>20-25</td>
+<td><strong>Critical (치명)</strong></td>
+</tr>
+<tr>
+<td>12-19</td>
+<td><strong>High (높음)</strong></td>
+</tr>
+<tr>
+<td>6-11</td>
+<td><strong>Medium (중간)</strong></td>
+</tr>
+<tr>
+<td>1-5</td>
+<td><strong>Low (낮음)</strong></td>
+</tr>
+</tbody>
+</table>
+<p>처리 방안은 <em>완화(mitigate)</em>, <em>전가(transfer)</em>, <em>회피(avoid)</em>, <em>수용(accept)</em> 중 하나입니다. 수용한 위험은 수용을 결정한 담당자와 함께 기록하세요.</p>
+<h2 id="효과적인-검토-절차">효과적인 검토 절차<a class="headerlink" href="#효과적인-검토-절차" title="Permanent link">#</a></h2>
+<ol class="steps">
+<li><b>흐름 단위로 진행</b>Threat List를 <em>Interaction</em>으로 정렬하고 다이어그램의 흐름을 하나씩 따라갑니다.</li>
+<li><b>위협이 아니라 속성을 고치기</b>"이 장치에는 웹 인터페이스가 없다"처럼 답하지 않은 속성 때문에 적용될 수 없는 위협이라면 속성을 고치세요. 그러면 위협이 완전히 사라지고, 이 모델을 바탕으로 만드는 다음 모델에서도 나타나지 않습니다.</li>
+<li><b>나머지 표시</b>한 줄 사유와 함께 <em>Not Applicable</em>로 표시하거나, 통제를 적고 <em>Mitigated</em>로 표시합니다.</li>
+<li><b>평가와 처리</b>남은 위협에 가능성, 영향, 처리 방안을 기록합니다.</li>
+<li><b>SL-T와 비교</b><em>Relevant from SL</em>로 정렬합니다. 목표 SL 이하의 모든 위협은 완화되었거나 명시적으로 수용되어야 합니다.</li>
+</ol>
+
+<h2 id="cvss가-필요한가요">CVSS가 필요한가요?<a class="headerlink" href="#cvss가-필요한가요" title="Permanent link">#</a></h2>
+<p>필요하지 않습니다. CVSS는 제품의 알려진 취약점을 점수화합니다. 위협 모델은 취약점이 존재하기 전 설계 단계의 위협을 다루므로, IEC 62443-3-2처럼 가능성 × 영향(또는 결과 심각도)을 사용합니다. CVSS는 나중에 모델링한 구성요소에서 특정 취약점(CVE)이 발견되었을 때 유용합니다.</p>
+<nav class="pager"><a class="prev" href="plant-guide.html"><small>← 이전</small>플랜트·사이트 위험 평가</a><a class="next" href="how-threats-work.html"><small>다음 →</small>위협이 생성되는 방식</a></nav>
+<footer>OT TMT 템플릿 · MIT 라이선스 · Microsoft, MITRE, IEC와 제휴 관계가 없습니다.</footer>
+</article></main>
+<aside class="toc"><h5>이 페이지의 내용</h5><a href="#위협이-알려-주는-내용">위협이 알려 주는 내용</a><a href="#직접-채우는-필드">직접 채우는 필드</a><a href="#위험-매트릭스">위험 매트릭스</a><a href="#효과적인-검토-절차">효과적인 검토 절차</a><a href="#cvss가-필요한가요">CVSS가 필요한가요?</a></aside>
+</div>
+</body>
+</html>
