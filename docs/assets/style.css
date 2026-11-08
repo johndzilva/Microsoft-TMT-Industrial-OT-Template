@@ -198,3 +198,22 @@ footer { margin-top: 40px; padding-top: 18px; border-top: 1px solid var(--line);
   table.cat tr.detail dl { grid-template-columns: 1fr; }
 }
 @media print { .topbar, .sidebar, .toc, .pager { display: none; } .layout { display: block; padding: 0; } }
+
+/* slim scrollbars that follow the theme */
+:root { --scroll-thumb: #c9d0da; --scroll-thumb-hover: #9aa4b2; }
+:root[data-theme="dark"] { --scroll-thumb: #343c4b; --scroll-thumb-hover: #4b5568; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --scroll-thumb: #343c4b; --scroll-thumb-hover: #4b5568; } }
+.sidebar, .toc, .tablewrap, .results, .doc pre {
+  scrollbar-width: thin;
+  scrollbar-color: var(--scroll-thumb) transparent;
+}
+.sidebar::-webkit-scrollbar, .toc::-webkit-scrollbar, .tablewrap::-webkit-scrollbar, .results::-webkit-scrollbar, .doc pre::-webkit-scrollbar { width: 6px; height: 6px; }
+.sidebar::-webkit-scrollbar-track, .toc::-webkit-scrollbar-track, .tablewrap::-webkit-scrollbar-track, .results::-webkit-scrollbar-track, .doc pre::-webkit-scrollbar-track { background: transparent; }
+.sidebar::-webkit-scrollbar-thumb, .toc::-webkit-scrollbar-thumb, .tablewrap::-webkit-scrollbar-thumb, .results::-webkit-scrollbar-thumb, .doc pre::-webkit-scrollbar-thumb { background: var(--scroll-thumb); border-radius: 3px; }
+.sidebar::-webkit-scrollbar-thumb:hover, .toc::-webkit-scrollbar-thumb:hover, .tablewrap::-webkit-scrollbar-thumb:hover, .results::-webkit-scrollbar-thumb:hover, .doc pre::-webkit-scrollbar-thumb:hover { background: var(--scroll-thumb-hover); }
+/* the page scrollbar too */
+html { scrollbar-width: thin; scrollbar-color: var(--scroll-thumb) var(--bg); }
+html::-webkit-scrollbar { width: 8px; }
+html::-webkit-scrollbar-track { background: var(--bg); }
+html::-webkit-scrollbar-thumb { background: var(--scroll-thumb); border-radius: 4px; border: 2px solid var(--bg); }
+html::-webkit-scrollbar-thumb:hover { background: var(--scroll-thumb-hover); }
